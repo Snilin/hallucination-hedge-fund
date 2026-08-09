@@ -1,0 +1,26 @@
+name: fund
+on:
+  schedule:
+    - cron: '9 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: fund
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install --quiet requests pandas numpy
+      - run: python engine.py
+      - run: |
+          git config user.name fund
+          git config user.email fund@users.noreply.github.com
+          git add -A
+          git commit -m tick || echo no-changes
+          git push
