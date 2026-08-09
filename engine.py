@@ -196,8 +196,38 @@ def main():
         st['trade_log'] = (st.get('trade_log', []) + trades)[-500:]
     json.dump(st, open('state.json', 'w'), indent=1, default=str)
 
-    # ---- equity history ----
-    sleeve_val = {k: ALLOC[k] * st['mult'][k] for k in ALLOC}
+    # ---- mark OPEN ignition positions to current market (live unrealized) ----
+    price_cache = {}
+
+    def cur_price(coin):
+        if coin in H:
+            return float(H[coin]['c'].iloc[-1])
+        if coin == 'SPX':
+            return st.get('spx_px')
+        if coin in price_cache:
+            return price_cache[coin]
+        d = candles(coin, '1h', 72)
+        p = float(d['c'].iloc[-1]) if (d is not None and len(d)) else None
+        price_cache[coin] = p
+        return p
+
+    open_positions = []
+    live_mult = dict(st['mult'])  # display copy; realized closes already in st['mult']
+    for e in [x for x in st['events'] if x['open']]:
+        cp = cur_price(e['coin'])
+        ur = usd = None
+        if cp:
+            ur = ((cp / e['entry'] - 1) - COST) / e['stop_frac']   # unrealized R (entry cost paid)
+            usd = ALLOC[e['sleeve']] * IGN_RISK[e['sleeve']] * ur
+            live_mult[e['sleeve']] += IGN_RISK[e['sleeve']] * ur    # mark sleeve to market
+        open_positions.append(dict(sleeve=e['sleeve'], coin=e['coin'], entry=e['entry'], stop=e['stop'],
+                                   cur=cp, move_pct=round(100 * (cp / e['entry'] - 1), 2) if cp else None,
+                                   unreal_R=round(ur, 2) if ur is not None else None,
+                                   unreal_usd=round(usd, 2) if usd is not None else None,
+                                   since=e['opened'][:10]))
+
+    # ---- equity history (marked to market) ----
+    sleeve_val = {k: ALLOC[k] * live_mult[k] for k in ALLOC}
     fund_val = sum(sleeve_val.values())
     hist = json.load(open('history.json')) if os.path.exists('history.json') else []
     hist.append(dict(t=str(now), fund=round(fund_val, 2), **{k: round(v, 2) for k, v in sleeve_val.items()}))
@@ -208,8 +238,6 @@ def main():
     def series_of(key):
         return [[h['t'], h[key]] for h in hist]
 
-    open_positions = [dict(sleeve=e['sleeve'], coin=e['coin'], entry=e['entry'], stop=e['stop'],
-                           since=e['opened'][:10]) for e in st['events'] if e['open']]
     live_pos = {a: st['combo_pos'].get(a, 0.0) for a in combo_assets}
     data = dict(
         name='Hallucination Hedge Fund',
@@ -220,7 +248,7 @@ def main():
         sleeves=[dict(key=k, name=SLEEVE_META[k][0], pool=SLEEVE_META[k][1], desc=SLEEVE_META[k][2],
                       alloc=ALLOC[k], alloc_pct=round(100 * ALLOC[k] / START, 1),
                       value=round(sleeve_val[k], 2), pnl=round(sleeve_val[k] - ALLOC[k], 2),
-                      pnl_pct=round(100 * (st['mult'][k] - 1), 3), series=series_of(k))
+                      pnl_pct=round(100 * (live_mult[k] - 1), 3), series=series_of(k))
                  for k in ALLOC],
         open_positions=open_positions,
         closed=[dict(sleeve=e['sleeve'], coin=e['coin'], R=e.get('R'), opened=e['opened'][:10], closed=e.get('closed', '')[:10])
