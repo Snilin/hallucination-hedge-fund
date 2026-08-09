@@ -122,6 +122,43 @@ const pct = n => (n>=0?'+':'')+n.toFixed(2)+'%';
 const cls = n => n>0?'pos':(n<0?'neg':'');
 const arrow = n => n>0?'▲ ':(n<0?'▼ ':'');
 
+
+// ---- live marking (client-side, same math/venue as engine.py) ----
+const ALLOC={combo:50000,spx:20000,ign_majors:12000,ign_alts:12000,ign_spx:6000};
+const IGN_RISK={ign_majors:0.03,ign_alts:0.015,ign_spx:0.03};
+const COST=5.5e-4;
+async function liveMark(){
+  const base=window.__BASE; if(!base||!base.open_positions) return;
+  const coins=[...new Set(base.open_positions.filter(o=>o.coin!=='SPX'&&o.entry&&o.stop).map(o=>o.coin))];
+  if(!coins.length) return;
+  let mids;
+  try{ mids=await fetch('https://api.hyperliquid.xyz/info',{method:'POST',
+        headers:{'Content-Type':'application/json'},body:JSON.stringify({type:'allMids'})}).then(r=>r.json()); }
+  catch(e){ return; }                       // network hiccup → keep last-good hourly marks
+  if(!mids||typeof mids!=='object') return;
+  const d=JSON.parse(JSON.stringify(base));
+  const sleeveDelta={}; let fundDelta=0;
+  (d.open_positions||[]).forEach(o=>{
+    if(o.coin==='SPX'||!o.entry||!o.stop) return;
+    const p=parseFloat(mids[o.coin]); if(!p||!isFinite(p)) return;
+    const sf=1-o.stop/o.entry; if(sf<=0) return;
+    const ur=((p/o.entry-1)-COST)/sf;
+    const usd=(ALLOC[o.sleeve]||0)*(IGN_RISK[o.sleeve]||0)*ur;
+    const dlt=usd-((o.unreal_usd==null)?0:o.unreal_usd);
+    fundDelta+=dlt; sleeveDelta[o.sleeve]=(sleeveDelta[o.sleeve]||0)+dlt;
+    o.cur=p; o.move_pct=+(100*(p/o.entry-1)).toFixed(2); o.unreal_R=+ur.toFixed(2); o.unreal_usd=+usd.toFixed(2);
+  });
+  (d.sleeves||[]).forEach(s=>{ if(sleeveDelta[s.key]){
+    s.value=+(s.value+sleeveDelta[s.key]).toFixed(2);
+    s.pnl=+(s.value-s.alloc).toFixed(2);
+    s.pnl_pct=+(100*(s.value/s.alloc-1)).toFixed(3); }});
+  d.fund.value=+(d.fund.value+fundDelta).toFixed(2);
+  d.fund.pnl=+(d.fund.value-d.start).toFixed(2);
+  d.fund.pnl_pct=+(100*(d.fund.value/d.start-1)).toFixed(3);
+  d._live=true; d._liveStamp=new Date().toISOString();
+  window.__D=d; render(d);
+}
+
 function maxDD(series){
   let peak=-1e18,dd=0;
   for(const p of series){const v=p[1]; if(v>peak)peak=v; if(peak>0)dd=Math.min(dd,v/peak-1);}
@@ -130,7 +167,7 @@ function maxDD(series){
 
 function render(d){
   document.getElementById('sub').textContent =
-    'Live since '+ (d.since||'').slice(0,10) +' · updated '+ (d.updated||'').replace('T',' ').slice(0,16) +' UTC';
+    'Live since '+ (d.since||'').slice(0,10) +' · updated '+ (d.updated||'').replace('T',' ').slice(0,16) +' UTC' + (d._live?(' | positions marked live '+d._liveStamp.slice(11,19)+' UTC'):'');
   document.getElementById('fundval').textContent = money(d.fund.value);
   const fp=document.getElementById('fundpnl');
   fp.className='pnlbig tnum '+cls(d.fund.pnl);
@@ -277,7 +314,10 @@ async function boot(){
   let d=window.__DATA__;
   if(!d){ try{ d=await fetch('./data.json?_='+Date.now()).then(r=>r.json()); }catch(e){} }
   if(!d){ document.getElementById('sub').textContent='data.json not found — open the hosted page, or use standalone.html'; return; }
-  window.__D=d; render(d);
+  window.__BASE=d; window.__D=d; render(d);
+  liveMark();
+  setInterval(liveMark, 30000);
+  setInterval(async()=>{ try{ const nd=await fetch('./data.json?_='+Date.now()).then(r=>r.json()); if(nd&&nd.fund) window.__BASE=nd; }catch(e){} }, 300000);
 }
 boot();
 </script>
