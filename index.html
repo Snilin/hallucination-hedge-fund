@@ -149,9 +149,15 @@ function render(d){
   }
 
   const op=d.open_positions||[];
-  document.getElementById('openpos').innerHTML = op.length? table(
-    ['Sleeve','Market','Entry','Stop','Since'],
-    op.map(o=>[sleeveName(o.sleeve,d),o.coin,fmt(o.entry),fmt(o.stop),o.since])
+  document.getElementById('openpos').innerHTML = op.length? tableR(
+    ['Sleeve','Market','Entry','Now','Move','Stop','Unrealized P&L','Since'],
+    op.map(o=>{
+      const u = o.unreal_usd;
+      const upnl = (u==null)?'—':`<span class="${cls(u)}">${arrow(u)}${money(u)} · ${(o.unreal_R>=0?'+':'')+o.unreal_R}R</span>`;
+      const mv = (o.move_pct==null)?'—':`<span class="${cls(o.move_pct)}">${pct(o.move_pct)}</span>`;
+      return [sleeveName(o.sleeve,d),o.coin,fmt(o.entry),fmt(o.cur),mv,fmt(o.stop),upnl,o.since];
+    }),
+    [2,3,5]
   ) : '<div class="empty">No open event trades right now — sleeves are armed and waiting for signals.</div>';
 
   const tl=(d.trade_log||[]).slice().reverse();
@@ -201,6 +207,11 @@ function sleeveCard(s,d){
 function table(head,rows){
   return '<table><thead><tr>'+head.map((h,i)=>`<th class="${i>1&&i<5?'tnum':''}">${h}</th>`).join('')+'</tr></thead><tbody>'+
     rows.map(r=>'<tr>'+r.map((c,i)=>`<td class="${i>1&&i<5?'tnum':''}">${c}</td>`).join('')+'</tr>').join('')+'</tbody></table>';
+}
+function tableR(head,rows,numCols){
+  const nc=new Set(numCols||[]);
+  return '<table><thead><tr>'+head.map((h,i)=>`<th class="${nc.has(i)?'tnum':''}">${h}</th>`).join('')+'</tr></thead><tbody>'+
+    rows.map(r=>'<tr>'+r.map((c,i)=>`<td class="${nc.has(i)?'tnum':''}">${c}</td>`).join('')+'</tr>').join('')+'</tbody></table>';
 }
 
 function drawPie(sleeves){
