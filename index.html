@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hallucination Hedge Fund</title>
+<style>
+  :root{
+    --bg:#0d0d0d; --surface:#1a1a19; --surface2:#222220; --line:#2c2c2a;
+    --ink:#ffffff; --ink2:#c3c2b7; --muted:#898781;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181;
+    --good:#0ca30c; --bad:#e06666; --ring:rgba(255,255,255,.10);
+  }
+  html[data-theme="light"]{
+    --bg:#f4f4f1; --surface:#ffffff; --surface2:#fafaf8; --line:#e1e0d9;
+    --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+    --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4;
+    --good:#006300; --bad:#d03b3b; --ring:rgba(11,11,11,.10);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;line-height:1.45}
+  .wrap{max-width:1180px;margin:0 auto;padding:24px 20px 60px}
+  a{color:inherit}
+  .row{display:flex;gap:16px;flex-wrap:wrap}
+  .card{background:var(--surface);border:1px solid var(--ring);border-radius:14px;padding:20px}
+  .muted{color:var(--muted)} .ink2{color:var(--ink2)}
+  .tnum{font-variant-numeric:tabular-nums}
+  .pos{color:var(--good)} .neg{color:var(--bad)}
+  header.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .dot{width:12px;height:12px;border-radius:50%;background:var(--s3);box-shadow:0 0 0 4px color-mix(in srgb,var(--s3) 22%,transparent)}
+  h1{font-size:20px;margin:0;letter-spacing:-.01em}
+  .badge{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+    padding:4px 9px;border-radius:999px;background:var(--surface2);border:1px solid var(--ring);color:var(--muted)}
+  .btn{cursor:pointer;background:var(--surface2);border:1px solid var(--ring);color:var(--ink2);
+    border-radius:9px;padding:7px 11px;font-size:13px}
+  .hero{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;margin-bottom:16px}
+  @media(max-width:820px){.hero{grid-template-columns:1fr}}
+  .big{font-size:42px;font-weight:650;letter-spacing:-.02em;margin:2px 0}
+  .k{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  .pnlbig{font-size:17px;font-weight:600}
+  .chartwrap{position:relative}
+  svg{display:block;width:100%;overflow:visible}
+  .legend{display:flex;flex-direction:column;gap:9px}
+  .lgrow{display:flex;align-items:center;gap:10px;font-size:13.5px}
+  .sw{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:820px){.grid3{grid-template-columns:1fr}}
+  .sleeve{padding:16px 16px 14px}
+  .sleeve .nm{font-weight:600;font-size:15px;display:flex;align-items:center;gap:8px}
+  .sleeve .desc{font-size:12px;color:var(--muted);margin:3px 0 12px;min-height:30px}
+  .statline{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;border-top:1px solid var(--line)}
+  .statline .lab{color:var(--muted)}
+  .poolhdr{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:26px 2px 12px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+  td.tnum,th.tnum{text-align:right}
+  .pill{font-size:11px;padding:2px 7px;border-radius:6px;background:var(--surface2);border:1px solid var(--ring);color:var(--ink2)}
+  .tip{position:absolute;pointer-events:none;background:var(--surface2);border:1px solid var(--ring);
+    border-radius:8px;padding:7px 10px;font-size:12px;transform:translate(-50%,-115%);white-space:nowrap;opacity:0;transition:opacity .08s}
+  .empty{color:var(--muted);font-size:13px;padding:14px 2px}
+  h2.sec{font-size:15px;margin:30px 2px 12px}
+  .footnote{color:var(--muted);font-size:11.5px;margin-top:26px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>Hallucination Hedge Fund</h1>
+        <div class="muted" style="font-size:12.5px" id="sub">loading…</div>
+      </div>
+    </div>
+    <div class="row" style="align-items:center;gap:10px">
+      <span class="badge">Paper · no capital at risk</span>
+      <button class="btn" id="theme">◐ Theme</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="card chartwrap">
+      <div class="k">Total fund value</div>
+      <div class="big tnum" id="fundval">—</div>
+      <div class="pnlbig tnum" id="fundpnl">—</div>
+      <div style="margin-top:14px" class="chartwrap">
+        <div class="k" style="margin-bottom:6px">Cumulative P&L</div>
+        <svg id="pnlchart" height="150" viewBox="0 0 700 150" preserveAspectRatio="none"></svg>
+        <div class="tip" id="pnltip"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="k">Allocation</div>
+      <div class="row" style="align-items:center;gap:22px;margin-top:8px">
+        <svg id="pie" width="180" height="180" viewBox="0 0 180 180"></svg>
+        <div class="legend" id="pielegend" style="flex:1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pools"></div>
+
+  <h2 class="sec">Open positions</h2>
+  <div class="card" style="padding:6px 6px 2px"><div id="openpos"></div></div>
+
+  <h2 class="sec">Recent activity</h2>
+  <div class="card" style="padding:6px 6px 2px"><div id="activity"></div></div>
+
+  <div class="footnote" id="foot"></div>
+</div>
+
+<!--DATA-->
+<script>
+const SW = {combo:'--s1',spx:'--s2',ign_majors:'--s3',ign_alts:'--s4',ign_spx:'--s5'};
+const cssv = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const money = n => (n<0?'-':'')+'$'+Math.abs(n).toLocaleString('en-US',{maximumFractionDigits:0});
+const pct = n => (n>=0?'+':'')+n.toFixed(2)+'%';
+const cls = n => n>0?'pos':(n<0?'neg':'');
+const arrow = n => n>0?'▲ ':(n<0?'▼ ':'');
+
+function maxDD(series){
+  let peak=-1e18,dd=0;
+  for(const p of series){const v=p[1]; if(v>peak)peak=v; if(peak>0)dd=Math.min(dd,v/peak-1);}
+  return dd*100;
+}
+
+function render(d){
+  document.getElementById('sub').textContent =
+    'Live since '+ (d.since||'').slice(0,10) +' · updated '+ (d.updated||'').replace('T',' ').slice(0,16) +' UTC';
+  document.getElementById('fundval').textContent = money(d.fund.value);
+  const fp=document.getElementById('fundpnl');
+  fp.className='pnlbig tnum '+cls(d.fund.pnl);
+  fp.textContent = arrow(d.fund.pnl)+money(d.fund.pnl)+'  ('+pct(d.fund.pnl_pct)+')';
+
+  drawLine(d.fund.series, d.start);
+  drawPie(d.sleeves);
+
+  const poolNames={A:'Pool A · Core (stable engines, cross-margined)',B:'Pool B · Event book (isolated, capped risk)'};
+  const pools=document.getElementById('pools'); pools.innerHTML='';
+  for(const P of ['A','B']){
+    const h=document.createElement('div'); h.className='poolhdr'; h.textContent=poolNames[P]; pools.appendChild(h);
+    const g=document.createElement('div'); g.className='grid3';
+    d.sleeves.filter(s=>s.pool===P).forEach(s=>g.appendChild(sleeveCard(s,d)));
+    pools.appendChild(g);
+  }
+
+  const op=d.open_positions||[];
+  document.getElementById('openpos').innerHTML = op.length? table(
+    ['Sleeve','Market','Entry','Stop','Since'],
+    op.map(o=>[sleeveName(o.sleeve,d),o.coin,fmt(o.entry),fmt(o.stop),o.since])
+  ) : '<div class="empty">No open event trades right now — sleeves are armed and waiting for signals.</div>';
+
+  const tl=(d.trade_log||[]).slice().reverse();
+  document.getElementById('activity').innerHTML = tl.length? table(
+    ['Time','Sleeve','Market','Action','Price','Detail'],
+    tl.map(t=>[t.ts.replace('T',' ').slice(0,16), sleeveName(t.sleeve,d), t.coin,
+      '<span class="pill">'+t.action+'</span>', fmt(t.price), '<span class="muted">'+(t.note||'')+'</span>'])
+  ) : '<div class="empty">No activity logged yet.</div>';
+
+  document.getElementById('foot').innerHTML =
+    'Model: $'+d.start.toLocaleString()+' paper book, allocated by the pie above. Core sleeves marked at their stated exposure; '+
+    'Ignition sleeves risk a fixed fraction of their slice per event (majors/S&P 3%, alts 1.5%), exit at a structural stop or after 20 days. '+
+    'Prices & funding are live from Hyperliquid; S&P from public daily data. Costs 0.055%/side + funding included. '+
+    'No orders are placed — fills assume mid-price, so live results will differ slightly.';
+}
+
+function sleeveName(k,d){const s=(d.sleeves||[]).find(x=>x.key===k);return s?s.name:k;}
+function fmt(n){ if(n==null||n==='')return '—'; n=+n; return n>=1000?n.toLocaleString('en-US',{maximumFractionDigits:2}):n.toFixed(n<10?4:2);}
+
+function sleeveCard(s,d){
+  const el=document.createElement('div'); el.className='card sleeve';
+  const closed=(d.closed||[]).filter(c=>c.sleeve===s.key);
+  const open=(d.open_positions||[]).filter(o=>o.sleeve===s.key).length;
+  const wins=closed.filter(c=>c.R>0).length;
+  const dd=maxDD(s.series||[]);
+  const isIgn=s.key.startsWith('ign');
+  let sub;
+  if(isIgn){
+    sub = `${closed.length} closed · ${open} open` + (closed.length?` · ${Math.round(100*wins/closed.length)}% win`:'');
+  }else{
+    const pos = s.key==='combo'
+      ? Object.entries(d.combo_positions||{}).map(([k,v])=>k+' '+(v>0?'LONG':v<0?'SHORT':'FLAT')).join(', ')
+      : ('S&P '+(d.spx_position>0?'LONG':'FLAT'));
+    sub = pos;
+  }
+  el.innerHTML =
+    `<div class="nm"><span class="sw" style="background:${cssv(SW[s.key])}"></span>${s.name}</div>
+     <div class="desc">${s.desc}</div>
+     <div class="statline"><span class="lab">Allocation</span><span class="tnum">${money(s.alloc)} · ${s.alloc_pct}%</span></div>
+     <div class="statline"><span class="lab">Value</span><span class="tnum">${money(s.value)}</span></div>
+     <div class="statline"><span class="lab">P&L</span><span class="tnum ${cls(s.pnl)}">${arrow(s.pnl)}${money(s.pnl)} (${pct(s.pnl_pct)})</span></div>
+     <div class="statline"><span class="lab">Max drawdown</span><span class="tnum ${dd<0?'neg':''}">${dd.toFixed(2)}%</span></div>
+     <div class="statline"><span class="lab">${isIgn?'Trades':'Position'}</span><span class="tnum">${sub}</span></div>`;
+  return el;
+}
+
+function table(head,rows){
+  return '<table><thead><tr>'+head.map((h,i)=>`<th class="${i>1&&i<5?'tnum':''}">${h}</th>`).join('')+'</tr></thead><tbody>'+
+    rows.map(r=>'<tr>'+r.map((c,i)=>`<td class="${i>1&&i<5?'tnum':''}">${c}</td>`).join('')+'</tr>').join('')+'</tbody></table>';
+}
+
+function drawPie(sleeves){
+  const svg=document.getElementById('pie'), lg=document.getElementById('pielegend');
+  const cx=90,cy=90,r=72,rin=44; let a=-Math.PI/2; svg.innerHTML=''; lg.innerHTML='';
+  const total=sleeves.reduce((x,s)=>x+s.alloc,0);
+  sleeves.forEach(s=>{
+    const frac=s.alloc/total, a2=a+frac*2*Math.PI;
+    const x1=cx+r*Math.cos(a),y1=cy+r*Math.sin(a),x2=cx+r*Math.cos(a2),y2=cy+r*Math.sin(a2);
+    const xi2=cx+rin*Math.cos(a2),yi2=cy+rin*Math.sin(a2),xi1=cx+rin*Math.cos(a),yi1=cy+rin*Math.sin(a);
+    const large=frac>0.5?1:0;
+    const p=`M${x1} ${y1} A${r} ${r} 0 ${large} 1 ${x2} ${y2} L${xi2} ${yi2} A${rin} ${rin} 0 ${large} 0 ${xi1} ${yi1} Z`;
+    const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d',p); path.setAttribute('fill',cssv(SW[s.key]));
+    path.setAttribute('stroke',cssv('--surface')); path.setAttribute('stroke-width','2');
+    svg.appendChild(path);
+    a=a2;
+    lg.innerHTML+=`<div class="lgrow"><span class="sw" style="background:${cssv(SW[s.key])}"></span>
+      <span style="flex:1">${s.name}</span><span class="tnum muted">${s.alloc_pct}%</span></div>`;
+  });
+}
+
+let SER=null, START=100000;
+function drawLine(series,start){
+  SER=series; START=start;
+  const svg=document.getElementById('pnlchart'); const W=700,H=150,pad=6;
+  svg.innerHTML='';
+  if(!series||series.length<2){
+    svg.innerHTML=`<text x="12" y="80" fill="${cssv('--muted')}" font-size="13">Cumulative P&L will plot as history builds (hourly).</text>`;
+    return;
+  }
+  const vals=series.map(p=>p[1]-start);
+  let mn=Math.min(...vals,0),mx=Math.max(...vals,0); if(mn===mx){mn-=1;mx+=1;}
+  const X=i=>pad+i*(W-2*pad)/(series.length-1);
+  const Y=v=>pad+(1-(v-mn)/(mx-mn))*(H-2*pad);
+  const zeroY=Y(0);
+  svg.innerHTML+=`<line x1="${pad}" x2="${W-pad}" y1="${zeroY}" y2="${zeroY}" stroke="${cssv('--line')}" stroke-width="1"/>`;
+  let dpath='',apath=`M${X(0)} ${zeroY} `;
+  vals.forEach((v,i)=>{const x=X(i),y=Y(v);dpath+=(i?'L':'M')+x+' '+y+' ';apath+='L'+x+' '+y+' ';});
+  apath+=`L${X(vals.length-1)} ${zeroY} Z`;
+  const last=vals[vals.length-1], col=last>=0?cssv('--good'):cssv('--bad');
+  svg.innerHTML+=`<path d="${apath}" fill="${col}" opacity="0.10"/>`;
+  svg.innerHTML+=`<path d="${dpath}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/>`;
+  const tip=document.getElementById('pnltip');
+  svg.onmousemove=e=>{
+    const rect=svg.getBoundingClientRect();
+    const i=Math.round((e.clientX-rect.left)/rect.width*(series.length-1));
+    if(i<0||i>=series.length)return;
+    const v=vals[i]; const xr=rect.left+X(i)/W*rect.width; const yr=rect.top+Y(v)/H*rect.height;
+    tip.style.opacity=1; tip.style.left=(xr-svg.closest('.card').getBoundingClientRect().left)+'px';
+    tip.style.top=(yr-svg.closest('.card').getBoundingClientRect().top)+'px';
+    tip.innerHTML=`<b class="${cls(v)}">${(v>=0?'+':'')+money(v)}</b> · ${series[i][0].replace('T',' ').slice(5,16)}`;
+  };
+  svg.onmouseleave=()=>{tip.style.opacity=0;};
+}
+
+document.getElementById('theme').onclick=()=>{
+  const h=document.documentElement; h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';
+  if(window.__D)render(window.__D);
+};
+
+async function boot(){
+  let d=window.__DATA__;
+  if(!d){ try{ d=await fetch('./data.json?_='+Date.now()).then(r=>r.json()); }catch(e){} }
+  if(!d){ document.getElementById('sub').textContent='data.json not found — open the hosted page, or use standalone.html'; return; }
+  window.__D=d; render(d);
+}
+boot();
+</script>
+</body>
+</html>
