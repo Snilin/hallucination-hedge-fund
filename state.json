@@ -1,0 +1,72 @@
+{
+ "ts": "2026-08-09 14:00:00+00:00",
+ "t0": "2026-08-09 14:00:00+00:00",
+ "px": {
+  "BTC": 65191.0,
+  "ETH": 1924.0,
+  "SOL": 76.69
+ },
+ "combo_pos": {
+  "BTC": 1.0,
+  "ETH": 1.0
+ },
+ "spx_pos": 1.0,
+ "spx_px": 7757.64013671875,
+ "mult": {
+  "combo": 0.999450075625,
+  "spx": 0.99945,
+  "ign_majors": 1.0,
+  "ign_alts": 1.0,
+  "ign_spx": 1.0
+ },
+ "events": [
+  {
+   "sleeve": "ign_alts",
+   "coin": "TAO",
+   "entry": 208.94,
+   "stop": 202.6718,
+   "stop_frac": 0.03,
+   "opened": "2026-08-09 14:00:00+00:00",
+   "open": true
+  }
+ ],
+ "closed": [],
+ "alt_last_scan": "2026-08-09 14:00:00+00:00",
+ "trade_log": [
+  {
+   "ts": "2026-08-09 14:00:00+00:00",
+   "sleeve": "combo",
+   "coin": "BTC",
+   "action": "rotate",
+   "to": 1.0,
+   "price": 65191.0,
+   "note": "long-votes 0.83, short-votes 0.0, veto False"
+  },
+  {
+   "ts": "2026-08-09 14:00:00+00:00",
+   "sleeve": "combo",
+   "coin": "ETH",
+   "action": "rotate",
+   "to": 1.0,
+   "price": 1924.0,
+   "note": "long-votes 1.0, short-votes 0.0, veto False"
+  },
+  {
+   "ts": "2026-08-09 14:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "TAO",
+   "action": "open",
+   "price": 208.94,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-08-09 14:00:00+00:00",
+   "sleeve": "spx",
+   "coin": "SPX",
+   "action": "rotate",
+   "to": 1.0,
+   "price": 7757.64,
+   "note": "long-votes 1.00"
+  }
+ ]
+}
