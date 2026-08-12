@@ -113,12 +113,23 @@ def main():
             fund = sum(float(x['fundingRate']) for x in fh) if fh else 0.0
             pc += (st['combo_pos'].get(a, 0.0) * r - st['combo_pos'].get(a, 0.0) * fund) / max(1, len(combo_assets))
         st['mult']['combo'] *= (1 + pc)
+    st.setdefault('combo_entry', {})
     for a in combo_assets:
         if tgt[a] != st['combo_pos'].get(a, 0.0):
             st['mult']['combo'] *= (1 - abs(tgt[a] - st['combo_pos'].get(a, 0.0)) * COST / max(1, len(combo_assets)))
             trades.append(dict(ts=str(now), sleeve='combo', coin=a, action='rotate',
                                to=tgt[a], price=px[a], note=f"long-votes {meta[a]['fl']}, short-votes {meta[a]['fs']}, veto {meta[a]['veto']}"))
             st['combo_pos'][a] = tgt[a]
+            if tgt[a] != 0.0:
+                st['combo_entry'][a] = px[a]          # avg entry of the current position
+            else:
+                st['combo_entry'].pop(a, None)
+    # backfill entry for positions already open before this feature existed
+    for a in combo_assets:
+        if st['combo_pos'].get(a, 0.0) != 0.0 and a not in st['combo_entry']:
+            rot = [t for t in st.get('trade_log', []) if t.get('sleeve') == 'combo' and t.get('coin') == a
+                   and t.get('action') == 'rotate' and t.get('to', 0)]
+            st['combo_entry'][a] = float(rot[-1]['price']) if rot else px.get(a)
 
     # ---- ignition helpers ----
     def close_check(sleeve, coin, dfh):
@@ -185,7 +196,11 @@ def main():
             trades.append(dict(ts=str(now), sleeve='spx', coin='SPX', action='rotate', to=stg,
                                price=round(float(cs.iloc[-1]), 2), note=f"long-votes {fr.iloc[-1]:.2f}"))
             st['spx_pos'] = stg
+            st['spx_entry'] = float(cs.iloc[-1]) if stg != 0.0 else None
         st['spx_px'] = float(cs.iloc[-1])
+        if st.get('spx_pos', 0.0) != 0.0 and not st.get('spx_entry'):   # backfill
+            rot = [t for t in st.get('trade_log', []) if t.get('sleeve') == 'spx' and t.get('action') == 'rotate' and t.get('to', 0)]
+            st['spx_entry'] = float(rot[-1]['price']) if rot else float(cs.iloc[-1])
         close_check('ign_spx', 'SPX', spx)
         if fr.iloc[-1] >= 0.5 and fr.iloc[-2] < 0.5 and not any(e['sleeve'] == 'ign_spx' and e['open'] for e in st['events']):
             open_ev('ign_spx', 'SPX', float(cs.iloc[-1]), max(0.008, 1.2 * atr_frac(spx)))
@@ -226,6 +241,31 @@ def main():
                                    unreal_usd=round(usd, 2) if usd is not None else None,
                                    since=e['opened'][:10]))
 
+    # ---- holdings by asset (what the book actually holds right now) ----
+    holdings = []
+    for a in combo_assets:
+        pos = st['combo_pos'].get(a, 0.0)
+        if pos != 0.0:
+            entry = st.get('combo_entry', {}).get(a) or px.get(a)
+            cp = px.get(a)
+            mv = round(100 * (cp / entry - 1) * (1 if pos > 0 else -1), 2) if (entry and cp) else None
+            holdings.append(dict(asset=a, sleeve='combo', side='LONG' if pos > 0 else 'SHORT',
+                                 entry=round(entry, 4) if entry else None, cur=round(cp, 4) if cp else None,
+                                 move_pct=mv, exposure=round(ALLOC['combo'] / max(1, len(combo_assets)) * abs(pos))))
+    if st.get('spx_pos', 0.0) != 0.0 and st.get('spx_px'):
+        entry = st.get('spx_entry') or st.get('spx_px'); cp = st.get('spx_px'); pos = st['spx_pos']
+        holdings.append(dict(asset='S&P 500', sleeve='spx', side='LONG' if pos > 0 else 'SHORT',
+                             entry=round(entry, 2), cur=round(cp, 2),
+                             move_pct=round(100 * (cp / entry - 1) * (1 if pos > 0 else -1), 2),
+                             exposure=round(ALLOC['spx'] * abs(pos))))
+    for e in [x for x in st['events'] if x['open']]:
+        cp = cur_price(e['coin'])
+        notional = (ALLOC[e['sleeve']] * IGN_RISK[e['sleeve']]) / e['stop_frac'] if e.get('stop_frac') else None
+        holdings.append(dict(asset=e['coin'], sleeve=e['sleeve'], side='LONG',
+                             entry=round(e['entry'], 4), cur=round(cp, 4) if cp else None,
+                             move_pct=round(100 * (cp / e['entry'] - 1), 2) if cp else None,
+                             exposure=round(notional) if notional else None))
+
     # ---- equity history (marked to market) ----
     sleeve_val = {k: ALLOC[k] * live_mult[k] for k in ALLOC}
     fund_val = sum(sleeve_val.values())
@@ -251,6 +291,7 @@ def main():
                       pnl_pct=round(100 * (live_mult[k] - 1), 3), series=series_of(k))
                  for k in ALLOC],
         open_positions=open_positions,
+        holdings=holdings,
         closed=[dict(sleeve=e['sleeve'], coin=e['coin'], R=e.get('R'), opened=e['opened'][:10], closed=e.get('closed', '')[:10])
                 for e in st['closed'][-100:]],
         trade_log=st.get('trade_log', [])[-60:],
