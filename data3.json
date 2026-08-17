@@ -1,0 +1,38 @@
+{
+ "name": "Test Lab \u2014 Hybrid Book",
+ "updated": "2026-08-17 17:00:00+00:00",
+ "since": "2026-08-17 17:00:00+00:00",
+ "start": 100.0,
+ "equity": 100.0,
+ "realized": 100.0,
+ "pnl": 0.0,
+ "pnl_pct": 0.0,
+ "gate_bull": false,
+ "series": [
+  [
+   "2026-08-17 17:00:00+00:00",
+   100.0
+  ]
+ ],
+ "e1": {
+  "closed": 0,
+  "open": 0,
+  "win_pct": 0.0,
+  "avg_R": null,
+  "tot_R": 0.0,
+  "best": null,
+  "worst": null
+ },
+ "e2": {
+  "closed": 0,
+  "open": 0,
+  "win_pct": 0.0,
+  "avg_R": null,
+  "tot_R": 0.0,
+  "best": null,
+  "worst": null
+ },
+ "open_positions": [],
+ "closed": [],
+ "trade_log": []
+}
