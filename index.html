@@ -36,6 +36,10 @@
     padding:4px 9px;border-radius:999px;background:var(--surface2);border:1px solid var(--ring);color:var(--muted)}
   .btn{cursor:pointer;background:var(--surface2);border:1px solid var(--ring);color:var(--ink2);
     border-radius:9px;padding:7px 11px;font-size:13px}
+  .tabbar{display:flex;gap:6px;margin-bottom:18px}
+  .tabbtn{cursor:pointer;background:var(--surface);border:1px solid var(--ring);color:var(--muted);
+    border-radius:10px;padding:8px 16px;font-size:13.5px;font-weight:600}
+  .tabbtn.on{background:var(--surface2);color:var(--ink)}
   .tfbtns{display:flex;gap:4px}
   .tfbtn{cursor:pointer;background:transparent;border:1px solid var(--ring);color:var(--muted);
     border-radius:7px;padding:3px 9px;font-size:12px;font-weight:600}
@@ -87,6 +91,12 @@
     </div>
   </header>
 
+  <div class="tabbar">
+    <button class="tabbtn on" id="tab-fund">Fund</button>
+    <button class="tabbtn" id="tab-lab">Test Lab</button>
+  </div>
+
+  <div id="view-fund">
   <div class="hero">
     <div class="card chartwrap">
       <div class="k">Total fund value</div>
@@ -122,6 +132,37 @@
   <div class="card" style="padding:6px 6px 2px"><div id="activity"></div></div>
 
   <div class="footnote" id="foot"></div>
+  </div><!--/view-fund-->
+
+  <div id="view-lab" style="display:none">
+    <div class="hero">
+      <div class="card chartwrap">
+        <div class="k">Test Lab · Hybrid book value</div>
+        <div class="big tnum" id="labval">&#8212;</div>
+        <div class="pnlbig tnum" id="labpnl">&#8212;</div>
+        <div style="margin-top:14px">
+          <div class="k" style="margin-bottom:6px">Equity ($100 start)</div>
+          <svg id="labchart" height="150" viewBox="0 0 700 150" preserveAspectRatio="none"></svg>
+        </div>
+      </div>
+      <div class="card">
+        <div class="k">The experiment</div>
+        <div style="font-size:13px;line-height:1.7;margin-top:8px" class="ink2">
+          Two engines, paper-traded forward to judge the backtest.<br>
+          <b>Engine 1 &#183; Fast Ignition</b> &#8212; 8&#215;-speed trend flips on BTC/ETH, longs only, bull-gated. 1% risk.<br>
+          <b>Engine 2 &#183; Alt Bleed</b> &#8212; shorts fresh daily breakdowns on liquid alts. 0.5% risk, 10 slots.<br>
+          <span class="muted" id="labgate"></span>
+        </div>
+      </div>
+    </div>
+    <div class="grid3" id="labeng" style="grid-template-columns:repeat(2,1fr)"></div>
+    <h2 class="sec">Open positions</h2>
+    <div class="card" style="padding:6px 6px 2px"><div id="labopen"></div></div>
+    <h2 class="sec">Closed trades</h2>
+    <div class="card" style="padding:6px 6px 2px"><div id="labclosed"></div></div>
+    <div class="footnote">Paper book: $100 start, no keys, no orders. Hourly engine; marks are hourly closes.
+      Verdict window 8&#8211;12 weeks vs backtest expectancy (E1 ~+0.5R/tr, E2 ~+0.25R/tr). Costs 0.055%/side + slippage + funding included.</div>
+  </div><!--/view-lab-->
 </div>
 
 <!--DATA-->
@@ -379,6 +420,71 @@ document.getElementById('theme').onclick=()=>{
   const h=document.documentElement; h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';
   if(window.__D)render(window.__D);
 };
+
+// ---- Test Lab tab ----
+function drawLab(series){
+  const svg=document.getElementById('labchart'); const W=700,Hh=150,pad=6;
+  svg.innerHTML='';
+  if(!series||series.length<2){svg.innerHTML=`<text x="12" y="80" fill="${cssv('--muted')}" font-size="13">Equity plots as history builds (hourly).</text>`;return;}
+  const vals=series.map(p=>p[1]-100);
+  let mn=Math.min(...vals,0),mx=Math.max(...vals,0); if(mn===mx){mn-=1;mx+=1;}
+  const X=i=>pad+i*(W-2*pad)/(series.length-1);
+  const Y=v=>pad+(1-(v-mn)/(mx-mn))*(Hh-2*pad);
+  const zy=Y(0);
+  svg.innerHTML+=`<line x1="${pad}" x2="${W-pad}" y1="${zy}" y2="${zy}" stroke="${cssv('--line')}" stroke-width="1"/>`;
+  let p2='';
+  vals.forEach((v,i)=>{p2+=(i?'L':'M')+X(i)+' '+Y(v)+' ';});
+  const col=vals[vals.length-1]>=0?cssv('--good'):cssv('--bad');
+  svg.innerHTML+=`<path d="${p2}" fill="none" stroke="${col}" stroke-width="2" stroke-linejoin="round"/>`;
+}
+function renderLab(d){
+  document.getElementById('labval').textContent='$'+d.equity.toFixed(2);
+  const lp=document.getElementById('labpnl');
+  lp.className='pnlbig tnum '+cls(d.pnl);
+  lp.textContent=arrow(d.pnl)+'$'+Math.abs(d.pnl).toFixed(2)+' ('+pct(d.pnl_pct)+') · engine '+(d.updated||'').replace('T',' ').slice(0,16)+' UTC';
+  document.getElementById('labgate').textContent='BTC regime gate: '+(d.gate_bull?'BULL — Engine 1 armed':'BEAR — Engine 1 standing down');
+  drawLab(d.series);
+  const eng=document.getElementById('labeng'); eng.innerHTML='';
+  [['Engine 1 · Fast Ignition (longs)',d.e1,'--s1'],['Engine 2 · Alt Bleed (shorts)',d.e2,'--s5']].forEach(([nm,s,swc])=>{
+    const el=document.createElement('div'); el.className='card sleeve';
+    el.innerHTML=`<div class="nm"><span class="sw" style="background:${cssv(swc)}"></span>${nm}</div>
+      <div class="statline"><span class="lab">Closed / open</span><span class="tnum">${s.closed} / ${s.open}</span></div>
+      <div class="statline"><span class="lab">Win rate</span><span class="tnum">${s.closed?s.win_pct+'%':'—'}</span></div>
+      <div class="statline"><span class="lab">Avg R</span><span class="tnum ${s.avg_R>0?'pos':(s.avg_R<0?'neg':'')}">${s.avg_R!=null?(s.avg_R>=0?'+':'')+s.avg_R:'—'}</span></div>
+      <div class="statline"><span class="lab">Total R</span><span class="tnum ${s.tot_R>0?'pos':(s.tot_R<0?'neg':'')}">${(s.tot_R>=0?'+':'')+s.tot_R}</span></div>
+      <div class="statline"><span class="lab">Best / worst</span><span class="tnum">${s.best!=null?('+'+s.best+' / '+s.worst):'—'}</span></div>`;
+    eng.appendChild(el);
+  });
+  const op=d.open_positions||[];
+  document.getElementById('labopen').innerHTML=op.length? tableR(
+    ['Engine','Market','Side','Entry','Stop','Now','Unrealized','Since'],
+    op.map(o=>[o.engine===1?'Fast Ignition':'Alt Bleed',o.coin,
+      `<span class="${o.side==='L'?'pos':'neg'}">${o.side==='L'?'LONG':'SHORT'}</span>`,
+      fmt(o.entry),fmt(o.stop),fmt(o.cur),
+      o.unreal_R==null?'—':`<span class="${cls(o.unreal_R)}">${(o.unreal_R>=0?'+':'')+o.unreal_R}R</span>`,
+      o.since]),[3,4,5]) : '<div class="empty">No open positions — engines armed and waiting.</div>';
+  const clr=(d.closed||[]).slice().reverse();
+  document.getElementById('labclosed').innerHTML=clr.length? tableR(
+    ['Closed','Engine','Market','Side','R','Exit'],
+    clr.map(t=>[t.closed,t.engine===1?'Fast Ignition':'Alt Bleed',t.coin,t.side==='L'?'LONG':'SHORT',
+      `<span class="${cls(t.R)}">${(t.R>=0?'+':'')+t.R}R</span>`,'<span class="pill">'+(t.why||'')+'</span>']),[4]) :
+    '<div class="empty">No closed trades yet.</div>';
+}
+let LAB=null;
+async function loadLab(){
+  try{ const d=await fetch('./data3.json?_='+Date.now()).then(r=>r.json()); if(d&&d.equity!=null){LAB=d; renderLab(d);} }
+  catch(e){ document.getElementById('labval').textContent='awaiting first run'; }
+}
+document.getElementById('tab-fund').onclick=()=>{
+  document.getElementById('view-fund').style.display=''; document.getElementById('view-lab').style.display='none';
+  document.getElementById('tab-fund').classList.add('on'); document.getElementById('tab-lab').classList.remove('on');
+};
+document.getElementById('tab-lab').onclick=()=>{
+  document.getElementById('view-fund').style.display='none'; document.getElementById('view-lab').style.display='';
+  document.getElementById('tab-lab').classList.add('on'); document.getElementById('tab-fund').classList.remove('on');
+  if(!LAB) loadLab();
+};
+setInterval(()=>{ if(document.getElementById('view-lab').style.display!=='none') loadLab(); },120000);
 
 async function boot(){
   let d=window.__DATA__;
