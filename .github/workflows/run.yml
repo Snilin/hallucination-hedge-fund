@@ -18,6 +18,7 @@ jobs:
           python-version: '3.11'
       - run: pip install --quiet requests pandas numpy
       - run: python engine.py
+      - run: python tracker3.py
       - run: |
           git config user.name fund
           git config user.email fund@users.noreply.github.com
