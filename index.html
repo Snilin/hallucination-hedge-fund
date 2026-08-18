@@ -44,6 +44,10 @@
   .tfbtn{cursor:pointer;background:transparent;border:1px solid var(--ring);color:var(--muted);
     border-radius:7px;padding:3px 9px;font-size:12px;font-weight:600}
   .tfbtn.on{background:var(--surface2);color:var(--ink)}
+  .armgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.armgrid{grid-template-columns:1fr}}
+  .gdot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--line);margin-right:3px}
+  .gdot.on{background:var(--good)}
   #pnlperiod{text-transform:none;letter-spacing:0;margin-left:6px;font-weight:600}
   .hero{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;margin-bottom:16px}
   @media(max-width:820px){.hero{grid-template-columns:1fr}}
@@ -156,6 +160,7 @@
       </div>
     </div>
     <div class="grid3" id="labeng" style="grid-template-columns:repeat(2,1fr)"></div>
+    <div id="labarm" style="margin-top:14px"></div>
     <h2 class="sec">Open positions</h2>
     <div class="card" style="padding:6px 6px 2px"><div id="labopen"></div></div>
     <h2 class="sec">Closed trades</h2>
@@ -455,6 +460,38 @@ function renderLab(d){
       <div class="statline"><span class="lab">Best / worst</span><span class="tnum">${s.best!=null?('+'+s.best+' / '+s.worst):'—'}</span></div>`;
     eng.appendChild(el);
   });
+  const A=d.arming, ar=document.getElementById('labarm');
+  if(ar){
+    if(!A){ ar.innerHTML=''; }
+    else{
+      const g=A.gate||{votes:0,need:3,gaps:[]};
+      const posg=(g.gaps||[]).filter(x=>x>0);
+      const near=posg.length?Math.min(...posg):null;
+      let dots='';for(let i=0;i<6;i++)dots+='<span class="gdot'+(i<g.votes?' on':'')+'"></span>';
+      let e1rows='';
+      Object.keys(A.e1||{}).forEach(k=>{
+        const s=A.e1[k];
+        const msg=!d.gate_bull?'blocked by gate':(s.hot?'hot — needs cooldown below 3/6, then a fresh flip':'ARMED — next fresh up-flip opens a long');
+        e1rows+='<div class="statline"><span class="lab">'+k+' fast clock</span><span class="tnum">'+s.fast+'/6 · '+msg+'</span></div>';
+      });
+      const e2=A.e2||{};
+      const nx=new Date(); nx.setUTCHours(24,0,0,0);
+      const mins=Math.max(0,Math.round((nx-Date.now())/60000));
+      const wl=e2.watchlist||[];
+      const wlh=wl.length? wl.map(w=>'<div class="statline"><span class="lab">'+w.coin+'</span><span class="tnum">'+w.bulls+'/6 pairs bull · '+(w.gap!=null?w.gap+'% to flip':'—')+(w.veto?' · <span class="neg">veto</span>':'')+'</span></div>').join('')
+        : '<div class="empty" style="padding:8px 2px">No alts within reach of a fresh down-flip at last scan.</div>';
+      ar.innerHTML='<div class="card"><div class="nm">What each engine is waiting for</div><div class="armgrid">'
+        +'<div><div class="lab" style="margin-bottom:7px">ENGINE 1 · FAST IGNITION</div>'
+        +'<div class="statline"><span class="lab">Gate: slow BTC pairs bull</span><span class="tnum">'+dots+' '+g.votes+'/6 need '+g.need+(near!=null&&!d.gate_bull?' · nearest '+near.toFixed(2)+'% away':'')+'</span></div>'
+        +e1rows
+        +'<div class="statline"><span class="lab">On trigger</span><span class="tnum">LONG · 1% risk · 1.2×ATR stop · exit flip/7d</span></div></div>'
+        +'<div><div class="lab" style="margin-bottom:7px">ENGINE 2 · ALT BLEED</div>'
+        +'<div class="statline"><span class="lab">Next daily scan</span><span class="tnum">00:00 UTC · in '+Math.floor(mins/60)+'h '+(mins%60)+'m</span></div>'
+        +'<div class="statline"><span class="lab">Slots</span><span class="tnum">'+(e2.used||0)+' / '+(e2.slots||10)+' in use</span></div>'
+        +'<div class="lab" style="margin:9px 0 3px">Closest to a fresh down-flip (shorts fire on the flip)</div>'+wlh+'</div>'
+        +'</div></div>';
+    }
+  }
   const op=d.open_positions||[];
   document.getElementById('labopen').innerHTML=op.length? tableR(
     ['Engine','Market','Side','Entry','Stop','Now','Unrealized','Since'],
