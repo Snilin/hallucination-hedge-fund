@@ -1,6 +1,6 @@
 """Test Lab — hybrid short-term paper book ($100).
 Engine 1: 8x fast-ignition longs on BTC+ETH, slow-BTC-bull gate, 1.2xATR24 stop, exit flip-down/7d. Risk 1%/trade.
-Engine 2: alt bleed shorts, fresh daily down-flip, $5M liq, capitulation veto, 3% stop, 20d timeout, 10 slots. Risk 0.5%/trade.
+Engine 2: alt bleed shorts at 2x clock, fresh 12h down-flip, $5M liq, capitulation veto, 3% stop, 10d timeout, 10 slots. Risk 0.5%/trade.
 Paper only: no keys, no orders. Hourly via GitHub Actions. Emits data3.json for the dashboard Test Lab tab.
 """
 import json, os, time
@@ -15,7 +15,7 @@ FAST = [(max(2, f // 8), max(8, s // 8)) for f, s in BASE_H]
 BASE_D = [(2, 20), (3, 25), (3, 30), (4, 35), (5, 40), (7, 60)]
 E1_RISK = 0.01; E2_RISK = 0.005
 E1_ASSETS = ['BTC', 'ETH']
-E2_SLOTS = 10; E2_STOP = 0.03; E2_HOLD = 20
+E2_SLOTS = 10; E2_STOP = 0.03; E2_HOLD_HOURS = 240  # 20 bars x 12h = 10 days
 START = 100.0
 
 def post(body):
@@ -108,13 +108,13 @@ def main():
             continue
         seg = d[d.index > pd.Timestamp(ev.get('ts_check', ev['opened']))]
         stopped = bool((seg['h'] >= ev['stop']).any()) if len(seg) else False
-        expired = (now - pd.Timestamp(ev['opened'])).days >= E2_HOLD
+        expired = (now - pd.Timestamp(ev['opened'])) >= pd.Timedelta(hours=E2_HOLD_HOURS)
         if stopped or expired:
             close_ev(ev, ev['stop'] * (1 + SLIP) if stopped else float(d['c'].iloc[-1]),
                      'STOP' if stopped else 'TIMEOUT', E2_RISK)
         else:
             ev['ts_check'] = str(now); ev['cur'] = float(d['c'].iloc[-1])
-    if now.hour == 0 or st.get('alt_scan') is None:
+    if now.hour in (0, 12) or st.get('alt_scan') is None:
         st['alt_scan'] = str(now)
         watch = []
         mu = post({'type': 'metaAndAssetCtxs'})
@@ -127,8 +127,8 @@ def main():
                     break
                 if any(e['engine'] == 2 and e['coin'] == coin and e['open'] for e in st['events']):
                     continue
-                dd = candles(coin, '1d', 24 * 130)
-                if dd is None or len(dd) < 70:
+                dd = candles(coin, '12h', 24 * 110)   # ~220 x 12h bars
+                if dd is None or len(dd) < 130:
                     continue
                 cl = dd['c']; v = votes(cl, BASE_D)
                 veto = bool(((cl / cl.shift(10) - 1).iloc[-7:] < -0.25).any())
@@ -139,7 +139,7 @@ def main():
                                              stop=e * (1 + E2_STOP), stop_frac=E2_STOP,
                                              opened=str(now), open=True, cur=e))
                     log.append(dict(ts=str(now), engine=2, coin=coin, action='open',
-                                    note=f"SHORT @{e:.4f} stop +3%"))
+                                    note=f"SHORT @{e:.4f} stop +3% (12h clock)"))
                 elif 0.5 <= v_now < 0.75:
                     dg = [(float(cl.ewm(span=f).mean().iloc[-1]) / float(cl.ewm(span=s).mean().iloc[-1]) - 1) * 100
                           for f, s in BASE_D]
