@@ -154,7 +154,7 @@
         <div style="font-size:13px;line-height:1.7;margin-top:8px" class="ink2">
           Two engines, paper-traded forward to judge the backtest.<br>
           <b>Engine 1 &#183; Fast Ignition</b> &#8212; 8&#215;-speed trend flips on BTC/ETH, longs only, bull-gated. 1% risk.<br>
-          <b>Engine 2 &#183; Alt Bleed</b> &#8212; shorts fresh daily breakdowns on liquid alts. 0.5% risk, 10 slots.<br>
+          <b>Engine 2 &#183; Alt Bleed 2&#215;</b> &#8212; shorts fresh 12h breakdowns on liquid alts. 0.5% risk, 10 slots.<br>
           <span class="muted" id="labgate"></span>
         </div>
       </div>
@@ -166,7 +166,7 @@
     <h2 class="sec">Closed trades</h2>
     <div class="card" style="padding:6px 6px 2px"><div id="labclosed"></div></div>
     <div class="footnote">Paper book: $100 start, no keys, no orders. Hourly engine; marks are hourly closes.
-      Verdict window 8&#8211;12 weeks vs backtest expectancy (E1 ~+0.5R/tr, E2 ~+0.25R/tr). Costs 0.055%/side + slippage + funding included.</div>
+      Verdict window 8&#8211;12 weeks vs backtest expectancy (E1 ~+0.5R/tr, E2 @12h clock ~+0.2R/tr). Costs 0.055%/side + slippage + funding included.</div>
   </div><!--/view-lab-->
 </div>
 
@@ -475,7 +475,7 @@ function renderLab(d){
         e1rows+='<div class="statline"><span class="lab">'+k+' fast clock</span><span class="tnum">'+s.fast+'/6 · '+msg+'</span></div>';
       });
       const e2=A.e2||{};
-      const nx=new Date(); nx.setUTCHours(24,0,0,0);
+      const nx=new Date(); nx.setUTCHours(nx.getUTCHours()<12?12:24,0,0,0);
       const mins=Math.max(0,Math.round((nx-Date.now())/60000));
       const wl=e2.watchlist||[];
       const wlh=wl.length? wl.map(w=>'<div class="statline"><span class="lab">'+w.coin+'</span><span class="tnum">'+w.bulls+'/6 pairs bull · '+(w.gap!=null?w.gap+'% to flip':'—')+(w.veto?' · <span class="neg">veto</span>':'')+'</span></div>').join('')
@@ -486,7 +486,7 @@ function renderLab(d){
         +e1rows
         +'<div class="statline"><span class="lab">On trigger</span><span class="tnum">LONG · 1% risk · 1.2×ATR stop · exit flip/7d</span></div></div>'
         +'<div><div class="lab" style="margin-bottom:7px">ENGINE 2 · ALT BLEED</div>'
-        +'<div class="statline"><span class="lab">Next daily scan</span><span class="tnum">00:00 UTC · in '+Math.floor(mins/60)+'h '+(mins%60)+'m</span></div>'
+        +'<div class="statline"><span class="lab">Next scan (12h clock)</span><span class="tnum">00/12 UTC · in '+Math.floor(mins/60)+'h '+(mins%60)+'m</span></div>'
         +'<div class="statline"><span class="lab">Slots</span><span class="tnum">'+(e2.used||0)+' / '+(e2.slots||10)+' in use</span></div>'
         +'<div class="lab" style="margin:9px 0 3px">Closest to a fresh down-flip (shorts fire on the flip)</div>'+wlh+'</div>'
         +'</div></div>';
