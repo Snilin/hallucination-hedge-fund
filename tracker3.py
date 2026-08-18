@@ -68,10 +68,18 @@ def main():
         d = candles(a, '1h', 4400)
         if d is not None and len(d) > 1500:
             H[a] = d
-    gate = bool(votes(H['BTC']['c'], BASE_H).iloc[-1] >= 0.5) if 'BTC' in H else False
+    arm_gate = None
+    if 'BTC' in H:
+        cb = H['BTC']['c']
+        gg = [round((float(cb.ewm(span=s).mean().iloc[-1]) / float(cb.ewm(span=f).mean().iloc[-1]) - 1) * 100, 3)
+              for f, s in BASE_H]
+        arm_gate = dict(votes=len([g for g in gg if g < 0]), need=3, gaps=gg)
+    gate = bool(arm_gate and arm_gate['votes'] >= 3)
+    arm_e1 = {}
     for a in [x for x in E1_ASSETS if x in H]:
         d = H[a]; c = d['c']
         vf = votes(c, FAST)
+        arm_e1[a] = dict(fast=int(round(float(vf.iloc[-1]) * 6)), hot=bool(vf.iloc[-1] >= 0.5))
         for ev in [e for e in st['events'] if e['engine'] == 1 and e['coin'] == a and e['open']]:
             seg = d[d.index > pd.Timestamp(ev['opened'])]
             stopped = bool((seg['l'] <= ev['stop']).any()) if len(seg) else False
@@ -108,6 +116,7 @@ def main():
             ev['ts_check'] = str(now); ev['cur'] = float(d['c'].iloc[-1])
     if now.hour == 0 or st.get('alt_scan') is None:
         st['alt_scan'] = str(now)
+        watch = []
         mu = post({'type': 'metaAndAssetCtxs'})
         if mu:
             uni = [(u['name'], float(mu[1][i].get('dayNtlVlm', 0) or 0))
@@ -122,14 +131,22 @@ def main():
                 if dd is None or len(dd) < 70:
                     continue
                 cl = dd['c']; v = votes(cl, BASE_D)
-                if v.iloc[-1] < 0.5 and v.iloc[-2] >= 0.5 \
-                   and not bool(((cl / cl.shift(10) - 1).iloc[-7:] < -0.25).any()):
+                veto = bool(((cl / cl.shift(10) - 1).iloc[-7:] < -0.25).any())
+                v_now = float(v.iloc[-1])
+                if v_now < 0.5 and v.iloc[-2] >= 0.5 and not veto:
                     e = float(cl.iloc[-1])
                     st['events'].append(dict(engine=2, coin=coin, side='S', entry=e,
                                              stop=e * (1 + E2_STOP), stop_frac=E2_STOP,
                                              opened=str(now), open=True, cur=e))
                     log.append(dict(ts=str(now), engine=2, coin=coin, action='open',
                                     note=f"SHORT @{e:.4f} stop +3%"))
+                elif 0.5 <= v_now < 0.75:
+                    dg = [(float(cl.ewm(span=f).mean().iloc[-1]) / float(cl.ewm(span=s).mean().iloc[-1]) - 1) * 100
+                          for f, s in BASE_D]
+                    up = [g for g in dg if g > 0]
+                    watch.append(dict(coin=coin, bulls=int(round(v_now * 6)),
+                                      gap=round(min(up), 2) if up else None, veto=veto))
+            st['watch'] = sorted(watch, key=lambda w: (w['bulls'], w['gap'] if w['gap'] is not None else 99.0))[:8]
 
     # ---------- mark open to market & emit ----------
     unreal = 0.0
@@ -164,6 +181,10 @@ def main():
         equity=round(eq_live, 4), realized=round(st['equity'], 4),
         pnl=round(eq_live - START, 4), pnl_pct=round(100 * (eq_live / START - 1), 3),
         gate_bull=gate, series=st['hist'],
+        arming=dict(gate=arm_gate, e1=arm_e1,
+                    e2=dict(slots=E2_SLOTS,
+                            used=len([e for e in st['events'] if e['engine'] == 2 and e['open']]),
+                            last_scan=st.get('alt_scan'), watchlist=st.get('watch', []))),
         e1=eng_stats(1), e2=eng_stats(2),
         open_positions=open_pos,
         closed=[dict(engine=e['engine'], coin=e['coin'], side=e['side'], R=e['R'],
