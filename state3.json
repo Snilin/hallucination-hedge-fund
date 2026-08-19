@@ -1,1 +1,44 @@
-{"t0": "2026-08-19 11:00:00+00:00", "ts": null, "equity": 1000.0, "events": [], "closed": [], "alt_scan": null, "alt_scan_bar": null, "hist": [], "trade_log": [], "watch": []}
+{
+ "t0": "2026-08-19 11:00:00+00:00",
+ "ts": "2026-08-19 11:00:00+00:00",
+ "equity": 1000.0,
+ "events": [
+  {
+   "engine": 2,
+   "coin": "WLD",
+   "side": "S",
+   "entry": 0.31986,
+   "stop": 0.32945579999999997,
+   "stop_frac": 0.03,
+   "opened": "2026-08-19 11:00:00+00:00",
+   "open": true,
+   "cur": 0.31986
+  }
+ ],
+ "closed": [],
+ "alt_scan": "2026-08-19 11:00:00+00:00",
+ "alt_scan_bar": "2026-08-19 00:00:00+00:00",
+ "hist": [
+  [
+   "2026-08-19 11:00:00+00:00",
+   999.9083
+  ]
+ ],
+ "trade_log": [
+  {
+   "ts": "2026-08-19 11:00:00+00:00",
+   "engine": 2,
+   "coin": "WLD",
+   "action": "open",
+   "note": "SHORT @0.3199 stop +3% (12h clock)"
+  }
+ ],
+ "watch": [
+  {
+   "coin": "MON",
+   "bulls": 3,
+   "gap": 0.04,
+   "veto": false
+  }
+ ]
+}
