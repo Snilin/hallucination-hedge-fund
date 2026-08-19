@@ -92,8 +92,8 @@ def main():
                          'STOP' if stopped else ('FLIP' if flipped else 'TIMEOUT'), E1_RISK)
             else:
                 ev['cur'] = float(c.iloc[-1])
-        if gate and len(vf) > 2 and vf.iloc[-1] >= 0.5 and vf.iloc[-2] < 0.5 \
-           and not any(e['engine'] == 1 and e['coin'] == a and e['open'] for e in st['events']):
+        if gate and len(vf) > 4 and vf.iloc[-1] >= 0.5 and bool((vf.iloc[-4:-1] < 0.5).any()) \
+           and not any(e['engine'] == 1 and e['coin'] == a and (e['open'] or (now - pd.Timestamp(e['opened'])) < pd.Timedelta(hours=3)) for e in st['events']):
             tr = np.maximum(d['h'] - d['l'], np.maximum((d['h'] - d['c'].shift(1)).abs(),
                                                         (d['l'] - d['c'].shift(1)).abs()))
             atr24 = float(tr.rolling(24).mean().iloc[-1])
