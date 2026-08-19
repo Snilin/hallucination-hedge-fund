@@ -97,7 +97,7 @@ function record(venue, o) {
 function startBinance() {
   const tag = 'binance';
   let ws;
-  try { ws = new WebSocket('wss://fstream.binance.com/ws/!forceOrder@arr'); }
+  try { ws = new WebSocket('wss://dstream.binance.com/ws/!forceOrder@arr'); }  // USD-M liquidations serve from dstream; fstream accepts the subscription but sends nothing (verified 2026-08-19)
   catch (e) { retry(tag, startBinance); return; }
 
   ws.onopen = () => { backoff[tag] = 1000; console.log('[binance] connected (market-wide)'); };
@@ -176,8 +176,8 @@ function startOkx() {
         for (const d of (inst.details || [])) {
           const px = parseFloat(d.bkPx), qty = parseFloat(d.sz);
           record('okx', {
-            t: +d.ts, s: inst.instId, side: d.side,
-            victim: d.posSide === 'long' || d.side === 'sell' ? 'LONG' : 'SHORT',
+            t: +d.ts, s: inst.instId, side: d.side, posSide: d.posSide || null,
+            victim: d.posSide === 'long' ? 'LONG' : d.posSide === 'short' ? 'SHORT' : (d.side === 'sell' ? 'LONG' : 'SHORT'),
             px, qty, usd: +(px * qty).toFixed(2),
           });
         }
