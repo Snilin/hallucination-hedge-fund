@@ -1,6 +1,6 @@
-"""Test Lab — hybrid short-term paper book ($100).
+"""Test Lab — hybrid short-term paper book ($1,000).
 Engine 1: 8x fast-ignition longs on BTC+ETH, slow-BTC-bull gate, 1.2xATR24 stop, exit flip-down/7d. Risk 1%/trade.
-Engine 2: alt bleed shorts at 2x clock, fresh 12h down-flip, $5M liq, capitulation veto, 3% stop, 10d timeout, 10 slots. Risk 0.5%/trade.
+Engine 2: alt bleed shorts at 2x clock, fresh 12h down-flip, $1M liq, capitulation veto, 3% stop, 10d timeout, 10 slots. Risk 0.5%/trade.
 Paper only: no keys, no orders. Hourly via GitHub Actions. Emits data3.json for the dashboard Test Lab tab.
 """
 import json, os, time
@@ -16,7 +16,8 @@ BASE_D = [(2, 20), (3, 25), (3, 30), (4, 35), (5, 40), (7, 60)]
 E1_RISK = 0.01; E2_RISK = 0.005
 E1_ASSETS = ['BTC', 'ETH']
 E2_SLOTS = 10; E2_STOP = 0.03; E2_HOLD_HOURS = 240  # 20 bars x 12h = 10 days
-START = 100.0
+E2_SLIP = 0.0012  # measured HL round-trip slippage on $1M+ alts, charged on top of 2xCOST
+START = 1000.0
 
 def post(body):
     for k in range(5):
@@ -52,7 +53,7 @@ def main():
 
     def close_ev(ev, xpx, why, risk):
         rr_px = ((xpx / ev['entry'] - 1) if ev['side'] == 'L' else (1 - xpx / ev['entry']))
-        rr = (rr_px - 2 * COST) / ev['stop_frac']
+        rr = (rr_px - 2 * COST - (E2_SLIP if ev['engine'] == 2 else 0.0)) / ev['stop_frac']
         fh = post({'type': 'fundingHistory', 'coin': ev['coin'],
                    'startTime': int(pd.Timestamp(ev['opened']).timestamp() * 1000)})
         fr = sum(float(x['fundingRate']) for x in fh) if fh else 0.0
@@ -123,7 +124,7 @@ def main():
         if mu:
             uni = [(u['name'], float(mu[1][i].get('dayNtlVlm', 0) or 0))
                    for i, u in enumerate(mu[0]['universe']) if not u.get('isDelisted')]
-            alts = [n for n, v in uni if n not in ('BTC', 'ETH', 'SOL') and v > 5e6]
+            alts = [n for n, v in uni if n not in ('BTC', 'ETH', 'SOL') and v > 1e6]
             for coin in alts:
                 if len([e for e in st['events'] if e['engine'] == 2 and e['open']]) >= E2_SLOTS:
                     break
