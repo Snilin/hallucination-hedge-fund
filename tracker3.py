@@ -35,11 +35,12 @@ def candles(coin, interval, hours):
                                                 'startTime': now - hours * 3600_000, 'endTime': now}})
     if not r:
         return None
-    df = pd.DataFrame([{'t': x['t'], 'o': float(x['o']), 'h': float(x['h']),
+    df = pd.DataFrame([{'t': x['t'], 'T': x['T'], 'o': float(x['o']), 'h': float(x['h']),
                         'l': float(x['l']), 'c': float(x['c'])} for x in r])
     df.index = pd.to_datetime(df['t'], unit='ms', utc=True)
-    return df[~df.index.duplicated()].sort_index()
-
+    df = df[~df.index.duplicated()].sort_index()
+    return df.iloc[:-1] if len(df) > 1 and int(df['T'].iloc[-1]) > int(time.time() * 1000) else df
+    
 def votes(c, pairs):
     return sum((c.ewm(span=f).mean() > c.ewm(span=s).mean()).astype(float) for f, s in pairs) / len(pairs)
 
@@ -114,7 +115,8 @@ def main():
                      'STOP' if stopped else 'TIMEOUT', E2_RISK)
         else:
             ev['ts_check'] = str(now); ev['cur'] = float(d['c'].iloc[-1])
-    if now.hour in (0, 12) or st.get('alt_scan') is None:
+    if str(now.floor('12h')) != st.get('alt_scan_bar'):
+        st['alt_scan_bar'] = str(now.floor('12h'))
         st['alt_scan'] = str(now)
         watch = []
         mu = post({'type': 'metaAndAssetCtxs'})
