@@ -153,8 +153,8 @@
         <div class="k">The experiment</div>
         <div style="font-size:13px;line-height:1.7;margin-top:8px" class="ink2">
           Two engines, paper-traded forward to judge the backtest.<br>
-          <b>Engine 1 &#183; Fast Ignition</b> &#8212; 8&#215;-speed trend flips on BTC/ETH, longs only, bull-gated. 1% risk.<br>
-          <b>Engine 2 &#183; Alt Bleed 2&#215;</b> &#8212; shorts fresh 12h breakdowns on liquid alts. 0.5% risk, 10 slots.<br>
+          <b>Major Longs</b> &#8212; 8&#215;-speed trend flips on BTC/ETH, longs only, bull-gated. 1% risk.<br>
+          <b>Alt Shorts</b> &#8212; shorts fresh 12h breakdowns on liquid alts. 0.5% risk, 10 slots.<br>
           <span class="muted" id="labgate"></span>
         </div>
       </div>
@@ -165,8 +165,8 @@
     <div class="card" style="padding:6px 6px 2px"><div id="labopen"></div></div>
     <h2 class="sec">Closed trades</h2>
     <div class="card" style="padding:6px 6px 2px"><div id="labclosed"></div></div>
-    <div class="footnote">Paper book: $100 start, no keys, no orders. Hourly engine; marks are hourly closes.
-      Verdict window 8&#8211;12 weeks vs backtest expectancy (E1 ~+0.5R/tr, E2 @12h clock ~+0.2R/tr). Costs 0.055%/side + slippage + funding included.</div>
+    <div class="footnote">Paper book: $1,000 start, no keys, no orders. Hourly engine; marks are hourly closes.
+      Verdict window 8&#8211;12 weeks vs backtest expectancy (Major Longs ~+0.5R/tr, Alt Shorts ~+0.2R/tr). Costs 0.055%/side + slippage + funding included.</div>
   </div><!--/view-lab-->
 </div>
 
@@ -447,10 +447,10 @@ function renderLab(d){
   const lp=document.getElementById('labpnl');
   lp.className='pnlbig tnum '+cls(d.pnl);
   lp.textContent=arrow(d.pnl)+'$'+Math.abs(d.pnl).toFixed(2)+' ('+pct(d.pnl_pct)+') · engine '+(d.updated||'').replace('T',' ').slice(0,16)+' UTC';
-  document.getElementById('labgate').textContent='BTC regime gate: '+(d.gate_bull?'BULL — Engine 1 armed':'BEAR — Engine 1 standing down');
+  document.getElementById('labgate').textContent='BTC regime gate: '+(d.gate_bull?'BULL — Major Longs armed':'BEAR — Major Longs standing down');
   drawLab(d.series);
   const eng=document.getElementById('labeng'); eng.innerHTML='';
-  [['Engine 1 · Fast Ignition (longs)',d.e1,'--s1'],['Engine 2 · Alt Bleed (shorts)',d.e2,'--s5']].forEach(([nm,s,swc])=>{
+  [['Major Longs',d.e1,'--s1'],['Alt Shorts',d.e2,'--s5']].forEach(([nm,s,swc])=>{
     const el=document.createElement('div'); el.className='card sleeve';
     el.innerHTML=`<div class="nm"><span class="sw" style="background:${cssv(swc)}"></span>${nm}</div>
       <div class="statline"><span class="lab">Closed / open</span><span class="tnum">${s.closed} / ${s.open}</span></div>
