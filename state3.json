@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-08-20 11:00:00+00:00",
+ "ts": "2026-08-20 13:00:00+00:00",
  "equity": 994.5241745999999,
  "events": [
   {
@@ -38,8 +38,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-08-20 01:00:00+00:00",
- "alt_scan_bar": "2026-08-20 00:00:00+00:00",
+ "alt_scan": "2026-08-20 13:00:00+00:00",
+ "alt_scan_bar": "2026-08-20 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -156,6 +156,10 @@
   [
    "2026-08-20 11:00:00+00:00",
    994.5242
+  ],
+  [
+   "2026-08-20 13:00:00+00:00",
+   994.5242
   ]
  ],
  "trade_log": [
@@ -176,51 +180,51 @@
  ],
  "watch": [
   {
-   "coin": "SUI",
+   "coin": "CC",
    "bulls": 3,
-   "gap": 0.06,
+   "gap": 0.01,
    "veto": false
   },
   {
-   "coin": "kPEPE",
+   "coin": "ONDO",
    "bulls": 3,
-   "gap": 0.77,
+   "gap": 0.61,
    "veto": false
   },
   {
-   "coin": "XLM",
+   "coin": "UNI",
    "bulls": 3,
-   "gap": 0.93,
+   "gap": 0.92,
    "veto": false
   },
   {
-   "coin": "RENDER",
-   "bulls": 4,
-   "gap": 0.03,
+   "coin": "kBONK",
+   "bulls": 3,
+   "gap": 1.5,
    "veto": false
   },
   {
-   "coin": "kSHIB",
-   "bulls": 4,
-   "gap": 0.17,
+   "coin": "STRK",
+   "bulls": 3,
+   "gap": 1.5,
    "veto": false
   },
   {
-   "coin": "NEAR",
+   "coin": "BCH",
    "bulls": 4,
-   "gap": 0.25,
+   "gap": 0.5,
    "veto": false
   },
   {
-   "coin": "TAO",
+   "coin": "DOT",
    "bulls": 4,
-   "gap": 0.31,
+   "gap": 0.76,
    "veto": false
   },
   {
-   "coin": "AERO",
+   "coin": "OP",
    "bulls": 4,
-   "gap": 0.46,
+   "gap": 0.87,
    "veto": false
   }
  ]
