@@ -115,12 +115,13 @@
   },
   {
    "sleeve": "ign_alts",
-   "coin": "ARB",
-   "entry": 0.08939,
-   "stop": 0.08670829999999999,
+   "coin": "LINK",
+   "entry": 8.2957,
+   "stop": 8.046829,
    "stop_frac": 0.03,
-   "opened": "2026-08-20 05:00:00+00:00",
-   "open": true
+   "opened": "2026-08-10 00:00:00+00:00",
+   "open": true,
+   "recon": true
   }
  ],
  "closed": [
@@ -309,12 +310,12 @@
    "note": "stop 3.0% below"
   },
   {
-   "ts": "2026-08-20 05:00:00+00:00",
+   "ts": "2026-08-10 00:00:00+00:00",
    "sleeve": "ign_alts",
-   "coin": "ARB",
+   "coin": "LINK",
    "action": "open",
-   "price": 0.0894,
-   "note": "stop 3.0% below"
+   "price": 8.2957,
+   "note": "stop 3.0% below | reconstructed entry, signal missed by scan bug"
   }
  ],
  "combo_entry": {
