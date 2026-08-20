@@ -97,7 +97,7 @@ def main():
             tr = np.maximum(d['h'] - d['l'], np.maximum((d['h'] - d['c'].shift(1)).abs(),
                                                         (d['l'] - d['c'].shift(1)).abs()))
             atr24 = float(tr.rolling(24).mean().iloc[-1])
-            e = float(c.iloc[-1]); sf = max(1.2 * atr24 / e, 0.005)
+            e = float(c.iloc[-1]); sf = max(1.2 * atr24 / e, 0.02)  # 2% floor: caps any single position at 50% of the book (1% risk / 2% stop)
             st['events'].append(dict(engine=1, coin=a, side='L', entry=e, stop=e * (1 - sf),
                                      stop_frac=sf, opened=str(now), open=True, cur=e))
             log.append(dict(ts=str(now), engine=1, coin=a, action='open',
