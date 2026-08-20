@@ -49,10 +49,11 @@ def candles(coin, interval, hours):
                                                 'startTime': now - hours * 3600_000, 'endTime': now}})
     if not r:
         return None
-    df = pd.DataFrame([{'t': x['t'], 'o': float(x['o']), 'h': float(x['h']),
+    df = pd.DataFrame([{'t': x['t'], 'T': x['T'], 'o': float(x['o']), 'h': float(x['h']),
                         'l': float(x['l']), 'c': float(x['c'])} for x in r])
     df.index = pd.to_datetime(df['t'], unit='ms', utc=True)
-    return df[~df.index.duplicated()].sort_index()
+    df = df[~df.index.duplicated()].sort_index()
+    return df.iloc[:-1] if len(df) > 1 and int(df['T'].iloc[-1]) > int(time.time() * 1000) else df
 
 
 def frac(c, pairs, direction='L'):
@@ -156,14 +157,15 @@ def main():
     for a in [m for m in MAJORS if m in H]:
         close_check('ign_majors', a, H[a])
         fr = frac_series(H[a]['c'], BASE_H)
-        if fr.iloc[-1] >= 0.5 and fr.iloc[-2] < 0.5 and not any(e['sleeve'] == 'ign_majors' and e['coin'] == a and e['open'] for e in st['events']):
+        if len(fr) > 4 and fr.iloc[-1] >= 0.5 and bool((fr.iloc[-4:-1] < 0.5).any()) and not any(e['sleeve'] == 'ign_majors' and e['coin'] == a and (e['open'] or (now - pd.Timestamp(e['opened'])) < pd.Timedelta(hours=3)) for e in st['events']):
             dfd = H[a].resample('1D').agg({'o': 'first', 'h': 'max', 'l': 'min', 'c': 'last'}).dropna()
             open_ev('ign_majors', a, px[a], max(0.015, min(0.10, 1.2 * atr_frac(dfd))))
 
     # ---- sleeve 3: alt ignition (scan daily) ----
     btc_bull = frac(H['BTC']['c'], BASE_H, 'L') >= 0.5 if 'BTC' in H else False
-    if (now.hour == 0) or st.get('alt_last_scan') is None:
+    if str(now.floor('D')) != st.get('alt_scan_day'):
         st['alt_last_scan'] = str(now)
+        st['alt_scan_day'] = str(now.floor('D'))
         mu = post({'type': 'metaAndAssetCtxs'})
         if mu:
             uni = [(u['name'], float(mu[1][i].get('dayNtlVlm', 0) or 0)) for i, u in enumerate(mu[0]['universe']) if not u.get('isDelisted')]
