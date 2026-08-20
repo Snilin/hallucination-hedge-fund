@@ -1,12 +1,12 @@
 {
  "name": "Hallucination Hedge Fund",
- "updated": "2026-08-20 16:00:00+00:00",
+ "updated": "2026-08-20 17:00:00+00:00",
  "since": "2026-08-09 14:00:00+00:00",
  "start": 100000.0,
  "fund": {
-  "value": 110549.39,
-  "pnl": 10549.39,
-  "pnl_pct": 10.549,
+  "value": 112004.06,
+  "pnl": 12004.06,
+  "pnl_pct": 12.004,
   "series": [
    [
     "2026-08-09 14:00:00+00:00",
@@ -927,6 +927,10 @@
    [
     "2026-08-20 16:00:00+00:00",
     110549.39
+   ],
+   [
+    "2026-08-20 17:00:00+00:00",
+    112004.06
    ]
   ]
  },
@@ -943,9 +947,9 @@
    "desc": "Trend long/short with bear-fit short leg + capitulation veto",
    "alloc": 50000,
    "alloc_pct": 50.0,
-   "value": 56998.39,
-   "pnl": 6998.39,
-   "pnl_pct": 13.997,
+   "value": 57359.94,
+   "pnl": 7359.94,
+   "pnl_pct": 14.72,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -1866,6 +1870,10 @@
     [
      "2026-08-20 16:00:00+00:00",
      56998.39
+    ],
+    [
+     "2026-08-20 17:00:00+00:00",
+     57359.94
     ]
    ]
   },
@@ -1876,9 +1884,9 @@
    "desc": "Long-or-flat index trend (diversifier)",
    "alloc": 20000,
    "alloc_pct": 20.0,
-   "value": 19799.15,
-   "pnl": -200.85,
-   "pnl_pct": -1.004,
+   "value": 19746.25,
+   "pnl": -253.75,
+   "pnl_pct": -1.269,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -2799,6 +2807,10 @@
     [
      "2026-08-20 16:00:00+00:00",
      19799.15
+    ],
+    [
+     "2026-08-20 17:00:00+00:00",
+     19746.25
     ]
    ]
   },
@@ -3732,6 +3744,10 @@
     [
      "2026-08-20 16:00:00+00:00",
      12000.0
+    ],
+    [
+     "2026-08-20 17:00:00+00:00",
+     12000.0
     ]
    ]
   },
@@ -3742,9 +3758,9 @@
    "desc": "BTC-gated alt breakouts, top-10 concurrent",
    "alloc": 12000,
    "alloc_pct": 12.0,
-   "value": 15751.85,
-   "pnl": 3751.85,
-   "pnl_pct": 31.265,
+   "value": 16897.86,
+   "pnl": 4897.86,
+   "pnl_pct": 40.816,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -4665,6 +4681,10 @@
     [
      "2026-08-20 16:00:00+00:00",
      15751.85
+    ],
+    [
+     "2026-08-20 17:00:00+00:00",
+     16897.86
     ]
    ]
   },
@@ -5598,6 +5618,10 @@
     [
      "2026-08-20 16:00:00+00:00",
      6000.0
+    ],
+    [
+     "2026-08-20 17:00:00+00:00",
+     6000.0
     ]
    ]
   }
@@ -5608,10 +5632,10 @@
    "coin": "XRP",
    "entry": 1.106,
    "stop": 1.07282,
-   "cur": 1.2616,
-   "move_pct": 14.07,
-   "unreal_R": 4.67,
-   "unreal_usd": 840.82,
+   "cur": 1.3156,
+   "move_pct": 18.95,
+   "unreal_R": 6.3,
+   "unreal_usd": 1133.77,
    "since": "2026-08-20"
   },
   {
@@ -5619,10 +5643,10 @@
    "coin": "DOGE",
    "entry": 0.075069,
    "stop": 0.07281692999999999,
-   "cur": 0.080248,
-   "move_pct": 6.9,
-   "unreal_R": 2.28,
-   "unreal_usd": 410.64,
+   "cur": 0.083324,
+   "move_pct": 11.0,
+   "unreal_R": 3.65,
+   "unreal_usd": 656.49,
    "since": "2026-08-20"
   },
   {
@@ -5630,10 +5654,10 @@
    "coin": "TRUMP",
    "entry": 1.7917,
    "stop": 1.737949,
-   "cur": 1.6682,
-   "move_pct": -6.89,
-   "unreal_R": -2.32,
-   "unreal_usd": -416.87,
+   "cur": 1.697,
+   "move_pct": -5.29,
+   "unreal_R": -1.78,
+   "unreal_usd": -320.43,
    "since": "2026-08-20"
   },
   {
@@ -5641,10 +5665,10 @@
    "coin": "WLD",
    "entry": 0.36346,
    "stop": 0.3525562,
-   "cur": 0.36277,
-   "move_pct": -0.19,
-   "unreal_R": -0.08,
-   "unreal_usd": -14.69,
+   "cur": 0.3684,
+   "move_pct": 1.36,
+   "unreal_R": 0.43,
+   "unreal_usd": 78.25,
    "since": "2026-08-20"
   },
   {
@@ -5652,10 +5676,10 @@
    "coin": "TAO",
    "entry": 205.81,
    "stop": 199.63569999999999,
-   "cur": 210.96,
-   "move_pct": 2.5,
-   "unreal_R": 0.82,
-   "unreal_usd": 146.84,
+   "cur": 212.81,
+   "move_pct": 3.4,
+   "unreal_R": 1.12,
+   "unreal_usd": 200.77,
    "since": "2026-08-20"
   },
   {
@@ -5663,10 +5687,10 @@
    "coin": "ENA",
    "entry": 0.093323,
    "stop": 0.09052331,
-   "cur": 0.10221,
-   "move_pct": 9.52,
-   "unreal_R": 3.16,
-   "unreal_usd": 568.07,
+   "cur": 0.10321,
+   "move_pct": 10.59,
+   "unreal_R": 3.51,
+   "unreal_usd": 632.36,
    "since": "2026-08-20"
   },
   {
@@ -5674,10 +5698,10 @@
    "coin": "AAVE",
    "entry": 95.293,
    "stop": 92.43421000000001,
-   "cur": 97.13,
-   "move_pct": 1.93,
-   "unreal_R": 0.62,
-   "unreal_usd": 112.36,
+   "cur": 97.425,
+   "move_pct": 2.24,
+   "unreal_R": 0.73,
+   "unreal_usd": 130.94,
    "since": "2026-08-20"
   },
   {
@@ -5685,10 +5709,10 @@
    "coin": "ADA",
    "entry": 0.18715,
    "stop": 0.18153550000000002,
-   "cur": 0.1969,
-   "move_pct": 5.21,
-   "unreal_R": 1.72,
-   "unreal_usd": 309.28,
+   "cur": 0.19949,
+   "move_pct": 6.59,
+   "unreal_R": 2.18,
+   "unreal_usd": 392.32,
    "since": "2026-08-20"
   },
   {
@@ -5696,10 +5720,10 @@
    "coin": "AVAX",
    "entry": 6.7843,
    "stop": 6.5807709999999995,
-   "cur": 7.0576,
-   "move_pct": 4.03,
-   "unreal_R": 1.32,
-   "unreal_usd": 238.41,
+   "cur": 7.2275,
+   "move_pct": 6.53,
+   "unreal_R": 2.16,
+   "unreal_usd": 388.66,
    "since": "2026-08-20"
   },
   {
@@ -5707,10 +5731,10 @@
    "coin": "LINK",
    "entry": 8.2957,
    "stop": 8.046829,
-   "cur": 10.715,
-   "move_pct": 29.16,
-   "unreal_R": 9.7,
-   "unreal_usd": 1746.5,
+   "cur": 10.781,
+   "move_pct": 29.96,
+   "unreal_R": 9.97,
+   "unreal_usd": 1794.23,
    "since": "2026-08-10"
   }
  ],
@@ -5720,8 +5744,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 64369.0,
-   "cur": 72453.0,
-   "move_pct": 12.56,
+   "cur": 72834.0,
+   "move_pct": 13.15,
    "exposure": 25000
   },
   {
@@ -5729,8 +5753,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 1893.2,
-   "cur": 2326.9,
-   "move_pct": 22.91,
+   "cur": 2344.3,
+   "move_pct": 23.83,
    "exposure": 25000
   },
   {
@@ -5738,8 +5762,8 @@
    "sleeve": "spx",
    "side": "LONG",
    "entry": 7757.64,
-   "cur": 7683.96,
-   "move_pct": -0.95,
+   "cur": 7663.43,
+   "move_pct": -1.21,
    "exposure": 20000
   },
   {
@@ -5747,8 +5771,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 1.106,
-   "cur": 1.2616,
-   "move_pct": 14.07,
+   "cur": 1.3156,
+   "move_pct": 18.95,
    "exposure": 6000
   },
   {
@@ -5756,8 +5780,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0751,
-   "cur": 0.0802,
-   "move_pct": 6.9,
+   "cur": 0.0833,
+   "move_pct": 11.0,
    "exposure": 6000
   },
   {
@@ -5765,8 +5789,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 1.7917,
-   "cur": 1.6682,
-   "move_pct": -6.89,
+   "cur": 1.697,
+   "move_pct": -5.29,
    "exposure": 6000
   },
   {
@@ -5774,8 +5798,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.3635,
-   "cur": 0.3628,
-   "move_pct": -0.19,
+   "cur": 0.3684,
+   "move_pct": 1.36,
    "exposure": 6000
   },
   {
@@ -5783,8 +5807,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 205.81,
-   "cur": 210.96,
-   "move_pct": 2.5,
+   "cur": 212.81,
+   "move_pct": 3.4,
    "exposure": 6000
   },
   {
@@ -5792,8 +5816,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0933,
-   "cur": 0.1022,
-   "move_pct": 9.52,
+   "cur": 0.1032,
+   "move_pct": 10.59,
    "exposure": 6000
   },
   {
@@ -5801,8 +5825,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 95.293,
-   "cur": 97.13,
-   "move_pct": 1.93,
+   "cur": 97.425,
+   "move_pct": 2.24,
    "exposure": 6000
   },
   {
@@ -5810,8 +5834,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.1872,
-   "cur": 0.1969,
-   "move_pct": 5.21,
+   "cur": 0.1995,
+   "move_pct": 6.59,
    "exposure": 6000
   },
   {
@@ -5819,8 +5843,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 6.7843,
-   "cur": 7.0576,
-   "move_pct": 4.03,
+   "cur": 7.2275,
+   "move_pct": 6.53,
    "exposure": 6000
   },
   {
@@ -5828,8 +5852,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 8.2957,
-   "cur": 10.715,
-   "move_pct": 29.16,
+   "cur": 10.781,
+   "move_pct": 29.96,
    "exposure": 6000
   }
  ],
