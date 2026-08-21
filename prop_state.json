@@ -1,0 +1,52 @@
+{
+ "last_bar": "2026-08-20 12:00:00+00:00",
+ "positions": [],
+ "closed": [],
+ "accounts": {
+  "BrightFunded-50bp": {
+   "equity": 1.0,
+   "phase": 0,
+   "phase_start": 1.0,
+   "day_start": 1.0,
+   "day": "",
+   "status": "active",
+   "opened": 0,
+   "wins": 0,
+   "losses": 0
+  },
+  "BrightFunded-75bp": {
+   "equity": 1.0,
+   "phase": 0,
+   "phase_start": 1.0,
+   "day_start": 1.0,
+   "day": "",
+   "status": "active",
+   "opened": 0,
+   "wins": 0,
+   "losses": 0
+  },
+  "Breakout-50bp": {
+   "equity": 1.0,
+   "phase": 0,
+   "phase_start": 1.0,
+   "day_start": 1.0,
+   "day": "",
+   "status": "active",
+   "opened": 0,
+   "wins": 0,
+   "losses": 0
+  },
+  "Breakout-75bp": {
+   "equity": 1.0,
+   "phase": 0,
+   "phase_start": 1.0,
+   "day_start": 1.0,
+   "day": "",
+   "status": "active",
+   "opened": 0,
+   "wins": 0,
+   "losses": 0
+  }
+ },
+ "started": "2026-08-20 12:00:00+00:00"
+}

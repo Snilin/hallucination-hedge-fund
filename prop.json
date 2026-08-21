@@ -1,0 +1,75 @@
+{
+ "started": "2026-08-20 12:00:00+00:00",
+ "last_bar": "2026-08-20 12:00:00+00:00",
+ "closed_total": 0,
+ "accounts": [
+  {
+   "name": "BrightFunded-50bp",
+   "firm": "BrightFunded",
+   "risk": 0.005,
+   "equity": 1.0,
+   "pnl_pct": 0.0,
+   "phase": 0,
+   "phases": 2,
+   "target": [
+    0.08,
+    0.05
+   ],
+   "max_dd": 0.1,
+   "status": "active",
+   "wins": 0,
+   "losses": 0
+  },
+  {
+   "name": "BrightFunded-75bp",
+   "firm": "BrightFunded",
+   "risk": 0.0075,
+   "equity": 1.0,
+   "pnl_pct": 0.0,
+   "phase": 0,
+   "phases": 2,
+   "target": [
+    0.08,
+    0.05
+   ],
+   "max_dd": 0.1,
+   "status": "active",
+   "wins": 0,
+   "losses": 0
+  },
+  {
+   "name": "Breakout-50bp",
+   "firm": "Breakout",
+   "risk": 0.005,
+   "equity": 1.0,
+   "pnl_pct": 0.0,
+   "phase": 0,
+   "phases": 1,
+   "target": [
+    0.1
+   ],
+   "max_dd": 0.06,
+   "status": "active",
+   "wins": 0,
+   "losses": 0
+  },
+  {
+   "name": "Breakout-75bp",
+   "firm": "Breakout",
+   "risk": 0.0075,
+   "equity": 1.0,
+   "pnl_pct": 0.0,
+   "phase": 0,
+   "phases": 1,
+   "target": [
+    0.1
+   ],
+   "max_dd": 0.06,
+   "status": "active",
+   "wins": 0,
+   "losses": 0
+  }
+ ],
+ "positions": [],
+ "recent": []
+}
