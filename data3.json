@@ -1,6 +1,6 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-08-20 23:00:00+00:00",
+ "updated": "2026-08-21 01:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
  "equity": 994.5242,
@@ -172,6 +172,10 @@
   [
    "2026-08-20 23:00:00+00:00",
    994.5242
+  ],
+  [
+   "2026-08-21 01:00:00+00:00",
+   994.5242
   ]
  ],
  "arming": {
@@ -179,12 +183,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -6.631,
-    -5.208,
-    -5.331,
-    -4.241,
-    -3.402,
-    -1.797
+    -6.956,
+    -5.511,
+    -5.646,
+    -4.524,
+    -3.657,
+    -2.015
    ]
   },
   "e1": {
@@ -200,54 +204,48 @@
   "e2": {
    "slots": 10,
    "used": 0,
-   "last_scan": "2026-08-20 13:00:00+00:00",
+   "last_scan": "2026-08-21 01:00:00+00:00",
    "watchlist": [
     {
      "coin": "CC",
      "bulls": 3,
-     "gap": 0.01,
+     "gap": 0.2,
+     "veto": false
+    },
+    {
+     "coin": "APT",
+     "bulls": 4,
+     "gap": 0.22,
      "veto": false
     },
     {
      "coin": "ONDO",
-     "bulls": 3,
-     "gap": 0.61,
+     "bulls": 4,
+     "gap": 0.59,
+     "veto": false
+    },
+    {
+     "coin": "FET",
+     "bulls": 4,
+     "gap": 0.74,
      "veto": false
     },
     {
      "coin": "UNI",
-     "bulls": 3,
-     "gap": 0.92,
+     "bulls": 4,
+     "gap": 1.02,
      "veto": false
     },
     {
      "coin": "kBONK",
-     "bulls": 3,
-     "gap": 1.5,
-     "veto": false
-    },
-    {
-     "coin": "STRK",
-     "bulls": 3,
-     "gap": 1.5,
-     "veto": false
-    },
-    {
-     "coin": "BCH",
      "bulls": 4,
-     "gap": 0.5,
+     "gap": 1.15,
      "veto": false
     },
     {
-     "coin": "DOT",
+     "coin": "FIL",
      "bulls": 4,
-     "gap": 0.76,
-     "veto": false
-    },
-    {
-     "coin": "OP",
-     "bulls": 4,
-     "gap": 0.87,
+     "gap": 1.23,
      "veto": false
     }
    ]
