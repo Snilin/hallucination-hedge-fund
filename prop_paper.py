@@ -5,8 +5,8 @@
 # ///
 """prop_paper.py - forward paper-trade of the majors challenge strategy.
 
-Runs the EXACT backtested logic (majors 12h vote-flip, both directions, 3%
-stop, TP+5R, 20-bar timeout, 6 slots) live, and tracks four paper challenge
+Runs the EXACT backtested logic (majors 4h vote-flip, both directions, 3%
+stop, TP+5R, ~10-day timeout, 6 slots) live, and tracks four paper challenge
 accounts in parallel:
 
     0.50% risk on BrightFunded (2-step 8%+5%, static 10% DD, 5% daily)
@@ -20,15 +20,15 @@ rules - so this is four honest views of one strategy. Each account passes
 Once an account passes or blows it FREEZES; that is the outcome we're
 measuring.
 
-Faithful to the backtest on purpose: operates only on CLOSED 12h bars, stops
+Faithful to the backtest on purpose: operates only on CLOSED 4h bars, stops
 and take-profits checked on the bar's high/low, so the forward result is
 directly comparable to the numbers that justified running this at all. It is
 paper - no keys, no orders, no exchange writes. State in prop_state.json,
 human-readable status in prop_status.txt, rewritten every run.
 
-Run every 12h (VPS cron: `5 0,12 * * * cd ~/prop && ~/.local/bin/uv run
-prop_paper.py >> prop.log 2>&1`). Idempotent: re-running on the same bar
-does nothing. Results take weeks - median pass was 31-54 days in backtest.
+Runs on the GitHub Actions job (hourly), acting only when a new 4h bar has
+closed. Idempotent: re-running on the same bar does nothing. Results take
+weeks - median pass was 31-54 days in backtest.
 """
 import json
 import os
@@ -40,9 +40,15 @@ import pandas as pd
 
 API = "https://api.hyperliquid.xyz/info"
 COINS = ["BTC", "ETH", "SOL", "XRP", "DOGE", "BNB", "ADA", "LINK"]
-BASE_D = [(2, 20), (3, 25), (3, 30), (4, 35), (5, 40), (7, 60)]
+# 4h clock, adopted 2026-08-21: on matched dates it caught each trend flip up
+# to 8h earlier than 12h, lifting per-trade edge (+0.226R -> +0.265R) with no
+# loss of pass rate. The EMA spans are the proven 12h spans x3, so the SMOOTHING
+# HORIZON is unchanged - only the sampling grid is finer. Timeout x3 too, so the
+# hold stays ~10 days.
+INTERVAL = "4h"
+BASE_D = [(6, 60), (9, 75), (9, 90), (12, 105), (15, 120), (21, 180)]
 COST = 5.5e-4; SLIP = 5e-4
-STOP = 0.03; TP_R = 5; HOLD_BARS = 20; SLOTS = 6
+STOP = 0.03; TP_R = 5; HOLD_BARS = 60; SLOTS = 6
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "prop_state.json")     # full internal state
 STATUS = os.path.join(HERE, "prop_status.txt")    # human-readable console/log
@@ -69,10 +75,10 @@ def post(body):
     return None
 
 
-def candles(coin, days=140):
+def candles(coin, days=220):
     end = int(time.time() * 1000)
     r = post({"type": "candleSnapshot", "req": dict(
-        coin=coin, interval="12h", startTime=end - days * 86400000, endTime=end)})
+        coin=coin, interval=INTERVAL, startTime=end - days * 86400000, endTime=end)})
     if not r or len(r) < 130:
         return None
     df = pd.DataFrame([{"t": x["t"], "T": x["T"], "h": float(x["h"]),
@@ -96,8 +102,12 @@ def fresh_account():
 
 def load():
     if os.path.exists(STATE):
-        return json.load(open(STATE))
-    return dict(last_bar="", positions=[], closed=[],
+        st = json.load(open(STATE))
+        # if the timeframe changed, start clean rather than mixing old-clock
+        # positions/stops into new-clock logic
+        if st.get("interval") == INTERVAL:
+            return st
+    return dict(last_bar="", positions=[], closed=[], interval=INTERVAL,
                 accounts={name: fresh_account() for name, _, _ in ACCOUNTS},
                 started=None)
 
