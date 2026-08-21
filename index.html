@@ -98,6 +98,7 @@
   <div class="tabbar">
     <button class="tabbtn on" id="tab-fund">Fund</button>
     <button class="tabbtn" id="tab-lab">Test Lab</button>
+    <button class="tabbtn" id="tab-prop">Prop Firm Testing</button>
   </div>
 
   <div id="view-fund">
@@ -168,6 +169,29 @@
     <div class="footnote">Paper book: $1,000 start, no keys, no orders. Hourly engine; marks are hourly closes.
       Verdict window 8&#8211;12 weeks vs backtest expectancy (Major Longs ~+0.5R/tr, Alt Shorts ~+0.2R/tr). Costs 0.055%/side + slippage + funding included.</div>
   </div><!--/view-lab-->
+
+  <div id="view-prop" style="display:none">
+    <div class="card">
+      <div class="k">What this is</div>
+      <div style="font-size:13px;line-height:1.7;margin-top:8px" class="ink2">
+        Forward paper-trade of the <b>majors challenge strategy</b> &#8212; the
+        8 most liquid coins (BTC ETH SOL XRP DOGE BNB ADA LINK), six-EMA vote
+        flip, <b>both directions</b>, 3% stop, take-profit at +5R, 20-bar
+        timeout, 6 slots, 12h clock. Four paper accounts run the same signals at
+        two risk sizes across two firms&#8217; real evaluation rules. Each one
+        passes, blows, or keeps grinding &#8212; then freezes. Paper only, no keys.
+        <span class="muted" id="propsub"></span>
+      </div>
+    </div>
+    <div class="grid3" id="propaccts" style="grid-template-columns:repeat(2,1fr);margin-top:14px"></div>
+    <h2 class="sec">Open positions</h2>
+    <div class="card" style="padding:6px 6px 2px"><div id="propopen"></div></div>
+    <h2 class="sec">Recent closed trades</h2>
+    <div class="card" style="padding:6px 6px 2px"><div id="propclosed"></div></div>
+    <div class="footnote">Mirrors the backtest exactly (12h closed bars, same stops/exits) so the forward
+      result is comparable. Backtest expectancy ~+0.22R/trade; median time to pass 31&#8211;54 days depending on risk.
+      BrightFunded: 2-step (+8% then +5%), static 10% drawdown. Breakout: 1-step (+10%), static 6% drawdown. Neither has a consistency rule.</div>
+  </div><!--/view-prop-->
 </div>
 
 <!--DATA-->
@@ -512,16 +536,64 @@ async function loadLab(){
   try{ const d=await fetch('./data3.json?_='+Date.now()).then(r=>r.json()); if(d&&d.equity!=null){LAB=d; renderLab(d);} }
   catch(e){ document.getElementById('labval').textContent='awaiting first run'; }
 }
-document.getElementById('tab-fund').onclick=()=>{
-  document.getElementById('view-fund').style.display=''; document.getElementById('view-lab').style.display='none';
-  document.getElementById('tab-fund').classList.add('on'); document.getElementById('tab-lab').classList.remove('on');
-};
-document.getElementById('tab-lab').onclick=()=>{
-  document.getElementById('view-fund').style.display='none'; document.getElementById('view-lab').style.display='';
-  document.getElementById('tab-lab').classList.add('on'); document.getElementById('tab-fund').classList.remove('on');
-  if(!LAB) loadLab();
-};
+const TABS=['fund','lab','prop'];
+function showTab(name){
+  TABS.forEach(t=>{
+    document.getElementById('view-'+t).style.display = t===name?'':'none';
+    document.getElementById('tab-'+t).classList.toggle('on', t===name);
+  });
+  if(name==='lab' && !LAB) loadLab();
+  if(name==='prop') loadProp();
+}
+document.getElementById('tab-fund').onclick=()=>showTab('fund');
+document.getElementById('tab-lab').onclick=()=>showTab('lab');
+document.getElementById('tab-prop').onclick=()=>showTab('prop');
 setInterval(()=>{ if(document.getElementById('view-lab').style.display!=='none') loadLab(); },120000);
+setInterval(()=>{ if(document.getElementById('view-prop').style.display!=='none') loadProp(); },120000);
+
+let PROP=null;
+async function loadProp(){
+  let d=null;
+  try{ d=await fetch('./prop.json?_='+Date.now()).then(r=>r.json()); }catch(e){}
+  if(!d){ document.getElementById('propsub').textContent=' · awaiting first run'; return; }
+  PROP=d; renderProp(d);
+}
+function propStatusChip(s){
+  if(s==='PASSED') return '<span class="badge" style="color:var(--good);border-color:var(--good)">PASSED</span>';
+  if(s==='BLOWN')  return '<span class="badge" style="color:var(--bad);border-color:var(--bad)">BLOWN</span>';
+  return '<span class="badge">active</span>';
+}
+function renderProp(d){
+  const started=(d.started||'').slice(0,10);
+  document.getElementById('propsub').textContent =
+    ` · started ${started} · ${d.closed_total} trades closed · latest bar ${(d.last_bar||'').slice(0,16).replace('T',' ')} UTC`;
+  document.getElementById('propaccts').innerHTML = (d.accounts||[]).map(a=>{
+    const barPct=Math.max(0,Math.min(100, (a.pnl_pct/ (a.target[a.target.length-1]*100 + (a.target.length>1?a.target[0]*100:0)))*100 ));
+    const tgt=a.target.map(t=>'+'+(t*100)+'%').join(' then ');
+    const phase = a.status==='active' ? `phase ${a.phase+1}/${a.phases}` : '';
+    return `<div class="card" style="padding:16px">
+      <div class="nm" style="display:flex;justify-content:space-between;align-items:center">
+        <span>${a.firm} · ${(a.risk*100).toFixed(2)}%</span>${propStatusChip(a.status)}</div>
+      <div class="big tnum ${a.pnl_pct>=0?'pos':'neg'}" style="font-size:30px;margin:6px 0">${a.pnl_pct>=0?'+':''}${a.pnl_pct.toFixed(2)}%</div>
+      <div class="statline"><span class="lab">Target</span><span class="tnum">${tgt} · DD ${(a.max_dd*100)}%</span></div>
+      <div class="statline"><span class="lab">Progress</span><span class="tnum">${phase}</span></div>
+      <div class="statline"><span class="lab">Win / loss</span><span class="tnum">${a.wins} / ${a.losses}</span></div>
+    </div>`;
+  }).join('') || '<div class="empty">No accounts yet.</div>';
+  const op=d.positions||[];
+  document.getElementById('propopen').innerHTML = op.length ?
+    table(['Coin','Side','Entry','Stop','Target','Bars'],
+      op.map(p=>[p.coin, p.dir==='L'?'LONG':'SHORT', (+p.entry).toFixed(4),
+                 (+p.stop).toFixed(4), (+p.tp).toFixed(4), p.bars+'/20']))
+    : '<div class="empty">No open positions right now.</div>';
+  const rc=(d.recent||[]).slice().reverse();
+  document.getElementById('propclosed').innerHTML = rc.length ?
+    table(['Coin','Side','Result','Exit','When'],
+      rc.map(c=>[c.coin, c.dir==='L'?'LONG':'SHORT',
+                 `<span class="${c.R>0?'pos':'neg'}">${c.R>0?'+':''}${(+c.R).toFixed(2)}R</span>`,
+                 c.why, (c.closed||'').slice(0,10)]))
+    : '<div class="empty">No closed trades yet.</div>';
+}
 
 async function boot(){
   let d=window.__DATA__;
