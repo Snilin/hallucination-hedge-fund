@@ -6,7 +6,7 @@
 """prop_paper.py - forward paper-trade of the majors challenge strategy.
 
 Runs the EXACT backtested logic (majors 4h vote-flip, both directions, 3%
-stop, TP+5R, ~10-day timeout, 6 slots) live, and tracks four paper challenge
+stop, TP+5R, 14-day timeout, 6 slots) live, and tracks four paper challenge
 accounts in parallel:
 
     0.50% risk on BrightFunded (2-step 8%+5%, static 10% DD, 5% daily)
@@ -48,7 +48,13 @@ COINS = ["BTC", "ETH", "SOL", "XRP", "DOGE", "BNB", "ADA", "LINK"]
 INTERVAL = "4h"
 BASE_D = [(6, 60), (9, 75), (9, 90), (12, 105), (15, 120), (21, 180)]
 COST = 5.5e-4; SLIP = 5e-4
-STOP = 0.03; TP_R = 5; HOLD_BARS = 60; SLOTS = 6
+# HOLD_BARS = 84 (14 days x 6 4h-bars). The 2D exit sweep (21 Aug) found 14d
+# beats the inherited 10d on a BROAD plateau: BrightFunded pass 82% vs 74%,
+# identical per-trade edge (+0.284R), ~3 days slower, and positive in EVERY
+# year incl 2026 (10d was -0.04R in 2026). A 5R target is a 15% move - majors
+# often need >10 days to travel it, so 10d was closing winners early. TP_R=5
+# confirmed optimal in the same sweep.
+STOP = 0.03; TP_R = 5; HOLD_BARS = 84; SLOTS = 6
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "prop_state.json")     # full internal state
 STATUS = os.path.join(HERE, "prop_status.txt")    # human-readable console/log
