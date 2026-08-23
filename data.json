@@ -1,12 +1,12 @@
 {
  "name": "Hallucination Hedge Fund",
- "updated": "2026-08-22 23:00:00+00:00",
+ "updated": "2026-08-23 01:00:00+00:00",
  "since": "2026-08-09 14:00:00+00:00",
  "start": 100000.0,
  "fund": {
-  "value": 124019.88,
-  "pnl": 24019.88,
-  "pnl_pct": 24.02,
+  "value": 124682.4,
+  "pnl": 24682.4,
+  "pnl_pct": 24.682,
   "series": [
    [
     "2026-08-09 14:00:00+00:00",
@@ -1151,6 +1151,10 @@
    [
     "2026-08-22 23:00:00+00:00",
     124019.88
+   ],
+   [
+    "2026-08-23 01:00:00+00:00",
+    124682.4
    ]
   ]
  },
@@ -1167,9 +1171,9 @@
    "desc": "Trend long/short with bear-fit short leg + capitulation veto",
    "alloc": 50000,
    "alloc_pct": 50.0,
-   "value": 59786.29,
-   "pnl": 9786.29,
-   "pnl_pct": 19.573,
+   "value": 60118.06,
+   "pnl": 10118.06,
+   "pnl_pct": 20.236,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -2314,6 +2318,10 @@
     [
      "2026-08-22 23:00:00+00:00",
      59786.29
+    ],
+    [
+     "2026-08-23 01:00:00+00:00",
+     60118.06
     ]
    ]
   },
@@ -3470,6 +3478,10 @@
     ],
     [
      "2026-08-22 23:00:00+00:00",
+     19774.44
+    ],
+    [
+     "2026-08-23 01:00:00+00:00",
      19774.44
     ]
    ]
@@ -4628,6 +4640,10 @@
     [
      "2026-08-22 23:00:00+00:00",
      12000.0
+    ],
+    [
+     "2026-08-23 01:00:00+00:00",
+     12000.0
     ]
    ]
   },
@@ -4638,9 +4654,9 @@
    "desc": "BTC-gated alt breakouts, top-10 concurrent",
    "alloc": 12000,
    "alloc_pct": 12.0,
-   "value": 26459.15,
-   "pnl": 14459.15,
-   "pnl_pct": 120.493,
+   "value": 26789.9,
+   "pnl": 14789.9,
+   "pnl_pct": 123.249,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -5785,6 +5801,10 @@
     [
      "2026-08-22 23:00:00+00:00",
      26459.15
+    ],
+    [
+     "2026-08-23 01:00:00+00:00",
+     26789.9
     ]
    ]
   },
@@ -6942,6 +6962,10 @@
     [
      "2026-08-22 23:00:00+00:00",
      6000.0
+    ],
+    [
+     "2026-08-23 01:00:00+00:00",
+     6000.0
     ]
    ]
   }
@@ -6952,10 +6976,10 @@
    "coin": "XRP",
    "entry": 1.106,
    "stop": 1.07282,
-   "cur": 1.4694,
-   "move_pct": 32.86,
-   "unreal_R": 10.93,
-   "unreal_usd": 1968.13,
+   "cur": 1.5153,
+   "move_pct": 37.01,
+   "unreal_R": 12.32,
+   "unreal_usd": 2217.13,
    "since": "2026-08-20"
   },
   {
@@ -6963,21 +6987,10 @@
    "coin": "DOGE",
    "entry": 0.075069,
    "stop": 0.07281692999999999,
-   "cur": 0.09202,
-   "move_pct": 22.58,
-   "unreal_R": 7.51,
-   "unreal_usd": 1351.53,
-   "since": "2026-08-20"
-  },
-  {
-   "sleeve": "ign_alts",
-   "coin": "WLD",
-   "entry": 0.36346,
-   "stop": 0.3525562,
-   "cur": 0.38865,
-   "move_pct": 6.93,
-   "unreal_R": 2.29,
-   "unreal_usd": 412.54,
+   "cur": 0.094052,
+   "move_pct": 25.29,
+   "unreal_R": 8.41,
+   "unreal_usd": 1513.94,
    "since": "2026-08-20"
   },
   {
@@ -6985,10 +6998,10 @@
    "coin": "TAO",
    "entry": 205.81,
    "stop": 199.63569999999999,
-   "cur": 223.74,
-   "move_pct": 8.71,
-   "unreal_R": 2.89,
-   "unreal_usd": 519.42,
+   "cur": 224.27,
+   "move_pct": 8.97,
+   "unreal_R": 2.97,
+   "unreal_usd": 534.87,
    "since": "2026-08-20"
   },
   {
@@ -6996,10 +7009,10 @@
    "coin": "ENA",
    "entry": 0.093323,
    "stop": 0.09052331,
-   "cur": 0.15842,
-   "move_pct": 69.75,
-   "unreal_R": 23.23,
-   "unreal_usd": 4181.97,
+   "cur": 0.15939,
+   "move_pct": 70.79,
+   "unreal_R": 23.58,
+   "unreal_usd": 4244.33,
    "since": "2026-08-20"
   },
   {
@@ -7007,10 +7020,10 @@
    "coin": "AAVE",
    "entry": 95.293,
    "stop": 92.43421000000001,
-   "cur": 125.61,
-   "move_pct": 31.81,
-   "unreal_R": 10.59,
-   "unreal_usd": 1905.57,
+   "cur": 127.49,
+   "move_pct": 33.79,
+   "unreal_R": 11.24,
+   "unreal_usd": 2023.94,
    "since": "2026-08-20"
   },
   {
@@ -7018,10 +7031,10 @@
    "coin": "ADA",
    "entry": 0.18715,
    "stop": 0.18153550000000002,
-   "cur": 0.22692,
-   "move_pct": 21.25,
-   "unreal_R": 7.07,
-   "unreal_usd": 1271.72,
+   "cur": 0.22893,
+   "move_pct": 22.32,
+   "unreal_R": 7.42,
+   "unreal_usd": 1336.16,
    "since": "2026-08-20"
   },
   {
@@ -7029,10 +7042,10 @@
    "coin": "AVAX",
    "entry": 6.7843,
    "stop": 6.5807709999999995,
-   "cur": 7.4897,
-   "move_pct": 10.4,
-   "unreal_R": 3.45,
-   "unreal_usd": 620.55,
+   "cur": 7.5773,
+   "move_pct": 11.69,
+   "unreal_R": 3.88,
+   "unreal_usd": 698.03,
    "since": "2026-08-20"
   },
   {
@@ -7040,10 +7053,10 @@
    "coin": "LINK",
    "entry": 8.2957,
    "stop": 8.046829,
-   "cur": 11.592,
-   "move_pct": 39.74,
-   "unreal_R": 13.23,
-   "unreal_usd": 2380.8,
+   "cur": 11.735,
+   "move_pct": 41.46,
+   "unreal_R": 13.8,
+   "unreal_usd": 2484.23,
    "since": "2026-08-10"
   },
   {
@@ -7051,10 +7064,10 @@
    "coin": "UNI",
    "entry": 4.1397,
    "stop": 4.015509000000001,
-   "cur": 4.2958,
-   "move_pct": 3.77,
-   "unreal_R": 1.24,
-   "unreal_usd": 222.95,
+   "cur": 4.3468,
+   "move_pct": 5.0,
+   "unreal_R": 1.65,
+   "unreal_usd": 296.87,
    "since": "2026-08-22"
   }
  ],
@@ -7064,8 +7077,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 64369.0,
-   "cur": 77053.0,
-   "move_pct": 19.71,
+   "cur": 77359.0,
+   "move_pct": 20.18,
    "exposure": 25000
   },
   {
@@ -7073,8 +7086,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 1893.2,
-   "cur": 2414.2,
-   "move_pct": 27.52,
+   "cur": 2431.7,
+   "move_pct": 28.44,
    "exposure": 25000
   },
   {
@@ -7091,8 +7104,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 1.106,
-   "cur": 1.4694,
-   "move_pct": 32.86,
+   "cur": 1.5153,
+   "move_pct": 37.01,
    "exposure": 6000
   },
   {
@@ -7100,17 +7113,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0751,
-   "cur": 0.092,
-   "move_pct": 22.58,
-   "exposure": 6000
-  },
-  {
-   "asset": "WLD",
-   "sleeve": "ign_alts",
-   "side": "LONG",
-   "entry": 0.3635,
-   "cur": 0.3886,
-   "move_pct": 6.93,
+   "cur": 0.0941,
+   "move_pct": 25.29,
    "exposure": 6000
   },
   {
@@ -7118,8 +7122,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 205.81,
-   "cur": 223.74,
-   "move_pct": 8.71,
+   "cur": 224.27,
+   "move_pct": 8.97,
    "exposure": 6000
   },
   {
@@ -7127,8 +7131,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0933,
-   "cur": 0.1584,
-   "move_pct": 69.75,
+   "cur": 0.1594,
+   "move_pct": 70.79,
    "exposure": 6000
   },
   {
@@ -7136,8 +7140,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 95.293,
-   "cur": 125.61,
-   "move_pct": 31.81,
+   "cur": 127.49,
+   "move_pct": 33.79,
    "exposure": 6000
   },
   {
@@ -7145,8 +7149,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.1872,
-   "cur": 0.2269,
-   "move_pct": 21.25,
+   "cur": 0.2289,
+   "move_pct": 22.32,
    "exposure": 6000
   },
   {
@@ -7154,8 +7158,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 6.7843,
-   "cur": 7.4897,
-   "move_pct": 10.4,
+   "cur": 7.5773,
+   "move_pct": 11.69,
    "exposure": 6000
   },
   {
@@ -7163,8 +7167,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 8.2957,
-   "cur": 11.592,
-   "move_pct": 39.74,
+   "cur": 11.735,
+   "move_pct": 41.46,
    "exposure": 6000
   },
   {
@@ -7172,8 +7176,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 4.1397,
-   "cur": 4.2958,
-   "move_pct": 3.77,
+   "cur": 4.3468,
+   "move_pct": 5.0,
    "exposure": 6000
   }
  ],
@@ -7191,6 +7195,13 @@
    "R": -1.053,
    "opened": "2026-08-20",
    "closed": "2026-08-22"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "WLD",
+   "R": -1.053,
+   "opened": "2026-08-20",
+   "closed": "2026-08-23"
   }
  ],
  "trade_log": [
@@ -7386,6 +7397,14 @@
    "action": "open",
    "price": 4.1397,
    "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-08-23 01:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "WLD",
+   "action": "close",
+   "price": 0.3524,
+   "note": "STOP \u00b7 -1.05R"
   }
  ]
 }
