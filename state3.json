@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-08-29 08:00:00+00:00",
+ "ts": "2026-08-29 14:00:00+00:00",
  "equity": 978.7295261971074,
  "events": [
   {
@@ -76,8 +76,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-28 18:00:00+00:00",
    "open": true,
-   "cur": 0.089,
-   "ts_check": "2026-08-29 08:00:00+00:00"
+   "cur": 0.08795,
+   "ts_check": "2026-08-29 14:00:00+00:00"
   },
   {
    "engine": 2,
@@ -88,8 +88,30 @@
    "stop_frac": 0.03,
    "opened": "2026-08-29 02:00:00+00:00",
    "open": true,
-   "cur": 0.08259,
-   "ts_check": "2026-08-29 08:00:00+00:00"
+   "cur": 0.085528,
+   "ts_check": "2026-08-29 14:00:00+00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ONDO",
+   "side": "S",
+   "entry": 0.34948,
+   "stop": 0.3599644,
+   "stop_frac": 0.03,
+   "opened": "2026-08-29 14:00:00+00:00",
+   "open": true,
+   "cur": 0.34948
+  },
+  {
+   "engine": 2,
+   "coin": "WLFI",
+   "side": "S",
+   "entry": 0.057664,
+   "stop": 0.05939392,
+   "stop_frac": 0.03,
+   "opened": "2026-08-29 14:00:00+00:00",
+   "open": true,
+   "cur": 0.057664
   }
  ],
  "closed": [
@@ -158,8 +180,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-08-29 02:00:00+00:00",
- "alt_scan_bar": "2026-08-29 00:00:00+00:00",
+ "alt_scan": "2026-08-29 14:00:00+00:00",
+ "alt_scan_bar": "2026-08-29 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -868,6 +890,10 @@
   [
    "2026-08-29 08:00:00+00:00",
    989.3394
+  ],
+  [
+   "2026-08-29 14:00:00+00:00",
+   985.3402
   ]
  ],
  "trade_log": [
@@ -940,37 +966,69 @@
    "coin": "XPL",
    "action": "open",
    "note": "SHORT @0.0846 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-29 14:00:00+00:00",
+   "engine": 2,
+   "coin": "ONDO",
+   "action": "open",
+   "note": "SHORT @0.3495 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-29 14:00:00+00:00",
+   "engine": 2,
+   "coin": "WLFI",
+   "action": "open",
+   "note": "SHORT @0.0577 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "WLFI",
+   "coin": "SUI",
    "bulls": 3,
-   "gap": 0.31,
-   "veto": false
-  },
-  {
-   "coin": "ONDO",
-   "bulls": 4,
-   "gap": 0.26,
+   "gap": 0.23,
    "veto": false
   },
   {
    "coin": "PAXG",
-   "bulls": 4,
-   "gap": 0.27,
-   "veto": false
-  },
-  {
-   "coin": "SUI",
-   "bulls": 4,
-   "gap": 0.38,
+   "bulls": 3,
+   "gap": 0.35,
    "veto": false
   },
   {
    "coin": "ARB",
+   "bulls": 3,
+   "gap": 0.68,
+   "veto": false
+  },
+  {
+   "coin": "DOT",
+   "bulls": 3,
+   "gap": 0.91,
+   "veto": false
+  },
+  {
+   "coin": "FET",
+   "bulls": 3,
+   "gap": 1.12,
+   "veto": false
+  },
+  {
+   "coin": "ADA",
+   "bulls": 3,
+   "gap": 1.21,
+   "veto": false
+  },
+  {
+   "coin": "NEAR",
    "bulls": 4,
-   "gap": 0.51,
+   "gap": 0.35,
+   "veto": false
+  },
+  {
+   "coin": "ETHFI",
+   "bulls": 4,
+   "gap": 0.38,
    "veto": false
   }
  ]

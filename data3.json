@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-08-29 08:00:00+00:00",
+ "updated": "2026-08-29 14:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 989.3394,
+ "equity": 985.3402,
  "realized": 978.7295,
- "pnl": -10.6606,
- "pnl_pct": -1.066,
+ "pnl": -14.6598,
+ "pnl_pct": -1.466,
  "gate_bull": true,
  "series": [
   [
@@ -716,6 +716,10 @@
   [
    "2026-08-29 08:00:00+00:00",
    989.3394
+  ],
+  [
+   "2026-08-29 14:00:00+00:00",
+   985.3402
   ]
  ],
  "arming": {
@@ -723,12 +727,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -7.701,
-    -9.292,
-    -10.421,
-    -11.158,
-    -11.524,
-    -12.024
+    -7.296,
+    -8.951,
+    -10.089,
+    -10.894,
+    -11.321,
+    -11.933
    ]
   },
   "e1": {
@@ -743,37 +747,55 @@
   },
   "e2": {
    "slots": 10,
-   "used": 2,
-   "last_scan": "2026-08-29 02:00:00+00:00",
+   "used": 4,
+   "last_scan": "2026-08-29 14:00:00+00:00",
    "watchlist": [
     {
-     "coin": "WLFI",
+     "coin": "SUI",
      "bulls": 3,
-     "gap": 0.31,
-     "veto": false
-    },
-    {
-     "coin": "ONDO",
-     "bulls": 4,
-     "gap": 0.26,
+     "gap": 0.23,
      "veto": false
     },
     {
      "coin": "PAXG",
-     "bulls": 4,
-     "gap": 0.27,
-     "veto": false
-    },
-    {
-     "coin": "SUI",
-     "bulls": 4,
-     "gap": 0.38,
+     "bulls": 3,
+     "gap": 0.35,
      "veto": false
     },
     {
      "coin": "ARB",
+     "bulls": 3,
+     "gap": 0.68,
+     "veto": false
+    },
+    {
+     "coin": "DOT",
+     "bulls": 3,
+     "gap": 0.91,
+     "veto": false
+    },
+    {
+     "coin": "FET",
+     "bulls": 3,
+     "gap": 1.12,
+     "veto": false
+    },
+    {
+     "coin": "ADA",
+     "bulls": 3,
+     "gap": 1.21,
+     "veto": false
+    },
+    {
+     "coin": "NEAR",
      "bulls": 4,
-     "gap": 0.51,
+     "gap": 0.35,
+     "veto": false
+    },
+    {
+     "coin": "ETHFI",
+     "bulls": 4,
+     "gap": 0.38,
      "veto": false
     }
    ]
@@ -790,7 +812,7 @@
  },
  "e2": {
   "closed": 4,
-  "open": 2,
+  "open": 4,
   "win_pct": 0.0,
   "avg_R": -1.072,
   "tot_R": -4.29,
@@ -804,8 +826,8 @@
    "side": "S",
    "entry": 0.09291,
    "stop": 0.09569730000000001,
-   "cur": 0.089,
-   "unreal_R": 1.38,
+   "cur": 0.08795,
+   "unreal_R": 1.76,
    "since": "2026-08-28 18:00"
   },
   {
@@ -814,9 +836,29 @@
    "side": "S",
    "entry": 0.084626,
    "stop": 0.08716478000000001,
-   "cur": 0.08259,
-   "unreal_R": 0.78,
+   "cur": 0.085528,
+   "unreal_R": -0.37,
    "since": "2026-08-29 02:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ONDO",
+   "side": "S",
+   "entry": 0.34948,
+   "stop": 0.3599644,
+   "cur": 0.34948,
+   "unreal_R": -0.02,
+   "since": "2026-08-29 14:00"
+  },
+  {
+   "engine": 2,
+   "coin": "WLFI",
+   "side": "S",
+   "entry": 0.057664,
+   "stop": 0.05939392,
+   "cur": 0.057664,
+   "unreal_R": -0.02,
+   "since": "2026-08-29 14:00"
   }
  ],
  "closed": [
@@ -927,6 +969,20 @@
    "coin": "XPL",
    "action": "open",
    "note": "SHORT @0.0846 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-29 14:00:00+00:00",
+   "engine": 2,
+   "coin": "ONDO",
+   "action": "open",
+   "note": "SHORT @0.3495 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-29 14:00:00+00:00",
+   "engine": 2,
+   "coin": "WLFI",
+   "action": "open",
+   "note": "SHORT @0.0577 stop +3% (12h clock)"
   }
  ]
 }
