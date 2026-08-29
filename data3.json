@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-08-28 18:00:00+00:00",
+ "updated": "2026-08-29 02:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 978.6398,
+ "equity": 984.2737,
  "realized": 978.7295,
- "pnl": -21.3602,
- "pnl_pct": -2.136,
+ "pnl": -15.7263,
+ "pnl_pct": -1.573,
  "gate_bull": true,
  "series": [
   [
@@ -708,6 +708,10 @@
   [
    "2026-08-28 18:00:00+00:00",
    978.6398
+  ],
+  [
+   "2026-08-29 02:00:00+00:00",
+   984.2737
   ]
  ],
  "arming": {
@@ -715,33 +719,57 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -8.969,
-    -10.243,
-    -11.345,
-    -11.852,
-    -12.038,
-    -12.239
+    -8.191,
+    -9.677,
+    -10.795,
+    -11.445,
+    -11.74,
+    -12.118
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 3,
-    "hot": true
+    "fast": 1,
+    "hot": false
    },
    "ETH": {
-    "fast": 3,
-    "hot": true
+    "fast": 1,
+    "hot": false
    }
   },
   "e2": {
    "slots": 10,
-   "used": 1,
-   "last_scan": "2026-08-28 18:00:00+00:00",
+   "used": 2,
+   "last_scan": "2026-08-29 02:00:00+00:00",
    "watchlist": [
     {
-     "coin": "XPL",
+     "coin": "WLFI",
+     "bulls": 3,
+     "gap": 0.31,
+     "veto": false
+    },
+    {
+     "coin": "ONDO",
      "bulls": 4,
-     "gap": 0.13,
+     "gap": 0.26,
+     "veto": false
+    },
+    {
+     "coin": "PAXG",
+     "bulls": 4,
+     "gap": 0.27,
+     "veto": false
+    },
+    {
+     "coin": "SUI",
+     "bulls": 4,
+     "gap": 0.38,
+     "veto": false
+    },
+    {
+     "coin": "ARB",
+     "bulls": 4,
+     "gap": 0.51,
      "veto": false
     }
    ]
@@ -758,7 +786,7 @@
  },
  "e2": {
   "closed": 4,
-  "open": 1,
+  "open": 2,
   "win_pct": 0.0,
   "avg_R": -1.072,
   "tot_R": -4.29,
@@ -772,9 +800,19 @@
    "side": "S",
    "entry": 0.09291,
    "stop": 0.09569730000000001,
-   "cur": 0.09291,
-   "unreal_R": -0.02,
+   "cur": 0.08965,
+   "unreal_R": 1.15,
    "since": "2026-08-28 18:00"
+  },
+  {
+   "engine": 2,
+   "coin": "XPL",
+   "side": "S",
+   "entry": 0.084626,
+   "stop": 0.08716478000000001,
+   "cur": 0.084626,
+   "unreal_R": -0.02,
+   "since": "2026-08-29 02:00"
   }
  ],
  "closed": [
@@ -878,6 +916,13 @@
    "coin": "OP",
    "action": "open",
    "note": "SHORT @0.0929 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-29 02:00:00+00:00",
+   "engine": 2,
+   "coin": "XPL",
+   "action": "open",
+   "note": "SHORT @0.0846 stop +3% (12h clock)"
   }
  ]
 }
