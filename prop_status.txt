@@ -1,5 +1,5 @@
 MAJORS CHALLENGE - forward paper trade
-started 2026-08-21 08:00:00+00:00  |  latest bar 2026-08-30 00:00:00+00:00  |  trades closed 0
+started 2026-08-21 08:00:00+00:00  |  latest bar 2026-08-30 08:00:00+00:00  |  trades closed 0
 
 account                 risk   equity   phase  status  W/L
 --------------------------------------------------------------
