@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-08-30 23:00:00+00:00",
+ "ts": "2026-08-31 05:00:00+00:00",
  "equity": 968.1443880294343,
  "events": [
   {
@@ -76,8 +76,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-28 18:00:00+00:00",
    "open": true,
-   "cur": 0.08873,
-   "ts_check": "2026-08-30 23:00:00+00:00"
+   "cur": 0.08645,
+   "ts_check": "2026-08-31 05:00:00+00:00"
   },
   {
    "engine": 2,
@@ -120,8 +120,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-29 14:00:00+00:00",
    "open": true,
-   "cur": 0.057498,
-   "ts_check": "2026-08-30 23:00:00+00:00"
+   "cur": 0.05712,
+   "ts_check": "2026-08-31 05:00:00+00:00"
   },
   {
    "engine": 2,
@@ -132,8 +132,85 @@
    "stop_frac": 0.03,
    "opened": "2026-08-30 12:00:00+00:00",
    "open": true,
-   "cur": 0.73599,
-   "ts_check": "2026-08-30 23:00:00+00:00"
+   "cur": 0.71446,
+   "ts_check": "2026-08-31 05:00:00+00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ARB",
+   "side": "S",
+   "entry": 0.08428,
+   "stop": 0.0868084,
+   "stop_frac": 0.03,
+   "opened": "2026-08-31 05:00:00+00:00",
+   "open": true,
+   "cur": 0.08428
+  },
+  {
+   "engine": 2,
+   "coin": "WLD",
+   "side": "S",
+   "entry": 0.36171,
+   "stop": 0.3725613,
+   "stop_frac": 0.03,
+   "opened": "2026-08-31 05:00:00+00:00",
+   "open": true,
+   "cur": 0.36171
+  },
+  {
+   "engine": 2,
+   "coin": "DOT",
+   "side": "S",
+   "entry": 0.81957,
+   "stop": 0.8441571,
+   "stop_frac": 0.03,
+   "opened": "2026-08-31 05:00:00+00:00",
+   "open": true,
+   "cur": 0.81957
+  },
+  {
+   "engine": 2,
+   "coin": "ADA",
+   "side": "S",
+   "entry": 0.19266,
+   "stop": 0.1984398,
+   "stop_frac": 0.03,
+   "opened": "2026-08-31 05:00:00+00:00",
+   "open": true,
+   "cur": 0.19266
+  },
+  {
+   "engine": 2,
+   "coin": "FET",
+   "side": "S",
+   "entry": 0.14855,
+   "stop": 0.1530065,
+   "stop_frac": 0.03,
+   "opened": "2026-08-31 05:00:00+00:00",
+   "open": true,
+   "cur": 0.14855
+  },
+  {
+   "engine": 2,
+   "coin": "XLM",
+   "side": "S",
+   "entry": 0.17469,
+   "stop": 0.17993070000000003,
+   "stop_frac": 0.03,
+   "opened": "2026-08-31 05:00:00+00:00",
+   "open": true,
+   "cur": 0.17469
+  },
+  {
+   "engine": 2,
+   "coin": "XPL",
+   "side": "S",
+   "entry": 0.084099,
+   "stop": 0.08662196999999999,
+   "stop_frac": 0.03,
+   "opened": "2026-08-31 05:00:00+00:00",
+   "open": true,
+   "cur": 0.084099
   }
  ],
  "closed": [
@@ -234,8 +311,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-08-30 12:00:00+00:00",
- "alt_scan_bar": "2026-08-30 12:00:00+00:00",
+ "alt_scan": "2026-08-31 05:00:00+00:00",
+ "alt_scan_bar": "2026-08-31 00:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -980,6 +1057,10 @@
   [
    "2026-08-30 23:00:00+00:00",
    976.8832
+  ],
+  [
+   "2026-08-31 05:00:00+00:00",
+   985.9621
   ]
  ],
  "trade_log": [
@@ -1087,43 +1168,104 @@
    "coin": "ONDO",
    "action": "close",
    "note": "STOP -1.08R"
+  },
+  {
+   "ts": "2026-08-31 05:00:00+00:00",
+   "engine": 2,
+   "coin": "ARB",
+   "action": "open",
+   "note": "SHORT @0.0843 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-31 05:00:00+00:00",
+   "engine": 2,
+   "coin": "WLD",
+   "action": "open",
+   "note": "SHORT @0.3617 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-31 05:00:00+00:00",
+   "engine": 2,
+   "coin": "DOT",
+   "action": "open",
+   "note": "SHORT @0.8196 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-31 05:00:00+00:00",
+   "engine": 2,
+   "coin": "ADA",
+   "action": "open",
+   "note": "SHORT @0.1927 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-31 05:00:00+00:00",
+   "engine": 2,
+   "coin": "FET",
+   "action": "open",
+   "note": "SHORT @0.1485 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-31 05:00:00+00:00",
+   "engine": 2,
+   "coin": "XLM",
+   "action": "open",
+   "note": "SHORT @0.1747 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-08-31 05:00:00+00:00",
+   "engine": 2,
+   "coin": "XPL",
+   "action": "open",
+   "note": "SHORT @0.0841 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "ARB",
+   "coin": "LTC",
    "bulls": 3,
-   "gap": 0.05,
+   "gap": 0.2,
    "veto": false
   },
   {
-   "coin": "ADA",
+   "coin": "BCH",
    "bulls": 3,
-   "gap": 0.16,
-   "veto": false
-  },
-  {
-   "coin": "XPL",
-   "bulls": 3,
-   "gap": 0.25,
-   "veto": false
-  },
-  {
-   "coin": "FET",
-   "bulls": 3,
-   "gap": 0.71,
-   "veto": false
-  },
-  {
-   "coin": "WLD",
-   "bulls": 4,
-   "gap": 0.25,
+   "gap": 0.54,
    "veto": false
   },
   {
    "coin": "ETHFI",
+   "bulls": 3,
+   "gap": 0.79,
+   "veto": false
+  },
+  {
+   "coin": "kPEPE",
+   "bulls": 3,
+   "gap": 2.45,
+   "veto": false
+  },
+  {
+   "coin": "TRX",
    "bulls": 4,
-   "gap": 0.66,
+   "gap": 0.1,
+   "veto": false
+  },
+  {
+   "coin": "VIRTUAL",
+   "bulls": 4,
+   "gap": 0.2,
+   "veto": false
+  },
+  {
+   "coin": "CRV",
+   "bulls": 4,
+   "gap": 0.35,
+   "veto": false
+  },
+  {
+   "coin": "DOGE",
+   "bulls": 4,
+   "gap": 0.6,
    "veto": false
   }
  ]
