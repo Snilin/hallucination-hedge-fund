@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-08-31 23:00:00+00:00",
+ "updated": "2026-09-01 04:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 940.1534,
- "realized": 942.0808,
- "pnl": -59.8466,
- "pnl_pct": -5.985,
+ "equity": 928.0339,
+ "realized": 931.4615,
+ "pnl": -71.9661,
+ "pnl_pct": -7.197,
  "gate_bull": true,
  "series": [
   [
@@ -768,6 +768,10 @@
   [
    "2026-08-31 23:00:00+00:00",
    940.1534
+  ],
+  [
+   "2026-09-01 04:00:00+00:00",
+   928.0339
   ]
  ],
  "arming": {
@@ -775,12 +779,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -5.842,
-    -7.345,
-    -8.551,
-    -9.486,
-    -10.147,
-    -11.43
+    -5.748,
+    -7.242,
+    -8.451,
+    -9.389,
+    -10.061,
+    -11.387
    ]
   },
   "e1": {
@@ -795,55 +799,49 @@
   },
   "e2": {
    "slots": 10,
-   "used": 7,
-   "last_scan": "2026-08-31 13:00:00+00:00",
+   "used": 6,
+   "last_scan": "2026-09-01 04:00:00+00:00",
    "watchlist": [
     {
-     "coin": "BCH",
+     "coin": "FET",
      "bulls": 3,
-     "gap": 0.46,
+     "gap": 0.19,
      "veto": false
     },
     {
-     "coin": "INJ",
+     "coin": "AERO",
      "bulls": 3,
-     "gap": 0.91,
+     "gap": 0.68,
      "veto": false
     },
     {
-     "coin": "ETHFI",
+     "coin": "DOGE",
      "bulls": 3,
-     "gap": 1.03,
+     "gap": 1.08,
      "veto": false
     },
     {
      "coin": "FARTCOIN",
      "bulls": 3,
-     "gap": 3.12,
+     "gap": 1.83,
      "veto": false
     },
     {
-     "coin": "DOGE",
+     "coin": "MON",
      "bulls": 4,
-     "gap": 0.07,
+     "gap": 0.52,
      "veto": false
     },
     {
-     "coin": "VIRTUAL",
+     "coin": "kPEPE",
      "bulls": 4,
-     "gap": 0.09,
+     "gap": 0.6,
      "veto": false
     },
     {
-     "coin": "AERO",
+     "coin": "ZRO",
      "bulls": 4,
-     "gap": 0.26,
-     "veto": false
-    },
-    {
-     "coin": "AVAX",
-     "bulls": 4,
-     "gap": 0.55,
+     "gap": 0.7,
      "veto": false
     }
    ]
@@ -859,33 +857,23 @@
   "worst": null
  },
  "e2": {
-  "closed": 11,
-  "open": 7,
+  "closed": 13,
+  "open": 6,
   "win_pct": 0.0,
-  "avg_R": -1.082,
-  "tot_R": -11.9,
+  "avg_R": -1.089,
+  "tot_R": -14.16,
   "best": -1.02,
-  "worst": -1.09
+  "worst": -1.16
  },
  "open_positions": [
-  {
-   "engine": 2,
-   "coin": "OP",
-   "side": "S",
-   "entry": 0.09291,
-   "stop": 0.09569730000000001,
-   "cur": 0.09185,
-   "unreal_R": 0.36,
-   "since": "2026-08-28 18:00"
-  },
   {
    "engine": 2,
    "coin": "WLFI",
    "side": "S",
    "entry": 0.057664,
    "stop": 0.05939392,
-   "cur": 0.057577,
-   "unreal_R": 0.03,
+   "cur": 0.057438,
+   "unreal_R": 0.11,
    "since": "2026-08-29 14:00"
   },
   {
@@ -894,8 +882,8 @@
    "side": "S",
    "entry": 0.74188,
    "stop": 0.7641364,
-   "cur": 0.72605,
-   "unreal_R": 0.69,
+   "cur": 0.73322,
+   "unreal_R": 0.37,
    "since": "2026-08-30 12:00"
   },
   {
@@ -904,18 +892,8 @@
    "side": "S",
    "entry": 0.36171,
    "stop": 0.3725613,
-   "cur": 0.3652,
-   "unreal_R": -0.34,
-   "since": "2026-08-31 05:00"
-  },
-  {
-   "engine": 2,
-   "coin": "DOT",
-   "side": "S",
-   "entry": 0.81957,
-   "stop": 0.8441571,
-   "cur": 0.83718,
-   "unreal_R": -0.73,
+   "cur": 0.36877,
+   "unreal_R": -0.67,
    "since": "2026-08-31 05:00"
   },
   {
@@ -924,8 +902,8 @@
    "side": "S",
    "entry": 48.313,
    "stop": 49.76239,
-   "cur": 48.57,
-   "unreal_R": -0.2,
+   "cur": 48.969,
+   "unreal_R": -0.47,
    "since": "2026-08-31 13:00"
   },
   {
@@ -934,8 +912,8 @@
    "side": "S",
    "entry": 0.33408,
    "stop": 0.3441024,
-   "cur": 0.33205,
-   "unreal_R": 0.18,
+   "cur": 0.33169,
+   "unreal_R": 0.22,
    "since": "2026-08-31 13:00"
   },
   {
@@ -944,9 +922,19 @@
    "side": "L",
    "entry": 2478.4,
    "stop": 2428.832,
-   "cur": 2469.6,
-   "unreal_R": -0.21,
+   "cur": 2472.8,
+   "unreal_R": -0.14,
    "since": "2026-08-31 19:00"
+  },
+  {
+   "engine": 2,
+   "coin": "INJ",
+   "side": "S",
+   "entry": 4.9312,
+   "stop": 5.079136,
+   "cur": 4.9312,
+   "unreal_R": -0.02,
+   "since": "2026-09-01 04:00"
   }
  ],
  "closed": [
@@ -1048,6 +1036,24 @@
    "why": "STOP",
    "opened": "2026-08-31 05:00",
    "closed": "2026-08-31 23:00"
+  },
+  {
+   "engine": 2,
+   "coin": "OP",
+   "side": "S",
+   "R": -1.159,
+   "why": "STOP",
+   "opened": "2026-08-28 18:00",
+   "closed": "2026-09-01 04:00"
+  },
+  {
+   "engine": 2,
+   "coin": "DOT",
+   "side": "S",
+   "R": -1.102,
+   "why": "STOP",
+   "opened": "2026-08-31 05:00",
+   "closed": "2026-09-01 04:00"
   }
  ],
  "trade_log": [
@@ -1260,6 +1266,27 @@
    "coin": "XLM",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-01 04:00:00+00:00",
+   "engine": 2,
+   "coin": "OP",
+   "action": "close",
+   "note": "STOP -1.16R"
+  },
+  {
+   "ts": "2026-09-01 04:00:00+00:00",
+   "engine": 2,
+   "coin": "DOT",
+   "action": "close",
+   "note": "STOP -1.10R"
+  },
+  {
+   "ts": "2026-09-01 04:00:00+00:00",
+   "engine": 2,
+   "coin": "INJ",
+   "action": "open",
+   "note": "SHORT @4.9312 stop +3% (12h clock)"
   }
  ]
 }
