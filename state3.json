@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-09-01 21:00:00+00:00",
+ "ts": "2026-09-02 00:00:00+00:00",
  "equity": 911.3052265207957,
  "events": [
   {
@@ -124,8 +124,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-29 14:00:00+00:00",
    "open": true,
-   "cur": 0.056922,
-   "ts_check": "2026-09-01 21:00:00+00:00"
+   "cur": 0.057016,
+   "ts_check": "2026-09-02 00:00:00+00:00"
   },
   {
    "engine": 2,
@@ -136,8 +136,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-30 12:00:00+00:00",
    "open": true,
-   "cur": 0.72391,
-   "ts_check": "2026-09-01 21:00:00+00:00"
+   "cur": 0.72205,
+   "ts_check": "2026-09-02 00:00:00+00:00"
   },
   {
    "engine": 2,
@@ -273,8 +273,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-31 13:00:00+00:00",
    "open": true,
-   "cur": 0.32267,
-   "ts_check": "2026-09-01 21:00:00+00:00"
+   "cur": 0.32175,
+   "ts_check": "2026-09-02 00:00:00+00:00"
   },
   {
    "engine": 1,
@@ -300,8 +300,19 @@
    "stop_frac": 0.03,
    "opened": "2026-09-01 04:00:00+00:00",
    "open": true,
-   "cur": 4.8006,
-   "ts_check": "2026-09-01 21:00:00+00:00"
+   "cur": 4.8029,
+   "ts_check": "2026-09-02 00:00:00+00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "side": "S",
+   "entry": 0.16781,
+   "stop": 0.17284429999999998,
+   "stop_frac": 0.03,
+   "opened": "2026-09-02 00:00:00+00:00",
+   "open": true,
+   "cur": 0.16781
   }
  ],
  "closed": [
@@ -558,8 +569,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-09-01 14:00:00+00:00",
- "alt_scan_bar": "2026-09-01 12:00:00+00:00",
+ "alt_scan": "2026-09-02 00:00:00+00:00",
+ "alt_scan_bar": "2026-09-02 00:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -1340,6 +1351,10 @@
   [
    "2026-09-01 21:00:00+00:00",
    925.8144
+  ],
+  [
+   "2026-09-02 00:00:00+00:00",
+   926.2115
   ]
  ],
  "trade_log": [
@@ -1594,55 +1609,62 @@
    "coin": "LTC",
    "action": "close",
    "note": "STOP -1.08R"
+  },
+  {
+   "ts": "2026-09-02 00:00:00+00:00",
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "action": "open",
+   "note": "SHORT @0.1678 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
+   "coin": "DOGE",
+   "bulls": 3,
+   "gap": 0.3,
+   "veto": false
+  },
+  {
    "coin": "OP",
    "bulls": 3,
-   "gap": 0.0,
+   "gap": 0.33,
    "veto": false
   },
   {
-   "coin": "kPEPE",
+   "coin": "TAO",
    "bulls": 3,
-   "gap": 1.5,
-   "veto": false
-  },
-  {
-   "coin": "FARTCOIN",
-   "bulls": 3,
-   "gap": 1.55,
-   "veto": false
-  },
-  {
-   "coin": "ZRO",
-   "bulls": 3,
-   "gap": 1.6,
-   "veto": false
-  },
-  {
-   "coin": "DOGE",
-   "bulls": 4,
-   "gap": 0.02,
-   "veto": false
-  },
-  {
-   "coin": "BCH",
-   "bulls": 4,
-   "gap": 0.06,
-   "veto": false
-  },
-  {
-   "coin": "FET",
-   "bulls": 4,
    "gap": 0.37,
    "veto": false
   },
   {
    "coin": "AERO",
+   "bulls": 3,
+   "gap": 0.4,
+   "veto": false
+  },
+  {
+   "coin": "BCH",
+   "bulls": 3,
+   "gap": 0.55,
+   "veto": false
+  },
+  {
+   "coin": "kPEPE",
+   "bulls": 3,
+   "gap": 0.73,
+   "veto": false
+  },
+  {
+   "coin": "ZRO",
+   "bulls": 3,
+   "gap": 1.08,
+   "veto": false
+  },
+  {
+   "coin": "MON",
    "bulls": 4,
-   "gap": 0.63,
+   "gap": 0.6,
    "veto": false
   }
  ]
