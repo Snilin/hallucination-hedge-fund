@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-09-02 09:00:00+00:00",
+ "ts": "2026-09-02 14:00:00+00:00",
  "equity": 911.3052265207957,
  "events": [
   {
@@ -124,8 +124,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-29 14:00:00+00:00",
    "open": true,
-   "cur": 0.056803,
-   "ts_check": "2026-09-02 09:00:00+00:00"
+   "cur": 0.056846,
+   "ts_check": "2026-09-02 14:00:00+00:00"
   },
   {
    "engine": 2,
@@ -136,8 +136,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-30 12:00:00+00:00",
    "open": true,
-   "cur": 0.71904,
-   "ts_check": "2026-09-02 09:00:00+00:00"
+   "cur": 0.71975,
+   "ts_check": "2026-09-02 14:00:00+00:00"
   },
   {
    "engine": 2,
@@ -273,8 +273,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-31 13:00:00+00:00",
    "open": true,
-   "cur": 0.32235,
-   "ts_check": "2026-09-02 09:00:00+00:00"
+   "cur": 0.32458,
+   "ts_check": "2026-09-02 14:00:00+00:00"
   },
   {
    "engine": 1,
@@ -300,8 +300,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-01 04:00:00+00:00",
    "open": true,
-   "cur": 4.8237,
-   "ts_check": "2026-09-02 09:00:00+00:00"
+   "cur": 4.78,
+   "ts_check": "2026-09-02 14:00:00+00:00"
   },
   {
    "engine": 2,
@@ -312,8 +312,52 @@
    "stop_frac": 0.03,
    "opened": "2026-09-02 00:00:00+00:00",
    "open": true,
-   "cur": 0.16216,
-   "ts_check": "2026-09-02 09:00:00+00:00"
+   "cur": 0.16256,
+   "ts_check": "2026-09-02 14:00:00+00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "DOGE",
+   "side": "S",
+   "entry": 0.08119,
+   "stop": 0.0836257,
+   "stop_frac": 0.03,
+   "opened": "2026-09-02 14:00:00+00:00",
+   "open": true,
+   "cur": 0.08119
+  },
+  {
+   "engine": 2,
+   "coin": "kPEPE",
+   "side": "S",
+   "entry": 0.003415,
+   "stop": 0.00351745,
+   "stop_frac": 0.03,
+   "opened": "2026-09-02 14:00:00+00:00",
+   "open": true,
+   "cur": 0.003415
+  },
+  {
+   "engine": 2,
+   "coin": "TAO",
+   "side": "S",
+   "entry": 217.19,
+   "stop": 223.7057,
+   "stop_frac": 0.03,
+   "opened": "2026-09-02 14:00:00+00:00",
+   "open": true,
+   "cur": 217.19
+  },
+  {
+   "engine": 2,
+   "coin": "AERO",
+   "side": "S",
+   "entry": 0.45777,
+   "stop": 0.4715031,
+   "stop_frac": 0.03,
+   "opened": "2026-09-02 14:00:00+00:00",
+   "open": true,
+   "cur": 0.45777
   }
  ],
  "closed": [
@@ -570,8 +614,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-09-02 00:00:00+00:00",
- "alt_scan_bar": "2026-09-02 00:00:00+00:00",
+ "alt_scan": "2026-09-02 14:00:00+00:00",
+ "alt_scan_bar": "2026-09-02 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -1364,6 +1408,10 @@
   [
    "2026-09-02 09:00:00+00:00",
    931.5891
+  ],
+  [
+   "2026-09-02 14:00:00+00:00",
+   930.9665
   ]
  ],
  "trade_log": [
@@ -1625,55 +1673,83 @@
    "coin": "FARTCOIN",
    "action": "open",
    "note": "SHORT @0.1678 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-02 14:00:00+00:00",
+   "engine": 2,
+   "coin": "DOGE",
+   "action": "open",
+   "note": "SHORT @0.0812 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-02 14:00:00+00:00",
+   "engine": 2,
+   "coin": "kPEPE",
+   "action": "open",
+   "note": "SHORT @0.0034 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-02 14:00:00+00:00",
+   "engine": 2,
+   "coin": "TAO",
+   "action": "open",
+   "note": "SHORT @217.1900 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-02 14:00:00+00:00",
+   "engine": 2,
+   "coin": "AERO",
+   "action": "open",
+   "note": "SHORT @0.4578 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "DOGE",
+   "coin": "MON",
    "bulls": 3,
-   "gap": 0.3,
-   "veto": false
-  },
-  {
-   "coin": "OP",
-   "bulls": 3,
-   "gap": 0.33,
-   "veto": false
-  },
-  {
-   "coin": "TAO",
-   "bulls": 3,
-   "gap": 0.37,
-   "veto": false
-  },
-  {
-   "coin": "AERO",
-   "bulls": 3,
-   "gap": 0.4,
-   "veto": false
-  },
-  {
-   "coin": "BCH",
-   "bulls": 3,
-   "gap": 0.55,
-   "veto": false
-  },
-  {
-   "coin": "kPEPE",
-   "bulls": 3,
-   "gap": 0.73,
+   "gap": 0.16,
    "veto": false
   },
   {
    "coin": "ZRO",
    "bulls": 3,
-   "gap": 1.08,
+   "gap": 0.22,
    "veto": false
   },
   {
-   "coin": "MON",
+   "coin": "GRASS",
+   "bulls": 3,
+   "gap": 0.42,
+   "veto": false
+  },
+  {
+   "coin": "AVAX",
+   "bulls": 3,
+   "gap": 0.61,
+   "veto": false
+  },
+  {
+   "coin": "VIRTUAL",
+   "bulls": 3,
+   "gap": 0.96,
+   "veto": false
+  },
+  {
+   "coin": "PENGU",
+   "bulls": 3,
+   "gap": 1.82,
+   "veto": false
+  },
+  {
+   "coin": "PURR",
+   "bulls": 3,
+   "gap": 3.36,
+   "veto": false
+  },
+  {
+   "coin": "OP",
    "bulls": 4,
-   "gap": 0.6,
+   "gap": 0.07,
    "veto": false
   }
  ]
