@@ -1,5 +1,5 @@
 {
- "last_bar": "2026-09-03 04:00:00+00:00",
+ "last_bar": "2026-09-03 08:00:00+00:00",
  "positions": [
   {
    "coin": "DOGE",
@@ -8,8 +8,18 @@
    "stop": 0.08411289,
    "tp": 0.06941355,
    "opened": "2026-09-02 12:00:00+00:00",
-   "last_bar": "2026-09-03 04:00:00+00:00",
-   "bars": 4
+   "last_bar": "2026-09-03 08:00:00+00:00",
+   "bars": 5
+  },
+  {
+   "coin": "ADA",
+   "dir": "L",
+   "entry": 0.20686,
+   "stop": 0.20065419999999998,
+   "tp": 0.23788899999999996,
+   "opened": "2026-09-03 08:00:00+00:00",
+   "last_bar": "2026-09-03 08:00:00+00:00",
+   "bars": 0
   }
  ],
  "closed": [],
@@ -22,7 +32,7 @@
    "day_start": 1.0,
    "day": "",
    "status": "active",
-   "opened": 1,
+   "opened": 2,
    "wins": 0,
    "losses": 0
   },
@@ -33,7 +43,7 @@
    "day_start": 1.0,
    "day": "",
    "status": "active",
-   "opened": 1,
+   "opened": 2,
    "wins": 0,
    "losses": 0
   },
@@ -44,7 +54,7 @@
    "day_start": 1.0,
    "day": "",
    "status": "active",
-   "opened": 1,
+   "opened": 2,
    "wins": 0,
    "losses": 0
   },
@@ -55,7 +65,7 @@
    "day_start": 1.0,
    "day": "",
    "status": "active",
-   "opened": 1,
+   "opened": 2,
    "wins": 0,
    "losses": 0
   }
