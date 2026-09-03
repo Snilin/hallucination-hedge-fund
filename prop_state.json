@@ -1,16 +1,6 @@
 {
- "last_bar": "2026-09-03 08:00:00+00:00",
+ "last_bar": "2026-09-03 12:00:00+00:00",
  "positions": [
-  {
-   "coin": "DOGE",
-   "dir": "S",
-   "entry": 0.081663,
-   "stop": 0.08411289,
-   "tp": 0.06941355,
-   "opened": "2026-09-02 12:00:00+00:00",
-   "last_bar": "2026-09-03 08:00:00+00:00",
-   "bars": 5
-  },
   {
    "coin": "ADA",
    "dir": "L",
@@ -18,56 +8,64 @@
    "stop": 0.20065419999999998,
    "tp": 0.23788899999999996,
    "opened": "2026-09-03 08:00:00+00:00",
-   "last_bar": "2026-09-03 08:00:00+00:00",
-   "bars": 0
+   "last_bar": "2026-09-03 12:00:00+00:00",
+   "bars": 1
   }
  ],
- "closed": [],
+ "closed": [
+  {
+   "coin": "DOGE",
+   "dir": "S",
+   "R": -1.054,
+   "why": "STOP",
+   "closed": "2026-09-03 12:00:00+00:00"
+  }
+ ],
  "interval": "4h",
  "accounts": {
   "BrightFunded-50bp": {
-   "equity": 1.0,
+   "equity": 0.9947308333333333,
    "phase": 0,
    "phase_start": 1.0,
    "day_start": 1.0,
-   "day": "",
+   "day": "2026-09-03",
    "status": "active",
    "opened": 2,
    "wins": 0,
-   "losses": 0
+   "losses": 1
   },
   "BrightFunded-75bp": {
-   "equity": 1.0,
+   "equity": 0.99209625,
    "phase": 0,
    "phase_start": 1.0,
    "day_start": 1.0,
-   "day": "",
+   "day": "2026-09-03",
    "status": "active",
    "opened": 2,
    "wins": 0,
-   "losses": 0
+   "losses": 1
   },
   "Breakout-50bp": {
-   "equity": 1.0,
+   "equity": 0.9947308333333333,
    "phase": 0,
    "phase_start": 1.0,
    "day_start": 1.0,
-   "day": "",
+   "day": "2026-09-03",
    "status": "active",
    "opened": 2,
    "wins": 0,
-   "losses": 0
+   "losses": 1
   },
   "Breakout-75bp": {
-   "equity": 1.0,
+   "equity": 0.99209625,
    "phase": 0,
    "phase_start": 1.0,
    "day_start": 1.0,
-   "day": "",
+   "day": "2026-09-03",
    "status": "active",
    "opened": 2,
    "wins": 0,
-   "losses": 0
+   "losses": 1
   }
  },
  "started": "2026-08-21 08:00:00+00:00"
