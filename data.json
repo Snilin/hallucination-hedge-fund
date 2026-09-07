@@ -1,12 +1,12 @@
 {
  "name": "Hallucination Hedge Fund",
- "updated": "2026-09-06 23:00:00+00:00",
+ "updated": "2026-09-07 04:00:00+00:00",
  "since": "2026-08-09 14:00:00+00:00",
  "start": 100000.0,
  "fund": {
-  "value": 132096.93,
-  "pnl": 32096.93,
-  "pnl_pct": 32.097,
+  "value": 131489.94,
+  "pnl": 31489.94,
+  "pnl_pct": 31.49,
   "series": [
    [
     "2026-08-09 14:00:00+00:00",
@@ -1707,6 +1707,10 @@
    [
     "2026-09-06 23:00:00+00:00",
     132096.93
+   ],
+   [
+    "2026-09-07 04:00:00+00:00",
+    131489.94
    ]
   ]
  },
@@ -1723,9 +1727,9 @@
    "desc": "Trend long/short with bear-fit short leg + capitulation veto",
    "alloc": 50000,
    "alloc_pct": 50.0,
-   "value": 61726.91,
-   "pnl": 11726.91,
-   "pnl_pct": 23.454,
+   "value": 61425.65,
+   "pnl": 11425.65,
+   "pnl_pct": 22.851,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -3426,6 +3430,10 @@
     [
      "2026-09-06 23:00:00+00:00",
      61726.91
+    ],
+    [
+     "2026-09-07 04:00:00+00:00",
+     61425.65
     ]
    ]
   },
@@ -5138,6 +5146,10 @@
     ],
     [
      "2026-09-06 23:00:00+00:00",
+     19888.41
+    ],
+    [
+     "2026-09-07 04:00:00+00:00",
      19888.41
     ]
    ]
@@ -6852,6 +6864,10 @@
     [
      "2026-09-06 23:00:00+00:00",
      12000.0
+    ],
+    [
+     "2026-09-07 04:00:00+00:00",
+     12000.0
     ]
    ]
   },
@@ -6862,9 +6878,9 @@
    "desc": "BTC-gated alt breakouts, top-10 concurrent",
    "alloc": 12000,
    "alloc_pct": 12.0,
-   "value": 32481.61,
-   "pnl": 20481.61,
-   "pnl_pct": 170.68,
+   "value": 32175.89,
+   "pnl": 20175.89,
+   "pnl_pct": 168.132,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -8565,6 +8581,10 @@
     [
      "2026-09-06 23:00:00+00:00",
      32481.61
+    ],
+    [
+     "2026-09-07 04:00:00+00:00",
+     32175.89
     ]
    ]
   },
@@ -10278,6 +10298,10 @@
     [
      "2026-09-06 23:00:00+00:00",
      6000.0
+    ],
+    [
+     "2026-09-07 04:00:00+00:00",
+     6000.0
     ]
    ]
   }
@@ -10288,10 +10312,10 @@
    "coin": "XRP",
    "entry": 1.106,
    "stop": 1.07282,
-   "cur": 1.4188,
-   "move_pct": 28.28,
-   "unreal_R": 9.41,
-   "unreal_usd": 1693.63,
+   "cur": 1.4061,
+   "move_pct": 27.13,
+   "unreal_R": 9.03,
+   "unreal_usd": 1624.73,
    "since": "2026-08-20"
   },
   {
@@ -10299,10 +10323,10 @@
    "coin": "DOGE",
    "entry": 0.075069,
    "stop": 0.07281692999999999,
-   "cur": 0.0903,
-   "move_pct": 20.29,
-   "unreal_R": 6.74,
-   "unreal_usd": 1214.06,
+   "cur": 0.089421,
+   "move_pct": 19.12,
+   "unreal_R": 6.35,
+   "unreal_usd": 1143.8,
    "since": "2026-08-20"
   },
   {
@@ -10310,10 +10334,10 @@
    "coin": "TAO",
    "entry": 205.81,
    "stop": 199.63569999999999,
-   "cur": 260.96,
-   "move_pct": 26.8,
-   "unreal_R": 8.91,
-   "unreal_usd": 1604.49,
+   "cur": 270.09,
+   "move_pct": 31.23,
+   "unreal_R": 10.39,
+   "unreal_usd": 1870.66,
    "since": "2026-08-20"
   },
   {
@@ -10321,10 +10345,10 @@
    "coin": "ENA",
    "entry": 0.093323,
    "stop": 0.09052331,
-   "cur": 0.17515,
-   "move_pct": 87.68,
-   "unreal_R": 29.21,
-   "unreal_usd": 5257.59,
+   "cur": 0.17315,
+   "move_pct": 85.54,
+   "unreal_R": 28.49,
+   "unreal_usd": 5129.0,
    "since": "2026-08-20"
   },
   {
@@ -10332,10 +10356,10 @@
    "coin": "AAVE",
    "entry": 95.293,
    "stop": 92.43421000000001,
-   "cur": 134.26,
-   "move_pct": 40.89,
-   "unreal_R": 13.61,
-   "unreal_usd": 2450.21,
+   "cur": 133.52,
+   "move_pct": 40.12,
+   "unreal_R": 13.35,
+   "unreal_usd": 2403.61,
    "since": "2026-08-20"
   },
   {
@@ -10343,10 +10367,10 @@
    "coin": "ADA",
    "entry": 0.18715,
    "stop": 0.18153550000000002,
-   "cur": 0.22122,
-   "move_pct": 18.2,
-   "unreal_R": 6.05,
-   "unreal_usd": 1088.98,
+   "cur": 0.21936,
+   "move_pct": 17.21,
+   "unreal_R": 5.72,
+   "unreal_usd": 1029.35,
    "since": "2026-08-20"
   },
   {
@@ -10354,10 +10378,10 @@
    "coin": "AVAX",
    "entry": 6.7843,
    "stop": 6.5807709999999995,
-   "cur": 7.821,
-   "move_pct": 15.28,
-   "unreal_R": 5.08,
-   "unreal_usd": 913.55,
+   "cur": 7.7735,
+   "move_pct": 14.58,
+   "unreal_R": 4.84,
+   "unreal_usd": 871.54,
    "since": "2026-08-20"
   },
   {
@@ -10365,10 +10389,10 @@
    "coin": "UNI",
    "entry": 4.1397,
    "stop": 4.015509000000001,
-   "cur": 7.17,
-   "move_pct": 73.2,
-   "unreal_R": 24.38,
-   "unreal_usd": 4388.76,
+   "cur": 7.0011,
+   "move_pct": 69.12,
+   "unreal_R": 23.02,
+   "unreal_usd": 4143.96,
    "since": "2026-08-22"
   },
   {
@@ -10376,11 +10400,22 @@
    "coin": "SUI",
    "entry": 0.74682,
    "stop": 0.7244154,
-   "cur": 0.80599,
-   "move_pct": 7.92,
-   "unreal_R": 2.62,
-   "unreal_usd": 472.08,
+   "cur": 0.79516,
+   "move_pct": 6.47,
+   "unreal_R": 2.14,
+   "unreal_usd": 385.07,
    "since": "2026-09-03"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "INJ",
+   "entry": 5.3138,
+   "stop": 5.154386,
+   "cur": 5.4725,
+   "move_pct": 2.99,
+   "unreal_R": 0.98,
+   "unreal_usd": 175.89,
+   "since": "2026-09-07"
   }
  ],
  "holdings": [
@@ -10389,8 +10424,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 64369.0,
-   "cur": 80021.0,
-   "move_pct": 24.32,
+   "cur": 79571.0,
+   "move_pct": 23.62,
    "exposure": 25000
   },
   {
@@ -10398,8 +10433,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 1893.2,
-   "cur": 2507.7,
-   "move_pct": 32.46,
+   "cur": 2497.7,
+   "move_pct": 31.93,
    "exposure": 25000
   },
   {
@@ -10416,8 +10451,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 1.106,
-   "cur": 1.4188,
-   "move_pct": 28.28,
+   "cur": 1.4061,
+   "move_pct": 27.13,
    "exposure": 6000
   },
   {
@@ -10425,8 +10460,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0751,
-   "cur": 0.0903,
-   "move_pct": 20.29,
+   "cur": 0.0894,
+   "move_pct": 19.12,
    "exposure": 6000
   },
   {
@@ -10434,8 +10469,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 205.81,
-   "cur": 260.96,
-   "move_pct": 26.8,
+   "cur": 270.09,
+   "move_pct": 31.23,
    "exposure": 6000
   },
   {
@@ -10443,8 +10478,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0933,
-   "cur": 0.1752,
-   "move_pct": 87.68,
+   "cur": 0.1731,
+   "move_pct": 85.54,
    "exposure": 6000
   },
   {
@@ -10452,8 +10487,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 95.293,
-   "cur": 134.26,
-   "move_pct": 40.89,
+   "cur": 133.52,
+   "move_pct": 40.12,
    "exposure": 6000
   },
   {
@@ -10461,8 +10496,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.1872,
-   "cur": 0.2212,
-   "move_pct": 18.2,
+   "cur": 0.2194,
+   "move_pct": 17.21,
    "exposure": 6000
   },
   {
@@ -10470,8 +10505,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 6.7843,
-   "cur": 7.821,
-   "move_pct": 15.28,
+   "cur": 7.7735,
+   "move_pct": 14.58,
    "exposure": 6000
   },
   {
@@ -10479,8 +10514,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 4.1397,
-   "cur": 7.17,
-   "move_pct": 73.2,
+   "cur": 7.0011,
+   "move_pct": 69.12,
    "exposure": 6000
   },
   {
@@ -10488,8 +10523,17 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.7468,
-   "cur": 0.806,
-   "move_pct": 7.92,
+   "cur": 0.7952,
+   "move_pct": 6.47,
+   "exposure": 6000
+  },
+  {
+   "asset": "INJ",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 5.3138,
+   "cur": 5.4725,
+   "move_pct": 2.99,
    "exposure": 6000
   }
  ],
@@ -10763,6 +10807,14 @@
    "action": "close",
    "price": 0.0938,
    "note": "STOP \u00b7 -1.05R"
+  },
+  {
+   "ts": "2026-09-07 04:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "INJ",
+   "action": "open",
+   "price": 5.3138,
+   "note": "stop 3.0% below"
   }
  ]
 }
