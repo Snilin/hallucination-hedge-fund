@@ -1,7 +1,7 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-09-08 09:00:00+00:00",
- "equity": 852.9641574449194,
+ "ts": "2026-09-08 14:00:00+00:00",
+ "equity": 857.7187680006873,
  "events": [
   {
    "engine": 2,
@@ -123,9 +123,13 @@
    "stop": 0.05939392,
    "stop_frac": 0.03,
    "opened": "2026-08-29 14:00:00+00:00",
-   "open": true,
+   "open": false,
    "cur": 0.055932,
-   "ts_check": "2026-09-08 09:00:00+00:00"
+   "ts_check": "2026-09-08 09:00:00+00:00",
+   "closed": "2026-09-08 14:00:00+00:00",
+   "exit": 0.055731,
+   "R": 1.115,
+   "why": "TIMEOUT"
   },
   {
    "engine": 2,
@@ -277,8 +281,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-31 13:00:00+00:00",
    "open": true,
-   "cur": 0.33827,
-   "ts_check": "2026-09-08 09:00:00+00:00"
+   "cur": 0.33868,
+   "ts_check": "2026-09-08 14:00:00+00:00"
   },
   {
    "engine": 1,
@@ -481,6 +485,28 @@
    "exit": 0.00396542172,
    "R": -1.071,
    "why": "STOP"
+  },
+  {
+   "engine": 2,
+   "coin": "GRASS",
+   "side": "S",
+   "entry": 0.33148,
+   "stop": 0.3414244,
+   "stop_frac": 0.03,
+   "opened": "2026-09-08 14:00:00+00:00",
+   "open": true,
+   "cur": 0.33148
+  },
+  {
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "side": "S",
+   "entry": 0.17093,
+   "stop": 0.1760579,
+   "stop_frac": 0.03,
+   "opened": "2026-09-08 14:00:00+00:00",
+   "open": true,
+   "cur": 0.17093
   }
  ],
  "closed": [
@@ -938,10 +964,26 @@
    "exit": 78776.0,
    "R": -0.121,
    "why": "FLIP"
+  },
+  {
+   "engine": 2,
+   "coin": "WLFI",
+   "side": "S",
+   "entry": 0.057664,
+   "stop": 0.05939392,
+   "stop_frac": 0.03,
+   "opened": "2026-08-29 14:00:00+00:00",
+   "open": false,
+   "cur": 0.055932,
+   "ts_check": "2026-09-08 09:00:00+00:00",
+   "closed": "2026-09-08 14:00:00+00:00",
+   "exit": 0.055731,
+   "R": 1.115,
+   "why": "TIMEOUT"
   }
  ],
- "alt_scan": "2026-09-08 04:00:00+00:00",
- "alt_scan_bar": "2026-09-08 00:00:00+00:00",
+ "alt_scan": "2026-09-08 14:00:00+00:00",
+ "alt_scan_bar": "2026-09-08 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -1886,6 +1928,10 @@
   [
    "2026-09-08 09:00:00+00:00",
    855.2948
+  ],
+  [
+   "2026-09-08 14:00:00+00:00",
+   855.5146
   ]
  ],
  "trade_log": [
@@ -2308,31 +2354,64 @@
    "coin": "BTC",
    "action": "close",
    "note": "FLIP -0.12R"
+  },
+  {
+   "ts": "2026-09-08 14:00:00+00:00",
+   "engine": 2,
+   "coin": "WLFI",
+   "action": "close",
+   "note": "TIMEOUT +1.11R"
+  },
+  {
+   "ts": "2026-09-08 14:00:00+00:00",
+   "engine": 2,
+   "coin": "GRASS",
+   "action": "open",
+   "note": "SHORT @0.3315 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-08 14:00:00+00:00",
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "action": "open",
+   "note": "SHORT @0.1709 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "GRASS",
+   "coin": "PENGU",
    "bulls": 3,
-   "gap": 0.03,
+   "gap": 0.04,
    "veto": false
   },
   {
-   "coin": "FARTCOIN",
+   "coin": "MON",
    "bulls": 3,
-   "gap": 0.23,
+   "gap": 0.13,
    "veto": false
   },
   {
    "coin": "TRUMP",
-   "bulls": 4,
-   "gap": 0.53,
+   "bulls": 3,
+   "gap": 1.2,
    "veto": false
   },
   {
-   "coin": "PENGU",
+   "coin": "MORPHO",
+   "bulls": 3,
+   "gap": 1.22,
+   "veto": false
+  },
+  {
+   "coin": "MET",
    "bulls": 4,
-   "gap": 0.54,
+   "gap": 0.01,
+   "veto": false
+  },
+  {
+   "coin": "SPX",
+   "bulls": 4,
+   "gap": 0.49,
    "veto": false
   }
  ]
