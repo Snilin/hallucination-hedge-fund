@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-09-08 21:00:00+00:00",
+ "ts": "2026-09-09 00:00:00+00:00",
  "equity": 853.0493313171428,
  "events": [
   {
@@ -281,8 +281,8 @@
    "stop_frac": 0.03,
    "opened": "2026-08-31 13:00:00+00:00",
    "open": true,
-   "cur": 0.33773,
-   "ts_check": "2026-09-08 21:00:00+00:00"
+   "cur": 0.33863,
+   "ts_check": "2026-09-09 00:00:00+00:00"
   },
   {
    "engine": 1,
@@ -510,8 +510,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-08 14:00:00+00:00",
    "open": true,
-   "cur": 0.16644,
-   "ts_check": "2026-09-08 21:00:00+00:00"
+   "cur": 0.16557,
+   "ts_check": "2026-09-09 00:00:00+00:00"
   },
   {
    "engine": 1,
@@ -522,7 +522,62 @@
    "stop_frac": 0.02,
    "opened": "2026-09-08 18:00:00+00:00",
    "open": true,
-   "cur": 2482.3
+   "cur": 2484.4
+  },
+  {
+   "engine": 2,
+   "coin": "POL",
+   "side": "S",
+   "entry": 0.09555,
+   "stop": 0.0984165,
+   "stop_frac": 0.03,
+   "opened": "2026-09-09 00:00:00+00:00",
+   "open": true,
+   "cur": 0.09555
+  },
+  {
+   "engine": 2,
+   "coin": "PENGU",
+   "side": "S",
+   "entry": 0.008079,
+   "stop": 0.00832137,
+   "stop_frac": 0.03,
+   "opened": "2026-09-09 00:00:00+00:00",
+   "open": true,
+   "cur": 0.008079
+  },
+  {
+   "engine": 2,
+   "coin": "MORPHO",
+   "side": "S",
+   "entry": 2.3677,
+   "stop": 2.438731,
+   "stop_frac": 0.03,
+   "opened": "2026-09-09 00:00:00+00:00",
+   "open": true,
+   "cur": 2.3677
+  },
+  {
+   "engine": 2,
+   "coin": "APEX",
+   "side": "S",
+   "entry": 0.20422,
+   "stop": 0.21034660000000002,
+   "stop_frac": 0.03,
+   "opened": "2026-09-09 00:00:00+00:00",
+   "open": true,
+   "cur": 0.20422
+  },
+  {
+   "engine": 2,
+   "coin": "MON",
+   "side": "S",
+   "entry": 0.025632,
+   "stop": 0.026400959999999998,
+   "stop_frac": 0.03,
+   "opened": "2026-09-09 00:00:00+00:00",
+   "open": true,
+   "cur": 0.025632
   }
  ],
  "closed": [
@@ -1013,8 +1068,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-09-08 14:00:00+00:00",
- "alt_scan_bar": "2026-09-08 12:00:00+00:00",
+ "alt_scan": "2026-09-09 00:00:00+00:00",
+ "alt_scan_bar": "2026-09-09 00:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -1971,6 +2026,10 @@
   [
    "2026-09-08 21:00:00+00:00",
    853.9652
+  ],
+  [
+   "2026-09-09 00:00:00+00:00",
+   854.2749
   ]
  ],
  "trade_log": [
@@ -2428,43 +2487,54 @@
    "coin": "GRASS",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "POL",
+   "action": "open",
+   "note": "SHORT @0.0955 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "PENGU",
+   "action": "open",
+   "note": "SHORT @0.0081 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "MORPHO",
+   "action": "open",
+   "note": "SHORT @2.3677 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "APEX",
+   "action": "open",
+   "note": "SHORT @0.2042 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "MON",
+   "action": "open",
+   "note": "SHORT @0.0256 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "PENGU",
-   "bulls": 3,
-   "gap": 0.04,
-   "veto": false
-  },
-  {
-   "coin": "MON",
-   "bulls": 3,
-   "gap": 0.13,
-   "veto": false
-  },
-  {
    "coin": "TRUMP",
    "bulls": 3,
-   "gap": 1.2,
-   "veto": false
-  },
-  {
-   "coin": "MORPHO",
-   "bulls": 3,
-   "gap": 1.22,
-   "veto": false
-  },
-  {
-   "coin": "MET",
-   "bulls": 4,
-   "gap": 0.01,
+   "gap": 0.16,
    "veto": false
   },
   {
    "coin": "SPX",
-   "bulls": 4,
-   "gap": 0.49,
+   "bulls": 3,
+   "gap": 1.89,
    "veto": false
   }
  ]

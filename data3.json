@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-08 21:00:00+00:00",
+ "updated": "2026-09-09 00:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 853.9652,
+ "equity": 854.2749,
  "realized": 853.0493,
- "pnl": -146.0348,
- "pnl_pct": -14.603,
+ "pnl": -145.7251,
+ "pnl_pct": -14.573,
  "gate_bull": true,
  "series": [
   [
@@ -964,6 +964,10 @@
   [
    "2026-09-08 21:00:00+00:00",
    853.9652
+  ],
+  [
+   "2026-09-09 00:00:00+00:00",
+   854.2749
   ]
  ],
  "arming": {
@@ -971,12 +975,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -2.818,
-    -4.325,
-    -5.519,
-    -6.626,
-    -7.52,
-    -9.77
+    -2.721,
+    -4.229,
+    -5.419,
+    -6.536,
+    -7.439,
+    -9.708
    ]
   },
   "e1": {
@@ -985,49 +989,25 @@
     "hot": false
    },
    "ETH": {
-    "fast": 4,
+    "fast": 5,
     "hot": true
    }
   },
   "e2": {
    "slots": 10,
-   "used": 2,
-   "last_scan": "2026-09-08 14:00:00+00:00",
+   "used": 7,
+   "last_scan": "2026-09-09 00:00:00+00:00",
    "watchlist": [
-    {
-     "coin": "PENGU",
-     "bulls": 3,
-     "gap": 0.04,
-     "veto": false
-    },
-    {
-     "coin": "MON",
-     "bulls": 3,
-     "gap": 0.13,
-     "veto": false
-    },
     {
      "coin": "TRUMP",
      "bulls": 3,
-     "gap": 1.2,
-     "veto": false
-    },
-    {
-     "coin": "MORPHO",
-     "bulls": 3,
-     "gap": 1.22,
-     "veto": false
-    },
-    {
-     "coin": "MET",
-     "bulls": 4,
-     "gap": 0.01,
+     "gap": 0.16,
      "veto": false
     },
     {
      "coin": "SPX",
-     "bulls": 4,
-     "gap": 0.49,
+     "bulls": 3,
+     "gap": 1.89,
      "veto": false
     }
    ]
@@ -1044,7 +1024,7 @@
  },
  "e2": {
   "closed": 29,
-  "open": 2,
+  "open": 7,
   "win_pct": 3.4,
   "avg_R": -1.009,
   "tot_R": -29.27,
@@ -1058,8 +1038,8 @@
    "side": "S",
    "entry": 0.33408,
    "stop": 0.3441024,
-   "cur": 0.33773,
-   "unreal_R": -0.38,
+   "cur": 0.33863,
+   "unreal_R": -0.47,
    "since": "2026-08-31 13:00"
   },
   {
@@ -1068,8 +1048,8 @@
    "side": "S",
    "entry": 0.17093,
    "stop": 0.1760579,
-   "cur": 0.16644,
-   "unreal_R": 0.86,
+   "cur": 0.16557,
+   "unreal_R": 1.03,
    "since": "2026-09-08 14:00"
   },
   {
@@ -1078,9 +1058,59 @@
    "side": "L",
    "entry": 2487.4,
    "stop": 2437.652,
-   "cur": 2482.3,
-   "unreal_R": -0.13,
+   "cur": 2484.4,
+   "unreal_R": -0.09,
    "since": "2026-09-08 18:00"
+  },
+  {
+   "engine": 2,
+   "coin": "POL",
+   "side": "S",
+   "entry": 0.09555,
+   "stop": 0.0984165,
+   "cur": 0.09555,
+   "unreal_R": -0.02,
+   "since": "2026-09-09 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "PENGU",
+   "side": "S",
+   "entry": 0.008079,
+   "stop": 0.00832137,
+   "cur": 0.008079,
+   "unreal_R": -0.02,
+   "since": "2026-09-09 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "MORPHO",
+   "side": "S",
+   "entry": 2.3677,
+   "stop": 2.438731,
+   "cur": 2.3677,
+   "unreal_R": -0.02,
+   "since": "2026-09-09 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "APEX",
+   "side": "S",
+   "entry": 0.20422,
+   "stop": 0.21034660000000002,
+   "cur": 0.20422,
+   "unreal_R": -0.02,
+   "since": "2026-09-09 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "MON",
+   "side": "S",
+   "entry": 0.025632,
+   "stop": 0.026400959999999998,
+   "cur": 0.025632,
+   "unreal_R": -0.02,
+   "since": "2026-09-09 00:00"
   }
  ],
  "closed": [
@@ -1365,41 +1395,6 @@
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-08-26 13:00:00+00:00",
-   "engine": 2,
-   "coin": "APT",
-   "action": "open",
-   "note": "SHORT @0.5616 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-08-27 09:00:00+00:00",
-   "engine": 2,
-   "coin": "JTO",
-   "action": "close",
-   "note": "STOP -1.08R"
-  },
-  {
-   "ts": "2026-08-27 09:00:00+00:00",
-   "engine": 2,
-   "coin": "APT",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-08-28 18:00:00+00:00",
-   "engine": 2,
-   "coin": "OP",
-   "action": "open",
-   "note": "SHORT @0.0929 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-08-29 02:00:00+00:00",
-   "engine": 2,
-   "coin": "XPL",
-   "action": "open",
-   "note": "SHORT @0.0846 stop +3% (12h clock)"
-  },
   {
    "ts": "2026-08-29 14:00:00+00:00",
    "engine": 2,
@@ -1784,6 +1779,41 @@
    "coin": "GRASS",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "POL",
+   "action": "open",
+   "note": "SHORT @0.0955 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "PENGU",
+   "action": "open",
+   "note": "SHORT @0.0081 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "MORPHO",
+   "action": "open",
+   "note": "SHORT @2.3677 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "APEX",
+   "action": "open",
+   "note": "SHORT @0.2042 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-09 00:00:00+00:00",
+   "engine": 2,
+   "coin": "MON",
+   "action": "open",
+   "note": "SHORT @0.0256 stop +3% (12h clock)"
   }
  ]
 }
