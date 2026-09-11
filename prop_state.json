@@ -1,37 +1,6 @@
 {
- "last_bar": "2026-09-11 08:00:00+00:00",
- "positions": [
-  {
-   "coin": "ADA",
-   "dir": "L",
-   "entry": 0.20686,
-   "stop": 0.20065419999999998,
-   "tp": 0.23788899999999996,
-   "opened": "2026-09-03 08:00:00+00:00",
-   "last_bar": "2026-09-11 08:00:00+00:00",
-   "bars": 48
-  },
-  {
-   "coin": "XRP",
-   "dir": "S",
-   "entry": 1.3511,
-   "stop": 1.391633,
-   "tp": 1.1484349999999999,
-   "opened": "2026-09-11 04:00:00+00:00",
-   "last_bar": "2026-09-11 08:00:00+00:00",
-   "bars": 1
-  },
-  {
-   "coin": "DOGE",
-   "dir": "S",
-   "entry": 0.083802,
-   "stop": 0.08631606,
-   "tp": 0.0712317,
-   "opened": "2026-09-11 04:00:00+00:00",
-   "last_bar": "2026-09-11 08:00:00+00:00",
-   "bars": 1
-  }
- ],
+ "last_bar": "2026-09-11 12:00:00+00:00",
+ "positions": [],
  "closed": [
   {
    "coin": "DOGE",
@@ -39,53 +8,74 @@
    "R": -1.054,
    "why": "STOP",
    "closed": "2026-09-03 12:00:00+00:00"
+  },
+  {
+   "coin": "ADA",
+   "dir": "L",
+   "R": -1.053,
+   "why": "STOP",
+   "closed": "2026-09-11 12:00:00+00:00"
+  },
+  {
+   "coin": "XRP",
+   "dir": "S",
+   "R": -1.054,
+   "why": "STOP",
+   "closed": "2026-09-11 12:00:00+00:00"
+  },
+  {
+   "coin": "DOGE",
+   "dir": "S",
+   "R": -1.054,
+   "why": "STOP",
+   "closed": "2026-09-11 12:00:00+00:00"
   }
  ],
  "interval": "4h",
  "accounts": {
   "BrightFunded-50bp": {
-   "equity": 0.9947308333333333,
+   "equity": 0.9790942550115297,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 1.0,
-   "day": "2026-09-03",
+   "day_start": 0.9947308333333333,
+   "day": "2026-09-11",
    "status": "active",
    "opened": 4,
    "wins": 0,
-   "losses": 1
+   "losses": 4
   },
   "BrightFunded-75bp": {
-   "equity": 0.99209625,
+   "equity": 0.968765168088481,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 1.0,
-   "day": "2026-09-03",
+   "day_start": 0.99209625,
+   "day": "2026-09-11",
    "status": "active",
    "opened": 4,
    "wins": 0,
-   "losses": 1
+   "losses": 4
   },
   "Breakout-50bp": {
-   "equity": 0.9947308333333333,
+   "equity": 0.9790942550115297,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 1.0,
-   "day": "2026-09-03",
+   "day_start": 0.9947308333333333,
+   "day": "2026-09-11",
    "status": "active",
    "opened": 4,
    "wins": 0,
-   "losses": 1
+   "losses": 4
   },
   "Breakout-75bp": {
-   "equity": 0.99209625,
+   "equity": 0.968765168088481,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 1.0,
-   "day": "2026-09-03",
+   "day_start": 0.99209625,
+   "day": "2026-09-11",
    "status": "active",
    "opened": 4,
    "wins": 0,
-   "losses": 1
+   "losses": 4
   }
  },
  "started": "2026-08-21 08:00:00+00:00"
