@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-11 21:00:00+00:00",
+ "updated": "2026-09-12 00:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 823.3851,
+ "equity": 822.7092,
  "realized": 768.6724,
- "pnl": -176.6149,
- "pnl_pct": -17.661,
+ "pnl": -177.2908,
+ "pnl_pct": -17.729,
  "gate_bull": true,
  "series": [
   [
@@ -1036,6 +1036,10 @@
   [
    "2026-09-11 21:00:00+00:00",
    823.3851
+  ],
+  [
+   "2026-09-12 00:00:00+00:00",
+   822.7092
   ]
  ],
  "arming": {
@@ -1043,12 +1047,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -0.809,
-    -2.21,
-    -3.295,
-    -4.507,
-    -5.546,
-    -8.154
+    -0.727,
+    -2.122,
+    -3.2,
+    -4.414,
+    -5.456,
+    -8.076
    ]
   },
   "e1": {
@@ -1063,55 +1067,55 @@
   },
   "e2": {
    "slots": 10,
-   "used": 5,
-   "last_scan": "2026-09-11 14:00:00+00:00",
+   "used": 7,
+   "last_scan": "2026-09-12 00:00:00+00:00",
    "watchlist": [
-    {
-     "coin": "CRV",
-     "bulls": 3,
-     "gap": 0.32,
-     "veto": false
-    },
-    {
-     "coin": "TIA",
-     "bulls": 3,
-     "gap": 0.41,
-     "veto": false
-    },
-    {
-     "coin": "ALGO",
-     "bulls": 3,
-     "gap": 0.62,
-     "veto": false
-    },
     {
      "coin": "AVAX",
      "bulls": 3,
-     "gap": 0.69,
-     "veto": false
-    },
-    {
-     "coin": "BNB",
-     "bulls": 3,
-     "gap": 0.9,
-     "veto": false
-    },
-    {
-     "coin": "ETC",
-     "bulls": 3,
-     "gap": 1.29,
+     "gap": 0.25,
      "veto": false
     },
     {
      "coin": "TAO",
      "bulls": 3,
-     "gap": 1.35,
+     "gap": 0.42,
      "veto": false
     },
     {
      "coin": "WLD",
      "bulls": 3,
-     "gap": 1.38,
+     "gap": 0.69,
+     "veto": false
+    },
+    {
+     "coin": "ALGO",
+     "bulls": 3,
+     "gap": 0.77,
+     "veto": false
+    },
+    {
+     "coin": "ETC",
+     "bulls": 3,
+     "gap": 0.78,
+     "veto": false
+    },
+    {
+     "coin": "CHIP",
+     "bulls": 3,
+     "gap": 2.08,
+     "veto": false
+    },
+    {
+     "coin": "SKR",
+     "bulls": 3,
+     "gap": 3.28,
+     "veto": false
+    },
+    {
+     "coin": "STRK",
+     "bulls": 4,
+     "gap": 0.48,
      "veto": false
     }
    ]
@@ -1128,7 +1132,7 @@
  },
  "e2": {
   "closed": 45,
-  "open": 5,
+  "open": 7,
   "win_pct": 2.2,
   "avg_R": -1.03,
   "tot_R": -46.36,
@@ -1142,8 +1146,8 @@
    "side": "S",
    "entry": 0.17093,
    "stop": 0.1760579,
-   "cur": 0.14389,
-   "unreal_R": 5.25,
+   "cur": 0.1437,
+   "unreal_R": 5.29,
    "since": "2026-09-08 14:00"
   },
   {
@@ -1152,8 +1156,8 @@
    "side": "S",
    "entry": 2.2398,
    "stop": 2.306994,
-   "cur": 1.9812,
-   "unreal_R": 3.83,
+   "cur": 1.9808,
+   "unreal_R": 3.84,
    "since": "2026-09-09 14:00"
   },
   {
@@ -1162,8 +1166,8 @@
    "side": "S",
    "entry": 0.00287,
    "stop": 0.0029561,
-   "cur": 0.002721,
-   "unreal_R": 1.71,
+   "cur": 0.002743,
+   "unreal_R": 1.46,
    "since": "2026-09-10 00:00"
   },
   {
@@ -1172,8 +1176,8 @@
    "side": "S",
    "entry": 1.3735,
    "stop": 1.4147049999999999,
-   "cur": 1.3679,
-   "unreal_R": 0.12,
+   "cur": 1.3635,
+   "unreal_R": 0.22,
    "since": "2026-09-10 00:00"
   },
   {
@@ -1182,9 +1186,29 @@
    "side": "S",
    "entry": 0.003983,
    "stop": 0.00410249,
-   "cur": 0.003584,
-   "unreal_R": 3.32,
+   "cur": 0.003588,
+   "unreal_R": 3.29,
    "since": "2026-09-10 14:00"
+  },
+  {
+   "engine": 2,
+   "coin": "CRV",
+   "side": "S",
+   "entry": 0.33544,
+   "stop": 0.3455032,
+   "cur": 0.33544,
+   "unreal_R": -0.02,
+   "since": "2026-09-12 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "TIA",
+   "side": "S",
+   "entry": 0.35356,
+   "stop": 0.3641668,
+   "cur": 0.35356,
+   "unreal_R": -0.02,
+   "since": "2026-09-12 00:00"
   }
  ],
  "closed": [
@@ -1641,20 +1665,6 @@
  ],
  "trade_log": [
   {
-   "ts": "2026-09-03 09:00:00+00:00",
-   "engine": 2,
-   "coin": "DOGE",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-03 09:00:00+00:00",
-   "engine": 2,
-   "coin": "TAO",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
    "ts": "2026-09-03 14:00:00+00:00",
    "engine": 1,
    "coin": "BTC",
@@ -2059,6 +2069,20 @@
    "coin": "HYPE",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-12 00:00:00+00:00",
+   "engine": 2,
+   "coin": "CRV",
+   "action": "open",
+   "note": "SHORT @0.3354 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-12 00:00:00+00:00",
+   "engine": 2,
+   "coin": "TIA",
+   "action": "open",
+   "note": "SHORT @0.3536 stop +3% (12h clock)"
   }
  ]
 }
