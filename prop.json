@@ -1,6 +1,6 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-09-11 20:00:00+00:00",
+ "last_bar": "2026-09-12 00:00:00+00:00",
  "closed_total": 4,
  "accounts": [
   {
@@ -70,7 +70,16 @@
    "losses": 4
   }
  ],
- "positions": [],
+ "positions": [
+  {
+   "coin": "BTC",
+   "dir": "S",
+   "entry": 77227.0,
+   "stop": 79543.81,
+   "tp": 65642.95,
+   "bars": 0
+  }
+ ],
  "recent": [
   {
    "coin": "DOGE",
