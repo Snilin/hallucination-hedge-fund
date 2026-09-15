@@ -1,6 +1,17 @@
 {
- "last_bar": "2026-09-15 08:00:00+00:00",
- "positions": [],
+ "last_bar": "2026-09-15 12:00:00+00:00",
+ "positions": [
+  {
+   "coin": "BTC",
+   "dir": "S",
+   "entry": 76480.0,
+   "stop": 78774.40000000001,
+   "tp": 65008.0,
+   "opened": "2026-09-15 12:00:00+00:00",
+   "last_bar": "2026-09-15 12:00:00+00:00",
+   "bars": 0
+  }
+ ],
  "closed": [
   {
    "coin": "DOGE",
@@ -54,7 +65,7 @@
    "day_start": 0.9790942550115297,
    "day": "2026-09-15",
    "status": "active",
-   "opened": 6,
+   "opened": 7,
    "wins": 0,
    "losses": 6
   },
@@ -65,7 +76,7 @@
    "day_start": 0.968765168088481,
    "day": "2026-09-15",
    "status": "active",
-   "opened": 6,
+   "opened": 7,
    "wins": 0,
    "losses": 6
   },
@@ -76,7 +87,7 @@
    "day_start": 0.9790942550115297,
    "day": "2026-09-15",
    "status": "active",
-   "opened": 6,
+   "opened": 7,
    "wins": 0,
    "losses": 6
   },
@@ -87,7 +98,7 @@
    "day_start": 0.968765168088481,
    "day": "2026-09-15",
    "status": "active",
-   "opened": 6,
+   "opened": 7,
    "wins": 0,
    "losses": 6
   }
