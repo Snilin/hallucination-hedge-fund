@@ -1,11 +1,11 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-15 09:00:00+00:00",
+ "updated": "2026-09-15 14:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 805.8799,
+ "equity": 805.8847,
  "realized": 740.3878,
- "pnl": -194.1201,
+ "pnl": -194.1153,
  "pnl_pct": -19.412,
  "gate_bull": true,
  "series": [
@@ -1120,6 +1120,10 @@
   [
    "2026-09-15 09:00:00+00:00",
    805.8799
+  ],
+  [
+   "2026-09-15 14:00:00+00:00",
+   805.8847
   ]
  ],
  "arming": {
@@ -1127,12 +1131,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -0.727,
-    -1.549,
-    -2.472,
-    -3.371,
-    -4.238,
-    -6.772
+    -0.53,
+    -1.408,
+    -2.322,
+    -3.243,
+    -4.121,
+    -6.667
    ]
   },
   "e1": {
@@ -1141,49 +1145,55 @@
     "hot": false
    },
    "ETH": {
-    "fast": 1,
+    "fast": 0,
     "hot": false
    }
   },
   "e2": {
    "slots": 10,
-   "used": 7,
-   "last_scan": "2026-09-15 04:00:00+00:00",
+   "used": 9,
+   "last_scan": "2026-09-15 14:00:00+00:00",
    "watchlist": [
     {
-     "coin": "JTO",
+     "coin": "CRV",
      "bulls": 3,
-     "gap": 0.07,
+     "gap": 0.33,
+     "veto": false
+    },
+    {
+     "coin": "ICP",
+     "bulls": 3,
+     "gap": 0.52,
+     "veto": false
+    },
+    {
+     "coin": "DASH",
+     "bulls": 3,
+     "gap": 1.0,
      "veto": false
     },
     {
      "coin": "ARB",
      "bulls": 3,
-     "gap": 0.78,
-     "veto": true
-    },
-    {
-     "coin": "DASH",
-     "bulls": 3,
-     "gap": 1.82,
-     "veto": false
-    },
-    {
-     "coin": "OP",
-     "bulls": 4,
-     "gap": 0.04,
-     "veto": false
-    },
-    {
-     "coin": "FET",
-     "bulls": 4,
-     "gap": 0.11,
+     "gap": 1.23,
      "veto": false
     },
     {
      "coin": "BNB",
      "bulls": 4,
-     "gap": 0.22,
+     "gap": 0.1,
+     "veto": false
+    },
+    {
+     "coin": "DOT",
+     "bulls": 4,
+     "gap": 0.32,
+     "veto": false
+    },
+    {
+     "coin": "JUP",
+     "bulls": 4,
+     "gap": 0.51,
      "veto": false
     }
    ]
@@ -1200,7 +1210,7 @@
  },
  "e2": {
   "closed": 49,
-  "open": 7,
+  "open": 9,
   "win_pct": 2.0,
   "avg_R": -1.035,
   "tot_R": -50.7,
@@ -1224,8 +1234,8 @@
    "side": "S",
    "entry": 2.2398,
    "stop": 2.306994,
-   "cur": 1.971,
-   "unreal_R": 3.98,
+   "cur": 1.9846,
+   "unreal_R": 3.78,
    "since": "2026-09-09 14:00"
   },
   {
@@ -1234,8 +1244,8 @@
    "side": "S",
    "entry": 0.00287,
    "stop": 0.0029561,
-   "cur": 0.002677,
-   "unreal_R": 2.22,
+   "cur": 0.00267,
+   "unreal_R": 2.3,
    "since": "2026-09-10 00:00"
   },
   {
@@ -1244,8 +1254,8 @@
    "side": "S",
    "entry": 1.3735,
    "stop": 1.4147049999999999,
-   "cur": 1.3407,
-   "unreal_R": 0.78,
+   "cur": 1.3392,
+   "unreal_R": 0.81,
    "since": "2026-09-10 00:00"
   },
   {
@@ -1254,8 +1264,8 @@
    "side": "S",
    "entry": 0.003983,
    "stop": 0.00410249,
-   "cur": 0.003615,
-   "unreal_R": 3.06,
+   "cur": 0.003608,
+   "unreal_R": 3.12,
    "since": "2026-09-10 14:00"
   },
   {
@@ -1264,8 +1274,8 @@
    "side": "S",
    "entry": 232.79,
    "stop": 239.7737,
-   "cur": 227.18,
-   "unreal_R": 0.78,
+   "cur": 225.42,
+   "unreal_R": 1.04,
    "since": "2026-09-13 00:00"
   },
   {
@@ -1274,9 +1284,29 @@
    "side": "S",
    "entry": 0.39023,
    "stop": 0.40193690000000004,
-   "cur": 0.37515,
-   "unreal_R": 1.27,
+   "cur": 0.37735,
+   "unreal_R": 1.08,
    "since": "2026-09-13 16:00"
+  },
+  {
+   "engine": 2,
+   "coin": "FET",
+   "side": "S",
+   "entry": 0.15722,
+   "stop": 0.1619366,
+   "cur": 0.15722,
+   "unreal_R": -0.02,
+   "since": "2026-09-15 14:00"
+  },
+  {
+   "engine": 2,
+   "coin": "JTO",
+   "side": "S",
+   "entry": 0.44213,
+   "stop": 0.4553939,
+   "cur": 0.44213,
+   "unreal_R": -0.02,
+   "since": "2026-09-15 14:00"
   }
  ],
  "closed": [
@@ -1787,20 +1817,6 @@
  ],
  "trade_log": [
   {
-   "ts": "2026-09-07 16:00:00+00:00",
-   "engine": 1,
-   "coin": "BTC",
-   "action": "close",
-   "note": "FLIP -0.12R"
-  },
-  {
-   "ts": "2026-09-08 14:00:00+00:00",
-   "engine": 2,
-   "coin": "WLFI",
-   "action": "close",
-   "note": "TIMEOUT +1.11R"
-  },
-  {
    "ts": "2026-09-08 14:00:00+00:00",
    "engine": 2,
    "coin": "GRASS",
@@ -2205,6 +2221,20 @@
    "coin": "BTC",
    "action": "close",
    "note": "FLIP -0.78R"
+  },
+  {
+   "ts": "2026-09-15 14:00:00+00:00",
+   "engine": 2,
+   "coin": "FET",
+   "action": "open",
+   "note": "SHORT @0.1572 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-15 14:00:00+00:00",
+   "engine": 2,
+   "coin": "JTO",
+   "action": "open",
+   "note": "SHORT @0.4421 stop +3% (12h clock)"
   }
  ]
 }
