@@ -1,5 +1,5 @@
 MAJORS CHALLENGE - forward paper trade
-started 2026-08-21 08:00:00+00:00  |  latest bar 2026-09-16 04:00:00+00:00  |  trades closed 6
+started 2026-08-21 08:00:00+00:00  |  latest bar 2026-09-16 12:00:00+00:00  |  trades closed 6
 
 account                 risk   equity   phase  status  W/L
 --------------------------------------------------------------
@@ -8,11 +8,12 @@ BrightFunded-75bp      0.75%   -4.65%     1/2  active  0/6
 Breakout-50bp          0.50%   -3.12%     1/1  active  0/6
 Breakout-75bp          0.75%   -4.65%     1/1  active  0/6
 
-open positions (4/6):
-  S BTC   @ 76480.0000  stop 78774.4000  tp 65008.0000  bar 4/84
-  S SOL   @ 96.8270  stop 99.7318  tp 82.3029  bar 2/84
-  S XRP   @ 1.2827  stop 1.3212  tp 1.0903  bar 2/84
-  S ETH   @ 2395.9000  stop 2467.7770  tp 2036.5150  bar 0/84
+open positions (5/6):
+  S BTC   @ 76480.0000  stop 78774.4000  tp 65008.0000  bar 6/84
+  S SOL   @ 96.8270  stop 99.7318  tp 82.3029  bar 4/84
+  S XRP   @ 1.2827  stop 1.3212  tp 1.0903  bar 4/84
+  S ETH   @ 2395.9000  stop 2467.7770  tp 2036.5150  bar 2/84
+  S BNB   @ 711.1900  stop 732.5257  tp 604.5115  bar 0/84
 
 last closed:
   S DOGE  -1.05R  STOP
