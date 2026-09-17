@@ -1,14 +1,14 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-09-16 20:00:00+00:00",
- "closed_total": 6,
+ "last_bar": "2026-09-17 00:00:00+00:00",
+ "closed_total": 7,
  "accounts": [
   {
    "name": "BrightFunded-50bp",
    "firm": "BrightFunded",
    "risk": 0.005,
-   "equity": 0.9688,
-   "pnl_pct": -3.12,
+   "equity": 0.9637,
+   "pnl_pct": -3.63,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -18,14 +18,14 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 0,
-   "losses": 6
+   "losses": 7
   },
   {
    "name": "BrightFunded-75bp",
    "firm": "BrightFunded",
    "risk": 0.0075,
-   "equity": 0.95351,
-   "pnl_pct": -4.65,
+   "equity": 0.94598,
+   "pnl_pct": -5.4,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -35,14 +35,14 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 0,
-   "losses": 6
+   "losses": 7
   },
   {
    "name": "Breakout-50bp",
    "firm": "Breakout",
    "risk": 0.005,
-   "equity": 0.9688,
-   "pnl_pct": -3.12,
+   "equity": 0.9637,
+   "pnl_pct": -3.63,
    "phase": 0,
    "phases": 1,
    "target": [
@@ -51,14 +51,14 @@
    "max_dd": 0.06,
    "status": "active",
    "wins": 0,
-   "losses": 6
+   "losses": 7
   },
   {
    "name": "Breakout-75bp",
    "firm": "Breakout",
    "risk": 0.0075,
-   "equity": 0.95351,
-   "pnl_pct": -4.65,
+   "equity": 0.94598,
+   "pnl_pct": -5.4,
    "phase": 0,
    "phases": 1,
    "target": [
@@ -67,7 +67,7 @@
    "max_dd": 0.06,
    "status": "active",
    "wins": 0,
-   "losses": 6
+   "losses": 7
   }
  ],
  "positions": [
@@ -77,15 +77,7 @@
    "entry": 76480.0,
    "stop": 78774.40000000001,
    "tp": 65008.0,
-   "bars": 8
-  },
-  {
-   "coin": "SOL",
-   "dir": "S",
-   "entry": 96.827,
-   "stop": 99.73181,
-   "tp": 82.30295,
-   "bars": 6
+   "bars": 9
   },
   {
    "coin": "XRP",
@@ -93,7 +85,7 @@
    "entry": 1.2827,
    "stop": 1.321181,
    "tp": 1.090295,
-   "bars": 6
+   "bars": 7
   },
   {
    "coin": "ETH",
@@ -101,7 +93,7 @@
    "entry": 2395.9,
    "stop": 2467.777,
    "tp": 2036.515,
-   "bars": 4
+   "bars": 5
   },
   {
    "coin": "BNB",
@@ -109,7 +101,7 @@
    "entry": 711.19,
    "stop": 732.5257,
    "tp": 604.5115000000001,
-   "bars": 2
+   "bars": 3
   }
  ],
  "recent": [
@@ -154,6 +146,13 @@
    "R": -1.054,
    "why": "STOP",
    "closed": "2026-09-15 00:00:00+00:00"
+  },
+  {
+   "coin": "SOL",
+   "dir": "S",
+   "R": -1.054,
+   "why": "STOP",
+   "closed": "2026-09-17 00:00:00+00:00"
   }
  ]
 }
