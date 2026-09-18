@@ -1,14 +1,14 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-09-18 08:00:00+00:00",
- "closed_total": 10,
+ "last_bar": "2026-09-18 12:00:00+00:00",
+ "closed_total": 11,
  "accounts": [
   {
    "name": "BrightFunded-50bp",
    "firm": "BrightFunded",
    "risk": 0.005,
-   "equity": 0.94855,
-   "pnl_pct": -5.15,
+   "equity": 0.94355,
+   "pnl_pct": -5.65,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -18,14 +18,14 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 0,
-   "losses": 10
+   "losses": 11
   },
   {
    "name": "BrightFunded-75bp",
    "firm": "BrightFunded",
    "risk": 0.0075,
-   "equity": 0.92372,
-   "pnl_pct": -7.63,
+   "equity": 0.91642,
+   "pnl_pct": -8.36,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -35,14 +35,14 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 0,
-   "losses": 10
+   "losses": 11
   },
   {
    "name": "Breakout-50bp",
    "firm": "Breakout",
    "risk": 0.005,
-   "equity": 0.94855,
-   "pnl_pct": -5.15,
+   "equity": 0.94355,
+   "pnl_pct": -5.65,
    "phase": 0,
    "phases": 1,
    "target": [
@@ -51,7 +51,7 @@
    "max_dd": 0.06,
    "status": "active",
    "wins": 0,
-   "losses": 10
+   "losses": 11
   },
   {
    "name": "Breakout-75bp",
@@ -72,20 +72,12 @@
  ],
  "positions": [
   {
-   "coin": "BTC",
-   "dir": "S",
-   "entry": 76480.0,
-   "stop": 78774.40000000001,
-   "tp": 65008.0,
-   "bars": 17
-  },
-  {
    "coin": "SOL",
    "dir": "L",
    "entry": 104.54,
    "stop": 101.4038,
    "tp": 120.221,
-   "bars": 2
+   "bars": 3
   },
   {
    "coin": "ETH",
@@ -93,7 +85,7 @@
    "entry": 2489.2,
    "stop": 2414.524,
    "tp": 2862.5799999999995,
-   "bars": 1
+   "bars": 2
   },
   {
    "coin": "ADA",
@@ -101,7 +93,7 @@
    "entry": 0.21423,
    "stop": 0.2078031,
    "tp": 0.2463645,
-   "bars": 0
+   "bars": 1
   },
   {
    "coin": "LINK",
@@ -109,6 +101,14 @@
    "entry": 11.837,
    "stop": 11.48189,
    "tp": 13.612549999999999,
+   "bars": 1
+  },
+  {
+   "coin": "BTC",
+   "dir": "L",
+   "entry": 80728.0,
+   "stop": 78306.16,
+   "tp": 92837.2,
    "bars": 0
   }
  ],
@@ -182,6 +182,13 @@
    "R": -1.054,
    "why": "STOP",
    "closed": "2026-09-18 00:00:00+00:00"
+  },
+  {
+   "coin": "BTC",
+   "dir": "S",
+   "R": -1.054,
+   "why": "STOP",
+   "closed": "2026-09-18 12:00:00+00:00"
   }
  ]
 }
