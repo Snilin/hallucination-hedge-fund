@@ -1,5 +1,5 @@
 {
- "last_bar": "2026-09-17 20:00:00+00:00",
+ "last_bar": "2026-09-18 00:00:00+00:00",
  "positions": [
   {
    "coin": "BTC",
@@ -8,18 +8,18 @@
    "stop": 78774.40000000001,
    "tp": 65008.0,
    "opened": "2026-09-15 12:00:00+00:00",
-   "last_bar": "2026-09-17 20:00:00+00:00",
-   "bars": 14
+   "last_bar": "2026-09-18 00:00:00+00:00",
+   "bars": 15
   },
   {
-   "coin": "XRP",
-   "dir": "S",
-   "entry": 1.2827,
-   "stop": 1.321181,
-   "tp": 1.090295,
-   "opened": "2026-09-15 20:00:00+00:00",
-   "last_bar": "2026-09-17 20:00:00+00:00",
-   "bars": 12
+   "coin": "SOL",
+   "dir": "L",
+   "entry": 104.54,
+   "stop": 101.4038,
+   "tp": 120.221,
+   "opened": "2026-09-18 00:00:00+00:00",
+   "last_bar": "2026-09-18 00:00:00+00:00",
+   "bars": 0
   }
  ],
  "closed": [
@@ -85,42 +85,49 @@
    "R": -1.054,
    "why": "STOP",
    "closed": "2026-09-17 16:00:00+00:00"
+  },
+  {
+   "coin": "XRP",
+   "dir": "S",
+   "R": -1.054,
+   "why": "STOP",
+   "closed": "2026-09-18 00:00:00+00:00"
   }
  ],
  "interval": "4h",
  "accounts": {
   "BrightFunded-50bp": {
-   "equity": 0.9535696092452711,
+   "equity": 0.9485450920458895,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 0.9688034170752702,
-   "day": "2026-09-17",
+   "day_start": 0.9535696092452711,
+   "day": "2026-09-18",
    "status": "active",
-   "opened": 11,
+   "opened": 12,
    "wins": 0,
-   "losses": 9
+   "losses": 10
   },
   "BrightFunded-75bp": {
-   "equity": 0.9310811957506446,
+   "equity": 0.9237221627497305,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 0.9535119307410223,
-   "day": "2026-09-17",
+   "day_start": 0.9310811957506446,
+   "day": "2026-09-18",
    "status": "active",
-   "opened": 11,
+   "opened": 12,
    "wins": 0,
-   "losses": 9
+   "losses": 10
   },
   "Breakout-50bp": {
-   "equity": 0.9535696092452711,
+   "equity": 0.9485450920458895,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 0.9688034170752702,
-   "day": "2026-09-17",
+   "day_start": 0.9535696092452711,
+   "day": "2026-09-18",
    "status": "active",
-   "opened": 11,
+   "opened": 12,
    "wins": 0,
-   "losses": 9
+   "losses": 10
   },
   "Breakout-75bp": {
    "equity": 0.9384988560844219,
