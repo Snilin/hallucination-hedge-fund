@@ -1,12 +1,12 @@
 {
  "name": "Hallucination Hedge Fund",
- "updated": "2026-09-18 21:00:00+00:00",
+ "updated": "2026-09-19 00:00:00+00:00",
  "since": "2026-08-09 14:00:00+00:00",
  "start": 100000.0,
  "fund": {
-  "value": 138734.64,
-  "pnl": 38734.64,
-  "pnl_pct": 38.735,
+  "value": 138224.17,
+  "pnl": 38224.17,
+  "pnl_pct": 38.224,
   "series": [
    [
     "2026-08-09 14:00:00+00:00",
@@ -1983,6 +1983,10 @@
    [
     "2026-09-18 21:00:00+00:00",
     138734.64
+   ],
+   [
+    "2026-09-19 00:00:00+00:00",
+    138224.17
    ]
   ]
  },
@@ -1999,9 +2003,9 @@
    "desc": "Trend long/short with bear-fit short leg + capitulation veto",
    "alloc": 50000,
    "alloc_pct": 50.0,
-   "value": 58890.16,
-   "pnl": 8890.16,
-   "pnl_pct": 17.78,
+   "value": 58591.12,
+   "pnl": 8591.12,
+   "pnl_pct": 17.182,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -3978,6 +3982,10 @@
     [
      "2026-09-18 21:00:00+00:00",
      58890.16
+    ],
+    [
+     "2026-09-19 00:00:00+00:00",
+     58591.12
     ]
    ]
   },
@@ -5966,6 +5974,10 @@
     ],
     [
      "2026-09-18 21:00:00+00:00",
+     19396.31
+    ],
+    [
+     "2026-09-19 00:00:00+00:00",
      19396.31
     ]
    ]
@@ -7956,6 +7968,10 @@
     [
      "2026-09-18 21:00:00+00:00",
      12000.0
+    ],
+    [
+     "2026-09-19 00:00:00+00:00",
+     12000.0
     ]
    ]
   },
@@ -7966,9 +7982,9 @@
    "desc": "BTC-gated alt breakouts, top-10 concurrent",
    "alloc": 12000,
    "alloc_pct": 12.0,
-   "value": 42661.48,
-   "pnl": 30661.48,
-   "pnl_pct": 255.512,
+   "value": 42450.05,
+   "pnl": 30450.05,
+   "pnl_pct": 253.75,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -9945,6 +9961,10 @@
     [
      "2026-09-18 21:00:00+00:00",
      42661.48
+    ],
+    [
+     "2026-09-19 00:00:00+00:00",
+     42450.05
     ]
    ]
   },
@@ -11934,6 +11954,10 @@
     [
      "2026-09-18 21:00:00+00:00",
      5786.68
+    ],
+    [
+     "2026-09-19 00:00:00+00:00",
+     5786.68
     ]
    ]
   }
@@ -11944,10 +11968,10 @@
    "coin": "PUMP",
    "entry": 0.004088,
    "stop": 0.003965359999999999,
-   "cur": 0.004384,
-   "move_pct": 7.24,
-   "unreal_R": 2.4,
-   "unreal_usd": 431.14,
+   "cur": 0.004241,
+   "move_pct": 3.74,
+   "unreal_R": 1.23,
+   "unreal_usd": 221.26,
    "since": "2026-09-18"
   },
   {
@@ -11955,10 +11979,10 @@
    "coin": "ONDO",
    "entry": 0.37269,
    "stop": 0.36150930000000003,
-   "cur": 0.39885,
-   "move_pct": 7.02,
-   "unreal_R": 2.32,
-   "unreal_usd": 417.85,
+   "cur": 0.39931,
+   "move_pct": 7.14,
+   "unreal_R": 2.36,
+   "unreal_usd": 425.26,
    "since": "2026-09-18"
   },
   {
@@ -11966,11 +11990,77 @@
    "coin": "TAO",
    "entry": 232.39,
    "stop": 225.4183,
-   "cur": 249.99,
-   "move_pct": 7.57,
-   "unreal_R": 2.51,
-   "unreal_usd": 451.11,
+   "cur": 250.41,
+   "move_pct": 7.75,
+   "unreal_R": 2.57,
+   "unreal_usd": 461.95,
    "since": "2026-09-18"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "WLD",
+   "entry": 0.42504,
+   "stop": 0.41228879999999996,
+   "cur": 0.42504,
+   "move_pct": 0.0,
+   "unreal_R": -0.02,
+   "unreal_usd": -3.3,
+   "since": "2026-09-19"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "SUI",
+   "entry": 0.8148,
+   "stop": 0.790356,
+   "cur": 0.8148,
+   "move_pct": 0.0,
+   "unreal_R": -0.02,
+   "unreal_usd": -3.3,
+   "since": "2026-09-19"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "XPL",
+   "entry": 0.093985,
+   "stop": 0.09116545,
+   "cur": 0.093985,
+   "move_pct": 0.0,
+   "unreal_R": -0.02,
+   "unreal_usd": -3.3,
+   "since": "2026-09-19"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "DOGE",
+   "entry": 0.087494,
+   "stop": 0.08486918,
+   "cur": 0.087494,
+   "move_pct": 0.0,
+   "unreal_R": -0.02,
+   "unreal_usd": -3.3,
+   "since": "2026-09-19"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "ADA",
+   "entry": 0.2246,
+   "stop": 0.217862,
+   "cur": 0.2246,
+   "move_pct": 0.0,
+   "unreal_R": -0.02,
+   "unreal_usd": -3.3,
+   "since": "2026-09-19"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "CHIP",
+   "entry": 0.044993,
+   "stop": 0.043643209999999995,
+   "cur": 0.044993,
+   "move_pct": 0.0,
+   "unreal_R": -0.02,
+   "unreal_usd": -3.3,
+   "since": "2026-09-19"
   }
  ],
  "holdings": [
@@ -11979,8 +12069,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 81041.0,
-   "cur": 81137.0,
-   "move_pct": 0.12,
+   "cur": 80916.0,
+   "move_pct": -0.15,
    "exposure": 25000
   },
   {
@@ -11988,8 +12078,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 2554.8,
-   "cur": 2632.3,
-   "move_pct": 3.03,
+   "cur": 2613.0,
+   "move_pct": 2.28,
    "exposure": 25000
   },
   {
@@ -11997,8 +12087,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0041,
-   "cur": 0.0044,
-   "move_pct": 7.24,
+   "cur": 0.0042,
+   "move_pct": 3.74,
    "exposure": 6000
   },
   {
@@ -12006,8 +12096,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.3727,
-   "cur": 0.3988,
-   "move_pct": 7.02,
+   "cur": 0.3993,
+   "move_pct": 7.14,
    "exposure": 6000
   },
   {
@@ -12015,8 +12105,62 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 232.39,
-   "cur": 249.99,
-   "move_pct": 7.57,
+   "cur": 250.41,
+   "move_pct": 7.75,
+   "exposure": 6000
+  },
+  {
+   "asset": "WLD",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 0.425,
+   "cur": 0.425,
+   "move_pct": 0.0,
+   "exposure": 6000
+  },
+  {
+   "asset": "SUI",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 0.8148,
+   "cur": 0.8148,
+   "move_pct": 0.0,
+   "exposure": 6000
+  },
+  {
+   "asset": "XPL",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 0.094,
+   "cur": 0.094,
+   "move_pct": 0.0,
+   "exposure": 6000
+  },
+  {
+   "asset": "DOGE",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 0.0875,
+   "cur": 0.0875,
+   "move_pct": 0.0,
+   "exposure": 6000
+  },
+  {
+   "asset": "ADA",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 0.2246,
+   "cur": 0.2246,
+   "move_pct": 0.0,
+   "exposure": 6000
+  },
+  {
+   "asset": "CHIP",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 0.045,
+   "cur": 0.045,
+   "move_pct": 0.0,
    "exposure": 6000
   }
  ],
@@ -12142,15 +12286,6 @@
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-08-09 14:00:00+00:00",
-   "sleeve": "combo",
-   "coin": "BTC",
-   "action": "rotate",
-   "to": 1.0,
-   "price": 65191.0,
-   "note": "long-votes 0.83, short-votes 0.0, veto False"
-  },
   {
    "ts": "2026-08-09 14:00:00+00:00",
    "sleeve": "combo",
@@ -12599,6 +12734,54 @@
    "to": 1.0,
    "price": 81041.0,
    "note": "long-votes 1.0, short-votes 0.0, veto False"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "WLD",
+   "action": "open",
+   "price": 0.425,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "SUI",
+   "action": "open",
+   "price": 0.8148,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "XPL",
+   "action": "open",
+   "price": 0.094,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "DOGE",
+   "action": "open",
+   "price": 0.0875,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "ADA",
+   "action": "open",
+   "price": 0.2246,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "CHIP",
+   "action": "open",
+   "price": 0.045,
+   "note": "stop 3.0% below"
   }
  ]
 }

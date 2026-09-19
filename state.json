@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-18 21:00:00+00:00",
+ "ts": "2026-09-19 00:00:00+00:00",
  "t0": "2026-08-09 14:00:00+00:00",
  "px": {
-  "BTC": 81137.0,
-  "ETH": 2632.3,
-  "SOL": 113.52
+  "BTC": 80916.0,
+  "ETH": 2613.0,
+  "SOL": 112.73
  },
  "combo_pos": {
   "BTC": 1.0,
@@ -13,7 +13,7 @@
  "spx_pos": 0.0,
  "spx_px": 7650.5,
  "mult": {
-  "combo": 1.1778032322505736,
+  "combo": 1.1718224774694959,
   "spx": 0.969815599387461,
   "ign_majors": 1.0,
   "ign_alts": 3.446781517563785,
@@ -251,6 +251,60 @@
    "stop_frac": 0.03,
    "opened": "2026-09-18 00:00:00+00:00",
    "open": true
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "WLD",
+   "entry": 0.42504,
+   "stop": 0.41228879999999996,
+   "stop_frac": 0.03,
+   "opened": "2026-09-19 00:00:00+00:00",
+   "open": true
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "SUI",
+   "entry": 0.8148,
+   "stop": 0.790356,
+   "stop_frac": 0.03,
+   "opened": "2026-09-19 00:00:00+00:00",
+   "open": true
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "XPL",
+   "entry": 0.093985,
+   "stop": 0.09116545,
+   "stop_frac": 0.03,
+   "opened": "2026-09-19 00:00:00+00:00",
+   "open": true
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "DOGE",
+   "entry": 0.087494,
+   "stop": 0.08486918,
+   "stop_frac": 0.03,
+   "opened": "2026-09-19 00:00:00+00:00",
+   "open": true
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "ADA",
+   "entry": 0.2246,
+   "stop": 0.217862,
+   "stop_frac": 0.03,
+   "opened": "2026-09-19 00:00:00+00:00",
+   "open": true
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "CHIP",
+   "entry": 0.044993,
+   "stop": 0.043643209999999995,
+   "stop_frac": 0.03,
+   "opened": "2026-09-19 00:00:00+00:00",
+   "open": true
   }
  ],
  "closed": [
@@ -460,7 +514,7 @@
    "exit": 0.18580754974999997
   }
  ],
- "alt_last_scan": "2026-09-18 00:00:00+00:00",
+ "alt_last_scan": "2026-09-19 00:00:00+00:00",
  "trade_log": [
   {
    "ts": "2026-08-09 14:00:00+00:00",
@@ -919,6 +973,54 @@
    "to": 1.0,
    "price": 81041.0,
    "note": "long-votes 1.0, short-votes 0.0, veto False"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "WLD",
+   "action": "open",
+   "price": 0.425,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "SUI",
+   "action": "open",
+   "price": 0.8148,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "XPL",
+   "action": "open",
+   "price": 0.094,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "DOGE",
+   "action": "open",
+   "price": 0.0875,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "ADA",
+   "action": "open",
+   "price": 0.2246,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-09-19 00:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "CHIP",
+   "action": "open",
+   "price": 0.045,
+   "note": "stop 3.0% below"
   }
  ],
  "combo_entry": {
@@ -926,5 +1028,5 @@
   "BTC": 81041.0
  },
  "spx_entry": null,
- "alt_scan_day": "2026-09-18 00:00:00+00:00"
+ "alt_scan_day": "2026-09-19 00:00:00+00:00"
 }
