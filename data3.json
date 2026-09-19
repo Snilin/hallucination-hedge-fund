@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-19 10:00:00+00:00",
+ "updated": "2026-09-19 14:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 754.1121,
- "realized": 724.8847,
- "pnl": -245.8879,
- "pnl_pct": -24.589,
+ "equity": 751.8992,
+ "realized": 734.4274,
+ "pnl": -248.1008,
+ "pnl_pct": -24.81,
  "gate_bull": true,
  "series": [
   [
@@ -1212,6 +1212,10 @@
   [
    "2026-09-19 10:00:00+00:00",
    754.1121
+  ],
+  [
+   "2026-09-19 14:00:00+00:00",
+   751.8992
   ]
  ],
  "arming": {
@@ -1219,12 +1223,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -2.597,
-    -2.48,
-    -3.241,
-    -3.56,
-    -4.036,
-    -6.12
+    -2.881,
+    -2.741,
+    -3.504,
+    -3.782,
+    -4.22,
+    -6.251
    ]
   },
   "e1": {
@@ -1239,49 +1243,37 @@
   },
   "e2": {
    "slots": 10,
-   "used": 2,
-   "last_scan": "2026-09-19 00:00:00+00:00",
+   "used": 1,
+   "last_scan": "2026-09-19 14:00:00+00:00",
    "watchlist": [
     {
-     "coin": "MON",
+     "coin": "CHIP",
      "bulls": 3,
-     "gap": 0.11,
+     "gap": 0.04,
      "veto": false
     },
     {
-     "coin": "VIRTUAL",
-     "bulls": 3,
-     "gap": 0.21,
+     "coin": "MON",
+     "bulls": 4,
+     "gap": 0.35,
      "veto": false
     },
     {
      "coin": "PENGU",
-     "bulls": 3,
-     "gap": 0.84,
-     "veto": false
-    },
-    {
-     "coin": "FARTCOIN",
-     "bulls": 3,
-     "gap": 1.5,
-     "veto": false
-    },
-    {
-     "coin": "XRP",
      "bulls": 4,
-     "gap": 0.02,
+     "gap": 0.85,
      "veto": false
     },
     {
      "coin": "JTO",
      "bulls": 4,
-     "gap": 0.49,
+     "gap": 1.05,
      "veto": false
     },
     {
-     "coin": "kBONK",
+     "coin": "FARTCOIN",
      "bulls": 4,
-     "gap": 0.65,
+     "gap": 1.44,
      "veto": false
     }
    ]
@@ -1297,33 +1289,23 @@
   "worst": -1.09
  },
  "e2": {
-  "closed": 57,
-  "open": 2,
-  "win_pct": 3.5,
-  "avg_R": -0.963,
-  "tot_R": -54.88,
+  "closed": 58,
+  "open": 1,
+  "win_pct": 5.2,
+  "avg_R": -0.901,
+  "tot_R": -52.25,
   "best": 3.31,
   "worst": -1.16
  },
  "open_positions": [
   {
    "engine": 2,
-   "coin": "TRUMP",
-   "side": "S",
-   "entry": 2.2398,
-   "stop": 2.306994,
-   "cur": 2.045,
-   "unreal_R": 2.88,
-   "since": "2026-09-09 14:00"
-  },
-  {
-   "engine": 2,
    "coin": "GRAM",
    "side": "S",
    "entry": 1.3735,
    "stop": 1.4147049999999999,
-   "cur": 1.3717,
-   "unreal_R": 0.03,
+   "cur": 1.3896,
+   "unreal_R": -0.41,
    "since": "2026-09-10 00:00"
   },
   {
@@ -1332,21 +1314,12 @@
    "side": "L",
    "entry": 77346.0,
    "stop": 75799.08,
-   "cur": 81378.0,
+   "cur": 81385.0,
    "unreal_R": 2.58,
    "since": "2026-09-18 04:00"
   }
  ],
  "closed": [
-  {
-   "engine": 2,
-   "coin": "XPL",
-   "side": "S",
-   "R": -1.087,
-   "why": "STOP",
-   "opened": "2026-08-29 02:00",
-   "closed": "2026-08-29 18:00"
-  },
   {
    "engine": 2,
    "coin": "ONDO",
@@ -1877,16 +1850,18 @@
    "why": "STOP",
    "opened": "2026-09-10 00:00",
    "closed": "2026-09-18 21:00"
+  },
+  {
+   "engine": 2,
+   "coin": "TRUMP",
+   "side": "S",
+   "R": 2.633,
+   "why": "TIMEOUT",
+   "opened": "2026-09-09 14:00",
+   "closed": "2026-09-19 14:00"
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-09-09 09:00:00+00:00",
-   "engine": 2,
-   "coin": "PENGU",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
   {
    "ts": "2026-09-09 09:00:00+00:00",
    "engine": 2,
@@ -2299,6 +2274,13 @@
    "coin": "kBONK",
    "action": "close",
    "note": "STOP -1.06R"
+  },
+  {
+   "ts": "2026-09-19 14:00:00+00:00",
+   "engine": 2,
+   "coin": "TRUMP",
+   "action": "close",
+   "note": "TIMEOUT +2.63R"
   }
  ]
 }
