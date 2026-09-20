@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-09-20 11:00:00+00:00",
+ "ts": "2026-09-20 15:00:00+00:00",
  "equity": 733.5116247113523,
  "events": [
   {
@@ -1049,7 +1049,40 @@
    "stop_frac": 0.02,
    "opened": "2026-09-18 04:00:00+00:00",
    "open": true,
-   "cur": 80313.0
+   "cur": 80689.0
+  },
+  {
+   "engine": 2,
+   "coin": "TRUMP",
+   "side": "S",
+   "entry": 2.0291,
+   "stop": 2.089973,
+   "stop_frac": 0.03,
+   "opened": "2026-09-20 15:00:00+00:00",
+   "open": true,
+   "cur": 2.0291
+  },
+  {
+   "engine": 2,
+   "coin": "CHIP",
+   "side": "S",
+   "entry": 0.041066,
+   "stop": 0.04229798,
+   "stop_frac": 0.03,
+   "opened": "2026-09-20 15:00:00+00:00",
+   "open": true,
+   "cur": 0.041066
+  },
+  {
+   "engine": 2,
+   "coin": "CASHCAT",
+   "side": "S",
+   "entry": 0.1531,
+   "stop": 0.15769300000000003,
+   "stop_frac": 0.03,
+   "opened": "2026-09-20 15:00:00+00:00",
+   "open": true,
+   "cur": 0.1531
   }
  ],
  "closed": [
@@ -2091,8 +2124,8 @@
    "why": "TIMEOUT"
   }
  ],
- "alt_scan": "2026-09-20 01:00:00+00:00",
- "alt_scan_bar": "2026-09-20 00:00:00+00:00",
+ "alt_scan": "2026-09-20 15:00:00+00:00",
+ "alt_scan_bar": "2026-09-20 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -3325,6 +3358,10 @@
   [
    "2026-09-20 11:00:00+00:00",
    747.3787
+  ],
+  [
+   "2026-09-20 15:00:00+00:00",
+   748.9599
   ]
  ],
  "trade_log": [
@@ -4258,25 +4295,40 @@
    "coin": "GRAM",
    "action": "close",
    "note": "TIMEOUT -0.25R"
+  },
+  {
+   "ts": "2026-09-20 15:00:00+00:00",
+   "engine": 2,
+   "coin": "TRUMP",
+   "action": "open",
+   "note": "SHORT @2.0291 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-20 15:00:00+00:00",
+   "engine": 2,
+   "coin": "CHIP",
+   "action": "open",
+   "note": "SHORT @0.0411 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-20 15:00:00+00:00",
+   "engine": 2,
+   "coin": "CASHCAT",
+   "action": "open",
+   "note": "SHORT @0.1531 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "TRUMP",
+   "coin": "MON",
    "bulls": 3,
-   "gap": 0.53,
+   "gap": 0.14,
    "veto": false
   },
   {
-   "coin": "CHIP",
+   "coin": "CRV",
    "bulls": 4,
    "gap": 0.05,
-   "veto": false
-  },
-  {
-   "coin": "HMSTR",
-   "bulls": 4,
-   "gap": 0.58,
    "veto": false
   }
  ]
