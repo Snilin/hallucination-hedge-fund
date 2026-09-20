@@ -1,14 +1,14 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-09-19 20:00:00+00:00",
- "closed_total": 11,
+ "last_bar": "2026-09-20 00:00:00+00:00",
+ "closed_total": 12,
  "accounts": [
   {
    "name": "BrightFunded-50bp",
    "firm": "BrightFunded",
    "risk": 0.005,
-   "equity": 0.94355,
-   "pnl_pct": -5.65,
+   "equity": 0.93858,
+   "pnl_pct": -6.14,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -18,14 +18,14 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 0,
-   "losses": 11
+   "losses": 12
   },
   {
    "name": "BrightFunded-75bp",
    "firm": "BrightFunded",
    "risk": 0.0075,
-   "equity": 0.91642,
-   "pnl_pct": -8.36,
+   "equity": 0.90919,
+   "pnl_pct": -9.08,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -35,23 +35,23 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 0,
-   "losses": 11
+   "losses": 12
   },
   {
    "name": "Breakout-50bp",
    "firm": "Breakout",
    "risk": 0.005,
-   "equity": 0.94355,
-   "pnl_pct": -5.65,
+   "equity": 0.93858,
+   "pnl_pct": -6.14,
    "phase": 0,
    "phases": 1,
    "target": [
     0.1
    ],
    "max_dd": 0.06,
-   "status": "active",
+   "status": "BLOWN",
    "wins": 0,
-   "losses": 11
+   "losses": 12
   },
   {
    "name": "Breakout-75bp",
@@ -77,7 +77,7 @@
    "entry": 104.54,
    "stop": 101.4038,
    "tp": 120.221,
-   "bars": 11
+   "bars": 12
   },
   {
    "coin": "ETH",
@@ -85,7 +85,7 @@
    "entry": 2489.2,
    "stop": 2414.524,
    "tp": 2862.5799999999995,
-   "bars": 10
+   "bars": 11
   },
   {
    "coin": "ADA",
@@ -93,7 +93,7 @@
    "entry": 0.21423,
    "stop": 0.2078031,
    "tp": 0.2463645,
-   "bars": 9
+   "bars": 10
   },
   {
    "coin": "LINK",
@@ -101,7 +101,7 @@
    "entry": 11.837,
    "stop": 11.48189,
    "tp": 13.612549999999999,
-   "bars": 9
+   "bars": 10
   },
   {
    "coin": "BTC",
@@ -109,15 +109,7 @@
    "entry": 80728.0,
    "stop": 78306.16,
    "tp": 92837.2,
-   "bars": 8
-  },
-  {
-   "coin": "DOGE",
-   "dir": "L",
-   "entry": 0.088024,
-   "stop": 0.08538328,
-   "tp": 0.1012276,
-   "bars": 7
+   "bars": 9
   }
  ],
  "recent": [
@@ -197,6 +189,13 @@
    "R": -1.054,
    "why": "STOP",
    "closed": "2026-09-18 12:00:00+00:00"
+  },
+  {
+   "coin": "DOGE",
+   "dir": "L",
+   "R": -1.053,
+   "why": "STOP",
+   "closed": "2026-09-20 00:00:00+00:00"
   }
  ]
 }

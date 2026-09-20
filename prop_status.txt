@@ -1,23 +1,21 @@
 MAJORS CHALLENGE - forward paper trade
-started 2026-08-21 08:00:00+00:00  |  latest bar 2026-09-19 20:00:00+00:00  |  trades closed 11
+started 2026-08-21 08:00:00+00:00  |  latest bar 2026-09-20 00:00:00+00:00  |  trades closed 12
 
 account                 risk   equity   phase  status  W/L
 --------------------------------------------------------------
-BrightFunded-50bp      0.50%   -5.65%     1/2  active  0/11
-BrightFunded-75bp      0.75%   -8.36%     1/2  active  0/11
-Breakout-50bp          0.50%   -5.65%     1/1  active  0/11
+BrightFunded-50bp      0.50%   -6.14%     1/2  active  0/12
+BrightFunded-75bp      0.75%   -9.08%     1/2  active  0/12
+Breakout-50bp          0.50%   -6.14%       -   BLOWN  0/12
 Breakout-75bp          0.75%   -6.15%       -   BLOWN  0/8
 
-open positions (6/6):
-  L SOL   @ 104.5400  stop 101.4038  tp 120.2210  bar 11/84
-  L ETH   @ 2489.2000  stop 2414.5240  tp 2862.5800  bar 10/84
-  L ADA   @ 0.2142  stop 0.2078  tp 0.2464  bar 9/84
-  L LINK  @ 11.8370  stop 11.4819  tp 13.6125  bar 9/84
-  L BTC   @ 80728.0000  stop 78306.1600  tp 92837.2000  bar 8/84
-  L DOGE  @ 0.0880  stop 0.0854  tp 0.1012  bar 7/84
+open positions (5/6):
+  L SOL   @ 104.5400  stop 101.4038  tp 120.2210  bar 12/84
+  L ETH   @ 2489.2000  stop 2414.5240  tp 2862.5800  bar 11/84
+  L ADA   @ 0.2142  stop 0.2078  tp 0.2464  bar 10/84
+  L LINK  @ 11.8370  stop 11.4819  tp 13.6125  bar 10/84
+  L BTC   @ 80728.0000  stop 78306.1600  tp 92837.2000  bar 9/84
 
 last closed:
-  S DOGE  -1.05R  STOP
   S BTC   -1.05R  STOP
   S LINK  -1.05R  STOP
   S SOL   -1.05R  STOP
@@ -25,3 +23,4 @@ last closed:
   S BNB   -1.05R  STOP
   S XRP   -1.05R  STOP
   S BTC   -1.05R  STOP
+  L DOGE  -1.05R  STOP
