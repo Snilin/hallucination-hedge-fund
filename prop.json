@@ -1,14 +1,14 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-09-21 08:00:00+00:00",
- "closed_total": 12,
+ "last_bar": "2026-09-21 12:00:00+00:00",
+ "closed_total": 13,
  "accounts": [
   {
    "name": "BrightFunded-50bp",
    "firm": "BrightFunded",
    "risk": 0.005,
-   "equity": 0.93858,
-   "pnl_pct": -6.14,
+   "equity": 0.96187,
+   "pnl_pct": -3.81,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -17,15 +17,15 @@
    ],
    "max_dd": 0.1,
    "status": "active",
-   "wins": 0,
+   "wins": 1,
    "losses": 12
   },
   {
    "name": "BrightFunded-75bp",
    "firm": "BrightFunded",
    "risk": 0.0075,
-   "equity": 0.90919,
-   "pnl_pct": -9.08,
+   "equity": 0.94303,
+   "pnl_pct": -5.7,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -34,7 +34,7 @@
    ],
    "max_dd": 0.1,
    "status": "active",
-   "wins": 0,
+   "wins": 1,
    "losses": 12
   },
   {
@@ -77,7 +77,7 @@
    "entry": 104.54,
    "stop": 101.4038,
    "tp": 120.221,
-   "bars": 20
+   "bars": 21
   },
   {
    "coin": "ETH",
@@ -85,15 +85,7 @@
    "entry": 2489.2,
    "stop": 2414.524,
    "tp": 2862.5799999999995,
-   "bars": 19
-  },
-  {
-   "coin": "ADA",
-   "dir": "L",
-   "entry": 0.21423,
-   "stop": 0.2078031,
-   "tp": 0.2463645,
-   "bars": 18
+   "bars": 20
   },
   {
    "coin": "LINK",
@@ -101,7 +93,7 @@
    "entry": 11.837,
    "stop": 11.48189,
    "tp": 13.612549999999999,
-   "bars": 18
+   "bars": 19
   },
   {
    "coin": "BTC",
@@ -109,17 +101,10 @@
    "entry": 80728.0,
    "stop": 78306.16,
    "tp": 92837.2,
-   "bars": 17
+   "bars": 18
   }
  ],
  "recent": [
-  {
-   "coin": "DOGE",
-   "dir": "S",
-   "R": -1.054,
-   "why": "STOP",
-   "closed": "2026-09-03 12:00:00+00:00"
-  },
   {
    "coin": "ADA",
    "dir": "L",
@@ -196,6 +181,13 @@
    "R": -1.053,
    "why": "STOP",
    "closed": "2026-09-20 00:00:00+00:00"
+  },
+  {
+   "coin": "ADA",
+   "dir": "L",
+   "R": 4.963,
+   "why": "TP",
+   "closed": "2026-09-21 12:00:00+00:00"
   }
  ]
 }
