@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-23 23:00:00+00:00",
+ "updated": "2026-09-24 04:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 755.8748,
+ "equity": 752.7343,
  "realized": 721.5604,
- "pnl": -244.1252,
- "pnl_pct": -24.413,
+ "pnl": -247.2657,
+ "pnl_pct": -24.727,
  "gate_bull": true,
  "series": [
   [
@@ -1316,6 +1316,10 @@
   [
    "2026-09-23 23:00:00+00:00",
    755.8748
+  ],
+  [
+   "2026-09-24 04:00:00+00:00",
+   752.7343
   ]
  ],
  "arming": {
@@ -1323,33 +1327,45 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -6.35,
-    -6.781,
-    -7.683,
-    -7.925,
-    -8.126,
-    -9.655
+    -6.034,
+    -6.602,
+    -7.508,
+    -7.833,
+    -8.085,
+    -9.67
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 4,
+    "fast": 3,
     "hot": true
    },
    "ETH": {
-    "fast": 3,
-    "hot": true
+    "fast": 2,
+    "hot": false
    }
   },
   "e2": {
    "slots": 10,
-   "used": 1,
-   "last_scan": "2026-09-23 16:00:00+00:00",
+   "used": 5,
+   "last_scan": "2026-09-24 04:00:00+00:00",
    "watchlist": [
     {
-     "coin": "ASTER",
+     "coin": "TRUMP",
      "bulls": 3,
-     "gap": 0.37,
+     "gap": 0.15,
+     "veto": false
+    },
+    {
+     "coin": "CHIP",
+     "bulls": 3,
+     "gap": 0.49,
+     "veto": false
+    },
+    {
+     "coin": "CRV",
+     "bulls": 3,
+     "gap": 0.63,
      "veto": false
     }
    ]
@@ -1366,7 +1382,7 @@
  },
  "e2": {
   "closed": 62,
-  "open": 1,
+  "open": 5,
   "win_pct": 4.8,
   "avg_R": -0.9,
   "tot_R": -55.77,
@@ -1380,8 +1396,8 @@
    "side": "L",
    "entry": 77346.0,
    "stop": 75799.08,
-   "cur": 84538.0,
-   "unreal_R": 4.62,
+   "cur": 83894.0,
+   "unreal_R": 4.21,
    "since": "2026-09-18 04:00"
   },
   {
@@ -1390,9 +1406,49 @@
    "side": "S",
    "entry": 4323.5,
    "stop": 4453.205,
-   "cur": 4286.4,
-   "unreal_R": 0.27,
+   "cur": 4281.8,
+   "unreal_R": 0.3,
    "since": "2026-09-22 14:00"
+  },
+  {
+   "engine": 2,
+   "coin": "SPX",
+   "side": "S",
+   "entry": 0.43119,
+   "stop": 0.4441257,
+   "cur": 0.43119,
+   "unreal_R": -0.02,
+   "since": "2026-09-24 04:00"
+  },
+  {
+   "engine": 2,
+   "coin": "SYRUP",
+   "side": "S",
+   "entry": 0.20013,
+   "stop": 0.2061339,
+   "cur": 0.20013,
+   "unreal_R": -0.02,
+   "since": "2026-09-24 04:00"
+  },
+  {
+   "engine": 2,
+   "coin": "WLFI",
+   "side": "S",
+   "entry": 0.054244,
+   "stop": 0.05587132,
+   "cur": 0.054244,
+   "unreal_R": -0.02,
+   "since": "2026-09-24 04:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ASTER",
+   "side": "S",
+   "entry": 0.69398,
+   "stop": 0.7147994000000001,
+   "cur": 0.69398,
+   "unreal_R": -0.02,
+   "since": "2026-09-24 04:00"
   }
  ],
  "closed": [
@@ -1939,34 +1995,6 @@
  ],
  "trade_log": [
   {
-   "ts": "2026-09-10 00:00:00+00:00",
-   "engine": 2,
-   "coin": "SPX",
-   "action": "open",
-   "note": "SHORT @0.4789 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-10 00:00:00+00:00",
-   "engine": 2,
-   "coin": "GRAM",
-   "action": "open",
-   "note": "SHORT @1.3735 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-10 09:00:00+00:00",
-   "engine": 2,
-   "coin": "SPX",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-10 14:00:00+00:00",
-   "engine": 2,
-   "coin": "TRX",
-   "action": "close",
-   "note": "TIMEOUT -0.76R"
-  },
-  {
    "ts": "2026-09-10 14:00:00+00:00",
    "engine": 2,
    "coin": "kPEPE",
@@ -2357,6 +2385,34 @@
    "coin": "PAXG",
    "action": "open",
    "note": "SHORT @4323.5000 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-24 04:00:00+00:00",
+   "engine": 2,
+   "coin": "SPX",
+   "action": "open",
+   "note": "SHORT @0.4312 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-24 04:00:00+00:00",
+   "engine": 2,
+   "coin": "SYRUP",
+   "action": "open",
+   "note": "SHORT @0.2001 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-24 04:00:00+00:00",
+   "engine": 2,
+   "coin": "WLFI",
+   "action": "open",
+   "note": "SHORT @0.0542 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-24 04:00:00+00:00",
+   "engine": 2,
+   "coin": "ASTER",
+   "action": "open",
+   "note": "SHORT @0.6940 stop +3% (12h clock)"
   }
  ]
 }
