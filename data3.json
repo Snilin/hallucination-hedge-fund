@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-24 14:00:00+00:00",
+ "updated": "2026-09-24 19:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 741.7359,
- "realized": 744.4307,
- "pnl": -258.2641,
- "pnl_pct": -25.826,
+ "equity": 721.613,
+ "realized": 720.4275,
+ "pnl": -278.387,
+ "pnl_pct": -27.839,
  "gate_bull": true,
  "series": [
   [
@@ -1328,6 +1328,10 @@
   [
    "2026-09-24 14:00:00+00:00",
    741.7359
+  ],
+  [
+   "2026-09-24 19:00:00+00:00",
+   721.613
   ]
  ],
  "arming": {
@@ -1335,18 +1339,18 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -5.388,
-    -6.186,
-    -7.101,
-    -7.583,
-    -7.938,
-    -9.645
+    -5.209,
+    -6.055,
+    -6.973,
+    -7.504,
+    -7.896,
+    -9.65
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 2,
-    "hot": false
+    "fast": 3,
+    "hot": true
    },
    "ETH": {
     "fast": 1,
@@ -1355,7 +1359,7 @@
   },
   "e2": {
    "slots": 10,
-   "used": 7,
+   "used": 1,
    "last_scan": "2026-09-24 14:00:00+00:00",
    "watchlist": [
     {
@@ -1387,7 +1391,7 @@
  },
  "e1": {
   "closed": 8,
-  "open": 0,
+  "open": 1,
   "win_pct": 12.5,
   "avg_R": -0.04,
   "tot_R": -0.32,
@@ -1395,11 +1399,11 @@
   "worst": -1.09
  },
  "e2": {
-  "closed": 64,
-  "open": 7,
-  "win_pct": 4.7,
-  "avg_R": -0.905,
-  "tot_R": -57.94,
+  "closed": 70,
+  "open": 1,
+  "win_pct": 4.3,
+  "avg_R": -0.921,
+  "tot_R": -64.48,
   "best": 3.31,
   "worst": -1.16
  },
@@ -1410,126 +1414,22 @@
    "side": "S",
    "entry": 4323.5,
    "stop": 4453.205,
-   "cur": 4263.9,
-   "unreal_R": 0.44,
+   "cur": 4271.3,
+   "unreal_R": 0.38,
    "since": "2026-09-22 14:00"
   },
   {
-   "engine": 2,
-   "coin": "WLFI",
-   "side": "S",
-   "entry": 0.054244,
-   "stop": 0.05587132,
-   "cur": 0.05502,
-   "unreal_R": -0.5,
-   "since": "2026-09-24 04:00"
-  },
-  {
-   "engine": 2,
-   "coin": "ASTER",
-   "side": "S",
-   "entry": 0.69398,
-   "stop": 0.7147994000000001,
-   "cur": 0.70602,
-   "unreal_R": -0.6,
-   "since": "2026-09-24 04:00"
-  },
-  {
-   "engine": 2,
-   "coin": "CRV",
-   "side": "S",
-   "entry": 0.33061,
-   "stop": 0.3405283,
-   "cur": 0.33061,
-   "unreal_R": -0.02,
-   "since": "2026-09-24 14:00"
-  },
-  {
-   "engine": 2,
-   "coin": "TRUMP",
-   "side": "S",
-   "entry": 1.9736,
-   "stop": 2.032808,
-   "cur": 1.9736,
-   "unreal_R": -0.02,
-   "since": "2026-09-24 14:00"
-  },
-  {
-   "engine": 2,
-   "coin": "PUMP",
-   "side": "S",
-   "entry": 0.003785,
-   "stop": 0.00389855,
-   "cur": 0.003785,
-   "unreal_R": -0.02,
-   "since": "2026-09-24 14:00"
-  },
-  {
-   "engine": 2,
-   "coin": "CHIP",
-   "side": "S",
-   "entry": 0.041571,
-   "stop": 0.042818129999999996,
-   "cur": 0.041571,
-   "unreal_R": -0.02,
-   "since": "2026-09-24 14:00"
+   "engine": 1,
+   "coin": "BTC",
+   "side": "L",
+   "entry": 84445.0,
+   "stop": 82756.09999999999,
+   "cur": 84445.0,
+   "unreal_R": -0.03,
+   "since": "2026-09-24 19:00"
   }
  ],
  "closed": [
-  {
-   "engine": 2,
-   "coin": "DOT",
-   "side": "S",
-   "R": -1.102,
-   "why": "STOP",
-   "opened": "2026-08-31 05:00",
-   "closed": "2026-09-01 04:00"
-  },
-  {
-   "engine": 2,
-   "coin": "WLD",
-   "side": "S",
-   "R": -1.092,
-   "why": "STOP",
-   "opened": "2026-08-31 05:00",
-   "closed": "2026-09-01 09:00"
-  },
-  {
-   "engine": 1,
-   "coin": "ETH",
-   "side": "L",
-   "R": -1.092,
-   "why": "STOP",
-   "opened": "2026-08-31 19:00",
-   "closed": "2026-09-01 14:00"
-  },
-  {
-   "engine": 2,
-   "coin": "LTC",
-   "side": "S",
-   "R": -1.081,
-   "why": "STOP",
-   "opened": "2026-08-31 13:00",
-   "closed": "2026-09-01 18:00"
-  },
-  {
-   "engine": 2,
-   "coin": "SUI",
-   "side": "S",
-   "R": -1.057,
-   "why": "STOP",
-   "opened": "2026-08-30 12:00",
-   "closed": "2026-09-03 04:00"
-  },
-  {
-   "engine": 2,
-   "coin": "AERO",
-   "side": "S",
-   "R": -1.088,
-   "why": "STOP",
-   "opened": "2026-09-02 14:00",
-   "closed": "2026-09-03 04:00"
-  },
   {
    "engine": 2,
    "coin": "ZRO",
@@ -2015,58 +1915,63 @@
    "why": "FLIP",
    "opened": "2026-09-18 04:00",
    "closed": "2026-09-24 14:00"
+  },
+  {
+   "engine": 2,
+   "coin": "WLFI",
+   "side": "S",
+   "R": -1.091,
+   "why": "STOP",
+   "opened": "2026-09-24 04:00",
+   "closed": "2026-09-24 19:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ASTER",
+   "side": "S",
+   "R": -1.087,
+   "why": "STOP",
+   "opened": "2026-09-24 04:00",
+   "closed": "2026-09-24 19:00"
+  },
+  {
+   "engine": 2,
+   "coin": "CRV",
+   "side": "S",
+   "R": -1.087,
+   "why": "STOP",
+   "opened": "2026-09-24 14:00",
+   "closed": "2026-09-24 19:00"
+  },
+  {
+   "engine": 2,
+   "coin": "TRUMP",
+   "side": "S",
+   "R": -1.091,
+   "why": "STOP",
+   "opened": "2026-09-24 14:00",
+   "closed": "2026-09-24 19:00"
+  },
+  {
+   "engine": 2,
+   "coin": "PUMP",
+   "side": "S",
+   "R": -1.091,
+   "why": "STOP",
+   "opened": "2026-09-24 14:00",
+   "closed": "2026-09-24 19:00"
+  },
+  {
+   "engine": 2,
+   "coin": "CHIP",
+   "side": "S",
+   "R": -1.088,
+   "why": "STOP",
+   "opened": "2026-09-24 14:00",
+   "closed": "2026-09-24 19:00"
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-09-11 14:00:00+00:00",
-   "engine": 2,
-   "coin": "kPEPE",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-11 14:00:00+00:00",
-   "engine": 2,
-   "coin": "ONDO",
-   "action": "close",
-   "note": "STOP -1.08R"
-  },
-  {
-   "ts": "2026-09-11 14:00:00+00:00",
-   "engine": 2,
-   "coin": "POL",
-   "action": "close",
-   "note": "STOP -1.08R"
-  },
-  {
-   "ts": "2026-09-11 14:00:00+00:00",
-   "engine": 2,
-   "coin": "VIRTUAL",
-   "action": "close",
-   "note": "STOP -1.08R"
-  },
-  {
-   "ts": "2026-09-11 14:00:00+00:00",
-   "engine": 2,
-   "coin": "OP",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-11 14:00:00+00:00",
-   "engine": 2,
-   "coin": "LINK",
-   "action": "open",
-   "note": "SHORT @11.3960 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-11 14:00:00+00:00",
-   "engine": 2,
-   "coin": "XRP",
-   "action": "open",
-   "note": "SHORT @1.3283 stop +3% (12h clock)"
-  },
   {
    "ts": "2026-09-11 14:00:00+00:00",
    "engine": 2,
@@ -2437,6 +2342,55 @@
    "coin": "CHIP",
    "action": "open",
    "note": "SHORT @0.0416 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-24 19:00:00+00:00",
+   "engine": 1,
+   "coin": "BTC",
+   "action": "open",
+   "note": "LONG @84445.00 stop 2.00%"
+  },
+  {
+   "ts": "2026-09-24 19:00:00+00:00",
+   "engine": 2,
+   "coin": "WLFI",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-24 19:00:00+00:00",
+   "engine": 2,
+   "coin": "ASTER",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-24 19:00:00+00:00",
+   "engine": 2,
+   "coin": "CRV",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-24 19:00:00+00:00",
+   "engine": 2,
+   "coin": "TRUMP",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-24 19:00:00+00:00",
+   "engine": 2,
+   "coin": "PUMP",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-24 19:00:00+00:00",
+   "engine": 2,
+   "coin": "CHIP",
+   "action": "close",
+   "note": "STOP -1.09R"
   }
  ]
 }
