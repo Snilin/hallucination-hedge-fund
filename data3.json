@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-28 06:00:00+00:00",
+ "updated": "2026-09-28 15:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 710.5104,
+ "equity": 711.66,
  "realized": 705.2363,
- "pnl": -289.4896,
- "pnl_pct": -28.949,
+ "pnl": -288.34,
+ "pnl_pct": -28.834,
  "gate_bull": true,
  "series": [
   [
@@ -1408,6 +1408,10 @@
   [
    "2026-09-28 06:00:00+00:00",
    710.5104
+  ],
+  [
+   "2026-09-28 15:00:00+00:00",
+   711.66
   ]
  ],
  "arming": {
@@ -1415,33 +1419,39 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -3.436,
-    -4.437,
-    -5.376,
-    -6.231,
-    -6.956,
-    -9.286
+    -2.961,
+    -4.06,
+    -4.994,
+    -5.916,
+    -6.694,
+    -9.108
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 1,
+    "fast": 0,
     "hot": false
    },
    "ETH": {
-    "fast": 1,
+    "fast": 0,
     "hot": false
    }
   },
   "e2": {
    "slots": 10,
-   "used": 2,
-   "last_scan": "2026-09-28 00:00:00+00:00",
+   "used": 6,
+   "last_scan": "2026-09-28 15:00:00+00:00",
    "watchlist": [
     {
-     "coin": "LIT",
+     "coin": "XMR",
      "bulls": 3,
-     "gap": 1.43,
+     "gap": 0.29,
+     "veto": false
+    },
+    {
+     "coin": "SYRUP",
+     "bulls": 3,
+     "gap": 0.52,
      "veto": false
     }
    ]
@@ -1458,7 +1468,7 @@
  },
  "e2": {
   "closed": 71,
-  "open": 2,
+  "open": 6,
   "win_pct": 4.2,
   "avg_R": -0.924,
   "tot_R": -65.57,
@@ -1472,8 +1482,8 @@
    "side": "S",
    "entry": 4323.5,
    "stop": 4453.205,
-   "cur": 4184.5,
-   "unreal_R": 1.05,
+   "cur": 4127.2,
+   "unreal_R": 1.5,
    "since": "2026-09-22 14:00"
   },
   {
@@ -1482,9 +1492,49 @@
    "side": "S",
    "entry": 0.3379,
    "stop": 0.348037,
-   "cur": 0.33323,
-   "unreal_R": 0.44,
+   "cur": 0.33366,
+   "unreal_R": 0.4,
    "since": "2026-09-26 01:00"
+  },
+  {
+   "engine": 2,
+   "coin": "CRV",
+   "side": "S",
+   "entry": 0.33026,
+   "stop": 0.3401678,
+   "cur": 0.33026,
+   "unreal_R": -0.02,
+   "since": "2026-09-28 15:00"
+  },
+  {
+   "engine": 2,
+   "coin": "TRUMP",
+   "side": "S",
+   "entry": 2.0034,
+   "stop": 2.063502,
+   "cur": 2.0034,
+   "unreal_R": -0.02,
+   "since": "2026-09-28 15:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ASTER",
+   "side": "S",
+   "entry": 0.70134,
+   "stop": 0.7223802,
+   "cur": 0.70134,
+   "unreal_R": -0.02,
+   "since": "2026-09-28 15:00"
+  },
+  {
+   "engine": 2,
+   "coin": "LIT",
+   "side": "S",
+   "entry": 4.4177,
+   "stop": 4.550231,
+   "cur": 4.4177,
+   "unreal_R": -0.02,
+   "since": "2026-09-28 15:00"
   }
  ],
  "closed": [
@@ -2031,34 +2081,6 @@
  ],
  "trade_log": [
   {
-   "ts": "2026-09-12 00:00:00+00:00",
-   "engine": 2,
-   "coin": "TIA",
-   "action": "open",
-   "note": "SHORT @0.3536 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-12 14:00:00+00:00",
-   "engine": 2,
-   "coin": "AVAX",
-   "action": "open",
-   "note": "SHORT @7.4412 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-13 00:00:00+00:00",
-   "engine": 2,
-   "coin": "TAO",
-   "action": "open",
-   "note": "SHORT @232.7900 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-13 11:00:00+00:00",
-   "engine": 2,
-   "coin": "CRV",
-   "action": "close",
-   "note": "STOP -1.08R"
-  },
-  {
    "ts": "2026-09-13 16:00:00+00:00",
    "engine": 2,
    "coin": "AAVE",
@@ -2449,6 +2471,34 @@
    "coin": "CASHCAT",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-09-28 15:00:00+00:00",
+   "engine": 2,
+   "coin": "CRV",
+   "action": "open",
+   "note": "SHORT @0.3303 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-28 15:00:00+00:00",
+   "engine": 2,
+   "coin": "TRUMP",
+   "action": "open",
+   "note": "SHORT @2.0034 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-28 15:00:00+00:00",
+   "engine": 2,
+   "coin": "ASTER",
+   "action": "open",
+   "note": "SHORT @0.7013 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-28 15:00:00+00:00",
+   "engine": 2,
+   "coin": "LIT",
+   "action": "open",
+   "note": "SHORT @4.4177 stop +3% (12h clock)"
   }
  ]
 }
