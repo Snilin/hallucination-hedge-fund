@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-09-29 20:00:00+00:00",
+ "ts": "2026-09-30 00:00:00+00:00",
  "equity": 690.0259609629827,
  "events": [
   {
@@ -1109,8 +1109,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-22 14:00:00+00:00",
    "open": true,
-   "cur": 4185.0,
-   "ts_check": "2026-09-29 20:00:00+00:00"
+   "cur": 4192.8,
+   "ts_check": "2026-09-30 00:00:00+00:00"
   },
   {
    "engine": 2,
@@ -1273,8 +1273,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-26 01:00:00+00:00",
    "open": true,
-   "cur": 0.33483,
-   "ts_check": "2026-09-29 20:00:00+00:00"
+   "cur": 0.33429,
+   "ts_check": "2026-09-30 00:00:00+00:00"
   },
   {
    "engine": 1,
@@ -1378,7 +1378,62 @@
    "stop_frac": 0.02,
    "opened": "2026-09-29 08:00:00+00:00",
    "open": true,
-   "cur": 2691.2
+   "cur": 2678.4
+  },
+  {
+   "engine": 2,
+   "coin": "PENDLE",
+   "side": "S",
+   "entry": 2.3223,
+   "stop": 2.391969,
+   "stop_frac": 0.03,
+   "opened": "2026-09-30 00:00:00+00:00",
+   "open": true,
+   "cur": 2.3223
+  },
+  {
+   "engine": 2,
+   "coin": "HYPE",
+   "side": "S",
+   "entry": 86.026,
+   "stop": 88.60678,
+   "stop_frac": 0.03,
+   "opened": "2026-09-30 00:00:00+00:00",
+   "open": true,
+   "cur": 86.026
+  },
+  {
+   "engine": 2,
+   "coin": "MORPHO",
+   "side": "S",
+   "entry": 2.4757,
+   "stop": 2.5499709999999998,
+   "stop_frac": 0.03,
+   "opened": "2026-09-30 00:00:00+00:00",
+   "open": true,
+   "cur": 2.4757
+  },
+  {
+   "engine": 2,
+   "coin": "CHIP",
+   "side": "S",
+   "entry": 0.044018,
+   "stop": 0.045338540000000004,
+   "stop_frac": 0.03,
+   "opened": "2026-09-30 00:00:00+00:00",
+   "open": true,
+   "cur": 0.044018
+  },
+  {
+   "engine": 2,
+   "coin": "CASHCAT",
+   "side": "S",
+   "entry": 0.17137,
+   "stop": 0.1765111,
+   "stop_frac": 0.03,
+   "opened": "2026-09-30 00:00:00+00:00",
+   "open": true,
+   "cur": 0.17137
   }
  ],
  "closed": [
@@ -2725,8 +2780,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-09-29 15:00:00+00:00",
- "alt_scan_bar": "2026-09-29 12:00:00+00:00",
+ "alt_scan": "2026-09-30 00:00:00+00:00",
+ "alt_scan_bar": "2026-09-30 00:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -4151,6 +4206,10 @@
   [
    "2026-09-29 20:00:00+00:00",
    691.7168
+  ],
+  [
+   "2026-09-30 00:00:00+00:00",
+   689.7488
   ]
  ],
  "trade_log": [
@@ -5378,49 +5437,90 @@
    "coin": "LIT",
    "action": "close",
    "note": "STOP -1.08R"
+  },
+  {
+   "ts": "2026-09-30 00:00:00+00:00",
+   "engine": 2,
+   "coin": "PENDLE",
+   "action": "open",
+   "note": "SHORT @2.3223 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-30 00:00:00+00:00",
+   "engine": 2,
+   "coin": "HYPE",
+   "action": "open",
+   "note": "SHORT @86.0260 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-30 00:00:00+00:00",
+   "engine": 2,
+   "coin": "MORPHO",
+   "action": "open",
+   "note": "SHORT @2.4757 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-30 00:00:00+00:00",
+   "engine": 2,
+   "coin": "CHIP",
+   "action": "open",
+   "note": "SHORT @0.0440 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-09-30 00:00:00+00:00",
+   "engine": 2,
+   "coin": "CASHCAT",
+   "action": "open",
+   "note": "SHORT @0.1714 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "CHIP",
+   "coin": "ASTER",
    "bulls": 3,
-   "gap": 0.08,
+   "gap": 0.0,
    "veto": false
   },
   {
    "coin": "XMR",
    "bulls": 3,
-   "gap": 0.23,
-   "veto": false
-  },
-  {
-   "coin": "HYPE",
-   "bulls": 3,
-   "gap": 0.39,
-   "veto": false
-  },
-  {
-   "coin": "PENDLE",
-   "bulls": 3,
-   "gap": 1.38,
-   "veto": false
-  },
-  {
-   "coin": "FARTCOIN",
-   "bulls": 3,
-   "gap": 1.46,
-   "veto": false
-  },
-  {
-   "coin": "MORPHO",
-   "bulls": 4,
-   "gap": 0.41,
+   "gap": 0.14,
    "veto": false
   },
   {
    "coin": "VVV",
+   "bulls": 3,
+   "gap": 1.59,
+   "veto": false
+  },
+  {
+   "coin": "ZEC",
    "bulls": 4,
-   "gap": 0.76,
+   "gap": 0.01,
+   "veto": false
+  },
+  {
+   "coin": "BNB",
+   "bulls": 4,
+   "gap": 0.11,
+   "veto": false
+  },
+  {
+   "coin": "BANANA",
+   "bulls": 4,
+   "gap": 0.22,
+   "veto": false
+  },
+  {
+   "coin": "XPL",
+   "bulls": 4,
+   "gap": 0.38,
+   "veto": false
+  },
+  {
+   "coin": "FARTCOIN",
+   "bulls": 4,
+   "gap": 0.52,
    "veto": false
   }
  ]
