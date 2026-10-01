@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-10-01 08:00:00+00:00",
+ "ts": "2026-10-01 16:00:00+00:00",
  "equity": 652.0149548882338,
  "events": [
   {
@@ -1109,8 +1109,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-22 14:00:00+00:00",
    "open": true,
-   "cur": 4171.7,
-   "ts_check": "2026-10-01 08:00:00+00:00"
+   "cur": 4178.8,
+   "ts_check": "2026-10-01 16:00:00+00:00"
   },
   {
    "engine": 2,
@@ -1273,8 +1273,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-26 01:00:00+00:00",
    "open": true,
-   "cur": 0.3376,
-   "ts_check": "2026-10-01 08:00:00+00:00"
+   "cur": 0.33356,
+   "ts_check": "2026-10-01 16:00:00+00:00"
   },
   {
    "engine": 1,
@@ -1501,7 +1501,7 @@
    "stop_frac": 0.02,
    "opened": "2026-10-01 02:00:00+00:00",
    "open": true,
-   "cur": 2677.9
+   "cur": 2683.0
   },
   {
    "engine": 2,
@@ -1512,8 +1512,19 @@
    "stop_frac": 0.03,
    "opened": "2026-10-01 02:00:00+00:00",
    "open": true,
-   "cur": 2.4814,
-   "ts_check": "2026-10-01 08:00:00+00:00"
+   "cur": 2.4743,
+   "ts_check": "2026-10-01 16:00:00+00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "XPL",
+   "side": "S",
+   "entry": 0.096128,
+   "stop": 0.09901184,
+   "stop_frac": 0.03,
+   "opened": "2026-10-01 16:00:00+00:00",
+   "open": true,
+   "cur": 0.096128
   }
  ],
  "closed": [
@@ -2983,8 +2994,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-10-01 02:00:00+00:00",
- "alt_scan_bar": "2026-10-01 00:00:00+00:00",
+ "alt_scan": "2026-10-01 16:00:00+00:00",
+ "alt_scan_bar": "2026-10-01 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -4437,6 +4448,10 @@
   [
    "2026-10-01 08:00:00+00:00",
    654.7213
+  ],
+  [
+   "2026-10-01 16:00:00+00:00",
+   656.7093
   ]
  ],
  "trade_log": [
@@ -5783,55 +5798,62 @@
    "coin": "MORPHO",
    "action": "open",
    "note": "SHORT @2.4973 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-01 16:00:00+00:00",
+   "engine": 2,
+   "coin": "XPL",
+   "action": "open",
+   "note": "SHORT @0.0961 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "HYPE",
-   "bulls": 3,
-   "gap": 0.03,
-   "veto": false
-  },
-  {
-   "coin": "XPL",
-   "bulls": 3,
-   "gap": 0.21,
-   "veto": false
-  },
-  {
    "coin": "XMR",
    "bulls": 3,
-   "gap": 0.25,
-   "veto": false
-  },
-  {
-   "coin": "VVV",
-   "bulls": 3,
-   "gap": 0.87,
+   "gap": 0.08,
    "veto": false
   },
   {
    "coin": "ZEC",
    "bulls": 3,
-   "gap": 1.37,
-   "veto": false
-  },
-  {
-   "coin": "DASH",
-   "bulls": 3,
-   "gap": 1.46,
-   "veto": false
-  },
-  {
-   "coin": "TIA",
-   "bulls": 4,
-   "gap": 0.12,
+   "gap": 0.2,
    "veto": false
   },
   {
    "coin": "FARTCOIN",
+   "bulls": 3,
+   "gap": 0.6,
+   "veto": false
+  },
+  {
+   "coin": "TIA",
+   "bulls": 3,
+   "gap": 0.97,
+   "veto": false
+  },
+  {
+   "coin": "VVV",
+   "bulls": 3,
+   "gap": 0.98,
+   "veto": false
+  },
+  {
+   "coin": "ARB",
+   "bulls": 3,
+   "gap": 2.08,
+   "veto": false
+  },
+  {
+   "coin": "EIGEN",
    "bulls": 4,
-   "gap": 0.32,
+   "gap": 0.85,
+   "veto": false
+  },
+  {
+   "coin": "APT",
+   "bulls": 4,
+   "gap": 1.44,
    "veto": false
   }
  ]
