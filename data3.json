@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-09-30 22:00:00+00:00",
+ "updated": "2026-10-01 02:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 655.7949,
+ "equity": 655.5796,
  "realized": 652.015,
- "pnl": -344.2051,
- "pnl_pct": -34.421,
+ "pnl": -344.4204,
+ "pnl_pct": -34.442,
  "gate_bull": true,
  "series": [
   [
@@ -1452,6 +1452,10 @@
   [
    "2026-09-30 22:00:00+00:00",
    655.7949
+  ],
+  [
+   "2026-10-01 02:00:00+00:00",
+   655.5796
   ]
  ],
  "arming": {
@@ -1459,69 +1463,75 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -2.251,
-    -3.179,
-    -4.077,
-    -4.982,
-    -5.812,
-    -8.421
+    -2.188,
+    -3.117,
+    -4.012,
+    -4.918,
+    -5.751,
+    -8.37
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 6,
-    "hot": true
+    "fast": 1,
+    "hot": false
    },
    "ETH": {
-    "fast": 2,
-    "hot": false
+    "fast": 6,
+    "hot": true
    }
   },
   "e2": {
    "slots": 10,
-   "used": 2,
-   "last_scan": "2026-09-30 13:00:00+00:00",
+   "used": 3,
+   "last_scan": "2026-10-01 02:00:00+00:00",
    "watchlist": [
     {
-     "coin": "XMR",
+     "coin": "HYPE",
      "bulls": 3,
-     "gap": 0.1,
+     "gap": 0.03,
      "veto": false
     },
     {
-     "coin": "MORPHO",
+     "coin": "XPL",
      "bulls": 3,
-     "gap": 0.29,
+     "gap": 0.21,
+     "veto": false
+    },
+    {
+     "coin": "XMR",
+     "bulls": 3,
+     "gap": 0.25,
      "veto": false
     },
     {
      "coin": "VVV",
      "bulls": 3,
-     "gap": 0.58,
+     "gap": 0.87,
      "veto": false
     },
     {
      "coin": "ZEC",
      "bulls": 3,
-     "gap": 1.83,
-     "veto": false
-    },
-    {
-     "coin": "XPL",
-     "bulls": 4,
-     "gap": 0.23,
+     "gap": 1.37,
      "veto": false
     },
     {
      "coin": "DASH",
-     "bulls": 4,
-     "gap": 0.91,
+     "bulls": 3,
+     "gap": 1.46,
      "veto": false
     },
     {
-     "coin": "ARB",
+     "coin": "TIA",
      "bulls": 4,
-     "gap": 1.31,
+     "gap": 0.12,
+     "veto": false
+    },
+    {
+     "coin": "FARTCOIN",
+     "bulls": 4,
+     "gap": 0.32,
      "veto": false
     }
    ]
@@ -1529,7 +1539,7 @@
  },
  "e1": {
   "closed": 14,
-  "open": 0,
+  "open": 1,
   "win_pct": 7.1,
   "avg_R": -0.344,
   "tot_R": -4.82,
@@ -1538,7 +1548,7 @@
  },
  "e2": {
   "closed": 80,
-  "open": 2,
+  "open": 3,
   "win_pct": 3.8,
   "avg_R": -0.942,
   "tot_R": -75.37,
@@ -1552,8 +1562,8 @@
    "side": "S",
    "entry": 4323.5,
    "stop": 4453.205,
-   "cur": 4168.1,
-   "unreal_R": 1.18,
+   "cur": 4166.9,
+   "unreal_R": 1.19,
    "since": "2026-09-22 14:00"
   },
   {
@@ -1562,9 +1572,29 @@
    "side": "S",
    "entry": 0.3379,
    "stop": 0.348037,
-   "cur": 0.33792,
+   "cur": 0.33794,
    "unreal_R": -0.02,
    "since": "2026-09-26 01:00"
+  },
+  {
+   "engine": 1,
+   "coin": "ETH",
+   "side": "L",
+   "entry": 2690.6,
+   "stop": 2636.788,
+   "cur": 2690.6,
+   "unreal_R": -0.03,
+   "since": "2026-10-01 02:00"
+  },
+  {
+   "engine": 2,
+   "coin": "MORPHO",
+   "side": "S",
+   "entry": 2.4973,
+   "stop": 2.572219,
+   "cur": 2.4973,
+   "unreal_R": -0.02,
+   "since": "2026-10-01 02:00"
   }
  ],
  "closed": [
@@ -2111,20 +2141,6 @@
  ],
  "trade_log": [
   {
-   "ts": "2026-09-18 21:00:00+00:00",
-   "engine": 2,
-   "coin": "kBONK",
-   "action": "close",
-   "note": "STOP -1.06R"
-  },
-  {
-   "ts": "2026-09-19 14:00:00+00:00",
-   "engine": 2,
-   "coin": "TRUMP",
-   "action": "close",
-   "note": "TIMEOUT +2.63R"
-  },
-  {
    "ts": "2026-09-20 01:00:00+00:00",
    "engine": 2,
    "coin": "GRAM",
@@ -2529,6 +2545,20 @@
    "coin": "HYPE",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-10-01 02:00:00+00:00",
+   "engine": 1,
+   "coin": "ETH",
+   "action": "open",
+   "note": "LONG @2690.60 stop 2.00%"
+  },
+  {
+   "ts": "2026-10-01 02:00:00+00:00",
+   "engine": 2,
+   "coin": "MORPHO",
+   "action": "open",
+   "note": "SHORT @2.4973 stop +3% (12h clock)"
   }
  ]
 }
