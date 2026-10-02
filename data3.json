@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-10-02 01:00:00+00:00",
+ "updated": "2026-10-02 08:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 655.8116,
- "realized": 648.4816,
- "pnl": -344.1884,
- "pnl_pct": -34.419,
+ "equity": 640.7865,
+ "realized": 631.0062,
+ "pnl": -359.2135,
+ "pnl_pct": -35.921,
  "gate_bull": true,
  "series": [
   [
@@ -1472,6 +1472,10 @@
   [
    "2026-10-02 01:00:00+00:00",
    655.8116
+  ],
+  [
+   "2026-10-02 08:00:00+00:00",
+   640.7865
   ]
  ],
  "arming": {
@@ -1479,12 +1483,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -2.342,
-    -3.123,
-    -4.004,
-    -4.827,
-    -5.618,
-    -8.226
+    -2.721,
+    -3.367,
+    -4.248,
+    -4.991,
+    -5.733,
+    -8.295
    ]
   },
   "e1": {
@@ -1499,7 +1503,7 @@
   },
   "e2": {
    "slots": 10,
-   "used": 7,
+   "used": 2,
    "last_scan": "2026-10-02 01:00:00+00:00",
    "watchlist": [
     {
@@ -1563,11 +1567,11 @@
   "worst": -1.09
  },
  "e2": {
-  "closed": 81,
-  "open": 7,
-  "win_pct": 3.7,
-  "avg_R": -0.944,
-  "tot_R": -76.45,
+  "closed": 86,
+  "open": 2,
+  "win_pct": 3.5,
+  "avg_R": -0.952,
+  "tot_R": -81.9,
   "best": 3.31,
   "worst": -1.16
  },
@@ -1578,8 +1582,8 @@
    "side": "S",
    "entry": 4323.5,
    "stop": 4453.205,
-   "cur": 4165.0,
-   "unreal_R": 1.2,
+   "cur": 4189.5,
+   "unreal_R": 1.01,
    "since": "2026-09-22 14:00"
   },
   {
@@ -1588,8 +1592,8 @@
    "side": "S",
    "entry": 0.3379,
    "stop": 0.348037,
-   "cur": 0.33389,
-   "unreal_R": 0.38,
+   "cur": 0.33433,
+   "unreal_R": 0.33,
    "since": "2026-09-26 01:00"
   },
   {
@@ -1598,107 +1602,12 @@
    "side": "L",
    "entry": 2690.6,
    "stop": 2636.788,
-   "cur": 2708.6,
-   "unreal_R": 0.31,
+   "cur": 2739.2,
+   "unreal_R": 0.88,
    "since": "2026-10-01 02:00"
-  },
-  {
-   "engine": 2,
-   "coin": "XPL",
-   "side": "S",
-   "entry": 0.096128,
-   "stop": 0.09901184,
-   "cur": 0.095674,
-   "unreal_R": 0.14,
-   "since": "2026-10-01 16:00"
-  },
-  {
-   "engine": 2,
-   "coin": "TIA",
-   "side": "S",
-   "entry": 0.42885,
-   "stop": 0.44171550000000004,
-   "cur": 0.42885,
-   "unreal_R": -0.02,
-   "since": "2026-10-02 01:00"
-  },
-  {
-   "engine": 2,
-   "coin": "HYPE",
-   "side": "S",
-   "entry": 87.632,
-   "stop": 90.26096000000001,
-   "cur": 87.632,
-   "unreal_R": -0.02,
-   "since": "2026-10-02 01:00"
-  },
-  {
-   "engine": 2,
-   "coin": "VVV",
-   "side": "S",
-   "entry": 26.25,
-   "stop": 27.0375,
-   "cur": 26.25,
-   "unreal_R": -0.02,
-   "since": "2026-10-02 01:00"
-  },
-  {
-   "engine": 2,
-   "coin": "ZEC",
-   "side": "S",
-   "entry": 1335.9,
-   "stop": 1375.977,
-   "cur": 1335.9,
-   "unreal_R": -0.02,
-   "since": "2026-10-02 01:00"
   }
  ],
  "closed": [
-  {
-   "engine": 1,
-   "coin": "BTC",
-   "side": "L",
-   "R": -0.282,
-   "why": "FLIP",
-   "opened": "2026-09-09 14:00",
-   "closed": "2026-09-09 18:00"
-  },
-  {
-   "engine": 2,
-   "coin": "MORPHO",
-   "side": "S",
-   "R": -1.085,
-   "why": "STOP",
-   "opened": "2026-09-09 00:00",
-   "closed": "2026-09-09 21:00"
-  },
-  {
-   "engine": 1,
-   "coin": "ETH",
-   "side": "L",
-   "R": -0.476,
-   "why": "FLIP",
-   "opened": "2026-09-08 18:00",
-   "closed": "2026-09-10 00:00"
-  },
-  {
-   "engine": 2,
-   "coin": "SPX",
-   "side": "S",
-   "R": -1.09,
-   "why": "STOP",
-   "opened": "2026-09-10 00:00",
-   "closed": "2026-09-10 09:00"
-  },
-  {
-   "engine": 2,
-   "coin": "TRX",
-   "side": "S",
-   "R": -0.755,
-   "why": "TIMEOUT",
-   "opened": "2026-08-31 13:00",
-   "closed": "2026-09-10 14:00"
-  },
   {
    "engine": 2,
    "coin": "kPEPE",
@@ -2193,44 +2102,54 @@
    "why": "STOP",
    "opened": "2026-10-01 02:00",
    "closed": "2026-10-02 01:00"
+  },
+  {
+   "engine": 2,
+   "coin": "XPL",
+   "side": "S",
+   "R": -1.087,
+   "why": "STOP",
+   "opened": "2026-10-01 16:00",
+   "closed": "2026-10-02 08:00"
+  },
+  {
+   "engine": 2,
+   "coin": "TIA",
+   "side": "S",
+   "R": -1.091,
+   "why": "STOP",
+   "opened": "2026-10-02 01:00",
+   "closed": "2026-10-02 08:00"
+  },
+  {
+   "engine": 2,
+   "coin": "HYPE",
+   "side": "S",
+   "R": -1.092,
+   "why": "STOP",
+   "opened": "2026-10-02 01:00",
+   "closed": "2026-10-02 08:00"
+  },
+  {
+   "engine": 2,
+   "coin": "VVV",
+   "side": "S",
+   "R": -1.089,
+   "why": "STOP",
+   "opened": "2026-10-02 01:00",
+   "closed": "2026-10-02 08:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ZEC",
+   "side": "S",
+   "R": -1.09,
+   "why": "STOP",
+   "opened": "2026-10-02 01:00",
+   "closed": "2026-10-02 08:00"
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-09-20 18:00:00+00:00",
-   "engine": 2,
-   "coin": "CASHCAT",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-22 14:00:00+00:00",
-   "engine": 2,
-   "coin": "PAXG",
-   "action": "open",
-   "note": "SHORT @4323.5000 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-24 04:00:00+00:00",
-   "engine": 2,
-   "coin": "SPX",
-   "action": "open",
-   "note": "SHORT @0.4312 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-24 04:00:00+00:00",
-   "engine": 2,
-   "coin": "SYRUP",
-   "action": "open",
-   "note": "SHORT @0.2001 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-24 04:00:00+00:00",
-   "engine": 2,
-   "coin": "WLFI",
-   "action": "open",
-   "note": "SHORT @0.0542 stop +3% (12h clock)"
-  },
   {
    "ts": "2026-09-24 04:00:00+00:00",
    "engine": 2,
@@ -2615,6 +2534,41 @@
    "coin": "ZEC",
    "action": "open",
    "note": "SHORT @1335.9000 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-02 08:00:00+00:00",
+   "engine": 2,
+   "coin": "XPL",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-10-02 08:00:00+00:00",
+   "engine": 2,
+   "coin": "TIA",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-10-02 08:00:00+00:00",
+   "engine": 2,
+   "coin": "HYPE",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-10-02 08:00:00+00:00",
+   "engine": 2,
+   "coin": "VVV",
+   "action": "close",
+   "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-10-02 08:00:00+00:00",
+   "engine": 2,
+   "coin": "ZEC",
+   "action": "close",
+   "note": "STOP -1.09R"
   }
  ]
 }
