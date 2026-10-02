@@ -1,7 +1,7 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-10-01 21:00:00+00:00",
- "equity": 652.0149548882338,
+ "ts": "2026-10-02 01:00:00+00:00",
+ "equity": 648.4815771785353,
  "events": [
   {
    "engine": 2,
@@ -1109,8 +1109,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-22 14:00:00+00:00",
    "open": true,
-   "cur": 4184.6,
-   "ts_check": "2026-10-01 21:00:00+00:00"
+   "cur": 4165.0,
+   "ts_check": "2026-10-02 01:00:00+00:00"
   },
   {
    "engine": 2,
@@ -1273,8 +1273,8 @@
    "stop_frac": 0.03,
    "opened": "2026-09-26 01:00:00+00:00",
    "open": true,
-   "cur": 0.33531,
-   "ts_check": "2026-10-01 21:00:00+00:00"
+   "cur": 0.33389,
+   "ts_check": "2026-10-02 01:00:00+00:00"
   },
   {
    "engine": 1,
@@ -1501,7 +1501,7 @@
    "stop_frac": 0.02,
    "opened": "2026-10-01 02:00:00+00:00",
    "open": true,
-   "cur": 2698.7
+   "cur": 2708.6
   },
   {
    "engine": 2,
@@ -1511,9 +1511,13 @@
    "stop": 2.572219,
    "stop_frac": 0.03,
    "opened": "2026-10-01 02:00:00+00:00",
-   "open": true,
+   "open": false,
    "cur": 2.5141,
-   "ts_check": "2026-10-01 21:00:00+00:00"
+   "ts_check": "2026-10-01 21:00:00+00:00",
+   "closed": "2026-10-02 01:00:00+00:00",
+   "exit": 2.5735051095,
+   "R": -1.084,
+   "why": "STOP"
   },
   {
    "engine": 2,
@@ -1524,8 +1528,52 @@
    "stop_frac": 0.03,
    "opened": "2026-10-01 16:00:00+00:00",
    "open": true,
-   "cur": 0.095912,
-   "ts_check": "2026-10-01 21:00:00+00:00"
+   "cur": 0.095674,
+   "ts_check": "2026-10-02 01:00:00+00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "TIA",
+   "side": "S",
+   "entry": 0.42885,
+   "stop": 0.44171550000000004,
+   "stop_frac": 0.03,
+   "opened": "2026-10-02 01:00:00+00:00",
+   "open": true,
+   "cur": 0.42885
+  },
+  {
+   "engine": 2,
+   "coin": "HYPE",
+   "side": "S",
+   "entry": 87.632,
+   "stop": 90.26096000000001,
+   "stop_frac": 0.03,
+   "opened": "2026-10-02 01:00:00+00:00",
+   "open": true,
+   "cur": 87.632
+  },
+  {
+   "engine": 2,
+   "coin": "VVV",
+   "side": "S",
+   "entry": 26.25,
+   "stop": 27.0375,
+   "stop_frac": 0.03,
+   "opened": "2026-10-02 01:00:00+00:00",
+   "open": true,
+   "cur": 26.25
+  },
+  {
+   "engine": 2,
+   "coin": "ZEC",
+   "side": "S",
+   "entry": 1335.9,
+   "stop": 1375.977,
+   "stop_frac": 0.03,
+   "opened": "2026-10-02 01:00:00+00:00",
+   "open": true,
+   "cur": 1335.9
   }
  ],
  "closed": [
@@ -2993,10 +3041,26 @@
    "exit": 88.65108339,
    "R": -1.092,
    "why": "STOP"
+  },
+  {
+   "engine": 2,
+   "coin": "MORPHO",
+   "side": "S",
+   "entry": 2.4973,
+   "stop": 2.572219,
+   "stop_frac": 0.03,
+   "opened": "2026-10-01 02:00:00+00:00",
+   "open": false,
+   "cur": 2.5141,
+   "ts_check": "2026-10-01 21:00:00+00:00",
+   "closed": "2026-10-02 01:00:00+00:00",
+   "exit": 2.5735051095,
+   "R": -1.084,
+   "why": "STOP"
   }
  ],
- "alt_scan": "2026-10-01 16:00:00+00:00",
- "alt_scan_bar": "2026-10-01 12:00:00+00:00",
+ "alt_scan": "2026-10-02 01:00:00+00:00",
+ "alt_scan_bar": "2026-10-02 00:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -4457,6 +4521,10 @@
   [
    "2026-10-01 21:00:00+00:00",
    656.4153
+  ],
+  [
+   "2026-10-02 01:00:00+00:00",
+   655.8116
   ]
  ],
  "trade_log": [
@@ -5810,17 +5878,46 @@
    "coin": "XPL",
    "action": "open",
    "note": "SHORT @0.0961 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-02 01:00:00+00:00",
+   "engine": 2,
+   "coin": "MORPHO",
+   "action": "close",
+   "note": "STOP -1.08R"
+  },
+  {
+   "ts": "2026-10-02 01:00:00+00:00",
+   "engine": 2,
+   "coin": "TIA",
+   "action": "open",
+   "note": "SHORT @0.4289 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-02 01:00:00+00:00",
+   "engine": 2,
+   "coin": "HYPE",
+   "action": "open",
+   "note": "SHORT @87.6320 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-02 01:00:00+00:00",
+   "engine": 2,
+   "coin": "VVV",
+   "action": "open",
+   "note": "SHORT @26.2500 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-02 01:00:00+00:00",
+   "engine": 2,
+   "coin": "ZEC",
+   "action": "open",
+   "note": "SHORT @1335.9000 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
    "coin": "XMR",
-   "bulls": 3,
-   "gap": 0.08,
-   "veto": false
-  },
-  {
-   "coin": "ZEC",
    "bulls": 3,
    "gap": 0.2,
    "veto": false
@@ -5828,37 +5925,43 @@
   {
    "coin": "FARTCOIN",
    "bulls": 3,
-   "gap": 0.6,
-   "veto": false
-  },
-  {
-   "coin": "TIA",
-   "bulls": 3,
-   "gap": 0.97,
-   "veto": false
-  },
-  {
-   "coin": "VVV",
-   "bulls": 3,
-   "gap": 0.98,
+   "gap": 0.4,
    "veto": false
   },
   {
    "coin": "ARB",
    "bulls": 3,
-   "gap": 2.08,
+   "gap": 1.33,
+   "veto": false
+  },
+  {
+   "coin": "MET",
+   "bulls": 4,
+   "gap": 0.03,
+   "veto": false
+  },
+  {
+   "coin": "2Z",
+   "bulls": 4,
+   "gap": 0.12,
    "veto": false
   },
   {
    "coin": "EIGEN",
    "bulls": 4,
-   "gap": 0.85,
+   "gap": 0.86,
    "veto": false
   },
   {
    "coin": "APT",
    "bulls": 4,
-   "gap": 1.44,
+   "gap": 1.07,
+   "veto": false
+  },
+  {
+   "coin": "INJ",
+   "bulls": 4,
+   "gap": 1.27,
    "veto": false
   }
  ]
