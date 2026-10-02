@@ -1,17 +1,6 @@
 {
- "last_bar": "2026-10-02 08:00:00+00:00",
- "positions": [
-  {
-   "coin": "BTC",
-   "dir": "L",
-   "entry": 80728.0,
-   "stop": 78306.16,
-   "tp": 92837.2,
-   "opened": "2026-09-18 12:00:00+00:00",
-   "last_bar": "2026-10-02 08:00:00+00:00",
-   "bars": 83
-  }
- ],
+ "last_bar": "2026-10-02 16:00:00+00:00",
+ "positions": [],
  "closed": [
   {
    "coin": "DOGE",
@@ -124,30 +113,37 @@
    "R": 3.311,
    "why": "TIMEOUT",
    "closed": "2026-10-02 04:00:00+00:00"
+  },
+  {
+   "coin": "BTC",
+   "dir": "L",
+   "R": 1.858,
+   "why": "TIMEOUT",
+   "closed": "2026-10-02 16:00:00+00:00"
   }
  ],
  "interval": "4h",
  "accounts": {
   "BrightFunded-50bp": {
-   "equity": 1.0269304223570737,
+   "equity": 1.0364714974593656,
    "phase": 0,
    "phase_start": 1.0,
    "day_start": 1.010205812812972,
    "day": "2026-10-02",
    "status": "active",
    "opened": 17,
-   "wins": 4,
+   "wins": 5,
    "losses": 12
   },
   "BrightFunded-75bp": {
-   "equity": 1.039739374255275,
+   "equity": 1.0542294963325967,
    "phase": 0,
    "phase_start": 1.0,
    "day_start": 1.0145447100703902,
    "day": "2026-10-02",
    "status": "active",
    "opened": 17,
-   "wins": 4,
+   "wins": 5,
    "losses": 12
   },
   "Breakout-50bp": {
