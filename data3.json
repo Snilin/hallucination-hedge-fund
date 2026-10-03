@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-10-03 06:00:00+00:00",
+ "updated": "2026-10-03 12:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 633.6765,
+ "equity": 629.3233,
  "realized": 631.8329,
- "pnl": -366.3235,
- "pnl_pct": -36.632,
+ "pnl": -370.6767,
+ "pnl_pct": -37.068,
  "gate_bull": true,
  "series": [
   [
@@ -1492,6 +1492,10 @@
   [
    "2026-10-03 06:00:00+00:00",
    633.6765
+  ],
+  [
+   "2026-10-03 12:00:00+00:00",
+   629.3233
   ]
  ],
  "arming": {
@@ -1499,17 +1503,17 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -2.762,
-    -3.454,
-    -4.329,
-    -5.047,
-    -5.758,
-    -8.293
+    -2.646,
+    -3.378,
+    -4.249,
+    -4.983,
+    -5.701,
+    -8.247
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 5,
+    "fast": 4,
     "hot": true
    },
    "ETH": {
@@ -1519,55 +1523,55 @@
   },
   "e2": {
    "slots": 10,
-   "used": 3,
-   "last_scan": "2026-10-03 00:00:00+00:00",
+   "used": 5,
+   "last_scan": "2026-10-03 12:00:00+00:00",
    "watchlist": [
     {
-     "coin": "XMR",
+     "coin": "FARTCOIN",
      "bulls": 3,
-     "gap": 0.09,
-     "veto": false
-    },
-    {
-     "coin": "ARB",
-     "bulls": 3,
-     "gap": 0.29,
+     "gap": 0.44,
      "veto": false
     },
     {
      "coin": "MET",
      "bulls": 3,
-     "gap": 1.43,
+     "gap": 0.55,
      "veto": false
     },
     {
-     "coin": "HYPE",
-     "bulls": 4,
-     "gap": 0.08,
+     "coin": "ARB",
+     "bulls": 3,
+     "gap": 0.6,
+     "veto": false
+    },
+    {
+     "coin": "PENGU",
+     "bulls": 3,
+     "gap": 0.79,
+     "veto": false
+    },
+    {
+     "coin": "ETHFI",
+     "bulls": 3,
+     "gap": 1.39,
      "veto": false
     },
     {
      "coin": "NIL",
-     "bulls": 4,
-     "gap": 0.16,
+     "bulls": 3,
+     "gap": 2.52,
      "veto": true
     },
     {
-     "coin": "PENGU",
+     "coin": "DOGE",
      "bulls": 4,
-     "gap": 0.26,
+     "gap": 0.13,
      "veto": false
     },
     {
-     "coin": "OP",
+     "coin": "TAO",
      "bulls": 4,
-     "gap": 0.76,
-     "veto": false
-    },
-    {
-     "coin": "CC",
-     "bulls": 4,
-     "gap": 0.76,
+     "gap": 0.52,
      "veto": false
     }
    ]
@@ -1584,7 +1588,7 @@
  },
  "e2": {
   "closed": 87,
-  "open": 3,
+  "open": 5,
   "win_pct": 4.6,
   "avg_R": -0.927,
   "tot_R": -80.65,
@@ -1598,8 +1602,8 @@
    "side": "S",
    "entry": 0.3379,
    "stop": 0.348037,
-   "cur": 0.33466,
-   "unreal_R": 0.3,
+   "cur": 0.33639,
+   "unreal_R": 0.13,
    "since": "2026-09-26 01:00"
   },
   {
@@ -1608,8 +1612,8 @@
    "side": "S",
    "entry": 2.3506,
    "stop": 2.421118,
-   "cur": 2.344,
-   "unreal_R": 0.08,
+   "cur": 2.3715,
+   "unreal_R": -0.31,
    "since": "2026-10-03 00:00"
   },
   {
@@ -1618,9 +1622,29 @@
    "side": "S",
    "entry": 0.093342,
    "stop": 0.09614226,
-   "cur": 0.092711,
-   "unreal_R": 0.21,
+   "cur": 0.094897,
+   "unreal_R": -0.57,
    "since": "2026-10-03 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "HYPE",
+   "side": "S",
+   "entry": 87.931,
+   "stop": 90.56893,
+   "cur": 87.931,
+   "unreal_R": -0.02,
+   "since": "2026-10-03 12:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ASTER",
+   "side": "S",
+   "entry": 0.71175,
+   "stop": 0.7331025,
+   "cur": 0.71175,
+   "unreal_R": -0.02,
+   "since": "2026-10-03 12:00"
   }
  ],
  "closed": [
@@ -2169,20 +2193,6 @@
   {
    "ts": "2026-09-24 14:00:00+00:00",
    "engine": 2,
-   "coin": "CRV",
-   "action": "open",
-   "note": "SHORT @0.3306 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-24 14:00:00+00:00",
-   "engine": 2,
-   "coin": "TRUMP",
-   "action": "open",
-   "note": "SHORT @1.9736 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-24 14:00:00+00:00",
-   "engine": 2,
    "coin": "PUMP",
    "action": "open",
    "note": "SHORT @0.0038 stop +3% (12h clock)"
@@ -2585,6 +2595,20 @@
    "coin": "XPL",
    "action": "open",
    "note": "SHORT @0.0933 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-03 12:00:00+00:00",
+   "engine": 2,
+   "coin": "HYPE",
+   "action": "open",
+   "note": "SHORT @87.9310 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-03 12:00:00+00:00",
+   "engine": 2,
+   "coin": "ASTER",
+   "action": "open",
+   "note": "SHORT @0.7117 stop +3% (12h clock)"
   }
  ]
 }
