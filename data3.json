@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-10-02 20:00:00+00:00",
+ "updated": "2026-10-03 00:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 633.1232,
- "realized": 634.9646,
- "pnl": -366.8768,
- "pnl_pct": -36.688,
+ "equity": 632.7686,
+ "realized": 631.8329,
+ "pnl": -367.2314,
+ "pnl_pct": -36.723,
  "gate_bull": true,
  "series": [
   [
@@ -1484,6 +1484,10 @@
   [
    "2026-10-02 20:00:00+00:00",
    633.1232
+  ],
+  [
+   "2026-10-03 00:00:00+00:00",
+   632.7686
   ]
  ],
  "arming": {
@@ -1491,92 +1495,92 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -3.005,
-    -3.596,
-    -4.476,
-    -5.158,
-    -5.853,
-    -8.368
+    -2.888,
+    -3.53,
+    -4.408,
+    -5.108,
+    -5.811,
+    -8.335
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 6,
+    "fast": 5,
     "hot": true
    },
    "ETH": {
-    "fast": 3,
-    "hot": true
+    "fast": 1,
+    "hot": false
    }
   },
   "e2": {
    "slots": 10,
-   "used": 1,
-   "last_scan": "2026-10-02 15:00:00+00:00",
+   "used": 3,
+   "last_scan": "2026-10-03 00:00:00+00:00",
    "watchlist": [
     {
-     "coin": "PENDLE",
+     "coin": "XMR",
      "bulls": 3,
-     "gap": 0.08,
-     "veto": false
-    },
-    {
-     "coin": "XPL",
-     "bulls": 3,
-     "gap": 0.12,
+     "gap": 0.09,
      "veto": false
     },
     {
      "coin": "ARB",
      "bulls": 3,
-     "gap": 1.58,
+     "gap": 0.29,
      "veto": false
     },
     {
-     "coin": "APEX",
+     "coin": "MET",
      "bulls": 3,
-     "gap": 1.87,
+     "gap": 1.43,
      "veto": false
     },
     {
-     "coin": "2Z",
-     "bulls": 3,
-     "gap": 1.91,
-     "veto": false
-    },
-    {
-     "coin": "XMR",
+     "coin": "HYPE",
      "bulls": 4,
-     "gap": 0.05,
+     "gap": 0.08,
      "veto": false
     },
     {
      "coin": "NIL",
      "bulls": 4,
-     "gap": 0.06,
+     "gap": 0.16,
      "veto": true
     },
     {
-     "coin": "MET",
+     "coin": "PENGU",
      "bulls": 4,
-     "gap": 1.29,
+     "gap": 0.26,
+     "veto": false
+    },
+    {
+     "coin": "OP",
+     "bulls": 4,
+     "gap": 0.76,
+     "veto": false
+    },
+    {
+     "coin": "CC",
+     "bulls": 4,
+     "gap": 0.76,
      "veto": false
     }
    ]
   }
  },
  "e1": {
-  "closed": 14,
-  "open": 1,
-  "win_pct": 7.1,
-  "avg_R": -0.344,
-  "tot_R": -4.82,
+  "closed": 15,
+  "open": 0,
+  "win_pct": 6.7,
+  "avg_R": -0.354,
+  "tot_R": -5.31,
   "best": 4.3,
   "worst": -1.09
  },
  "e2": {
   "closed": 87,
-  "open": 1,
+  "open": 3,
   "win_pct": 4.6,
   "avg_R": -0.927,
   "tot_R": -80.65,
@@ -1590,31 +1594,32 @@
    "side": "S",
    "entry": 0.3379,
    "stop": 0.348037,
-   "cur": 0.33471,
-   "unreal_R": 0.3,
+   "cur": 0.33434,
+   "unreal_R": 0.33,
    "since": "2026-09-26 01:00"
   },
   {
-   "engine": 1,
-   "coin": "ETH",
-   "side": "L",
-   "entry": 2690.6,
-   "stop": 2636.788,
-   "cur": 2668.5,
-   "unreal_R": -0.44,
-   "since": "2026-10-01 02:00"
+   "engine": 2,
+   "coin": "PENDLE",
+   "side": "S",
+   "entry": 2.3506,
+   "stop": 2.421118,
+   "cur": 2.3506,
+   "unreal_R": -0.02,
+   "since": "2026-10-03 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "XPL",
+   "side": "S",
+   "entry": 0.093342,
+   "stop": 0.09614226,
+   "cur": 0.093342,
+   "unreal_R": -0.02,
+   "since": "2026-10-03 00:00"
   }
  ],
  "closed": [
-  {
-   "engine": 2,
-   "coin": "ONDO",
-   "side": "S",
-   "R": -1.084,
-   "why": "STOP",
-   "opened": "2026-09-10 14:00",
-   "closed": "2026-09-11 14:00"
-  },
   {
    "engine": 2,
    "coin": "POL",
@@ -2145,30 +2150,18 @@
    "why": "TIMEOUT",
    "opened": "2026-09-22 14:00",
    "closed": "2026-10-02 15:00"
+  },
+  {
+   "engine": 1,
+   "coin": "ETH",
+   "side": "L",
+   "R": -0.493,
+   "why": "FLIP",
+   "opened": "2026-10-01 02:00",
+   "closed": "2026-10-03 00:00"
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-09-24 09:00:00+00:00",
-   "engine": 2,
-   "coin": "SPX",
-   "action": "close",
-   "note": "STOP -1.08R"
-  },
-  {
-   "ts": "2026-09-24 09:00:00+00:00",
-   "engine": 2,
-   "coin": "SYRUP",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-24 14:00:00+00:00",
-   "engine": 1,
-   "coin": "BTC",
-   "action": "close",
-   "note": "FLIP +4.30R"
-  },
   {
    "ts": "2026-09-24 14:00:00+00:00",
    "engine": 2,
@@ -2567,6 +2560,27 @@
    "coin": "PAXG",
    "action": "close",
    "note": "TIMEOUT +1.25R"
+  },
+  {
+   "ts": "2026-10-03 00:00:00+00:00",
+   "engine": 1,
+   "coin": "ETH",
+   "action": "close",
+   "note": "FLIP -0.49R"
+  },
+  {
+   "ts": "2026-10-03 00:00:00+00:00",
+   "engine": 2,
+   "coin": "PENDLE",
+   "action": "open",
+   "note": "SHORT @2.3506 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-03 00:00:00+00:00",
+   "engine": 2,
+   "coin": "XPL",
+   "action": "open",
+   "note": "SHORT @0.0933 stop +3% (12h clock)"
   }
  ]
 }
