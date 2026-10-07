@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-10-07 08:00:00+00:00",
+ "ts": "2026-10-07 16:00:00+00:00",
  "equity": 618.0480526860725,
  "events": [
   {
@@ -1680,8 +1680,8 @@
    "stop_frac": 0.03,
    "opened": "2026-10-04 05:00:00+00:00",
    "open": true,
-   "cur": 1.8915,
-   "ts_check": "2026-10-07 08:00:00+00:00"
+   "cur": 1.8545,
+   "ts_check": "2026-10-07 16:00:00+00:00"
   },
   {
    "engine": 2,
@@ -1692,8 +1692,8 @@
    "stop_frac": 0.03,
    "opened": "2026-10-06 16:00:00+00:00",
    "open": true,
-   "cur": 0.58124,
-   "ts_check": "2026-10-07 08:00:00+00:00"
+   "cur": 0.58081,
+   "ts_check": "2026-10-07 16:00:00+00:00"
   },
   {
    "engine": 2,
@@ -1704,8 +1704,85 @@
    "stop_frac": 0.03,
    "opened": "2026-10-07 01:00:00+00:00",
    "open": true,
-   "cur": 0.16336,
-   "ts_check": "2026-10-07 08:00:00+00:00"
+   "cur": 0.16029,
+   "ts_check": "2026-10-07 16:00:00+00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "OP",
+   "side": "S",
+   "entry": 0.11956,
+   "stop": 0.1231468,
+   "stop_frac": 0.03,
+   "opened": "2026-10-07 16:00:00+00:00",
+   "open": true,
+   "cur": 0.11956
+  },
+  {
+   "engine": 2,
+   "coin": "ARB",
+   "side": "S",
+   "entry": 0.18561,
+   "stop": 0.1911783,
+   "stop_frac": 0.03,
+   "opened": "2026-10-07 16:00:00+00:00",
+   "open": true,
+   "cur": 0.18561
+  },
+  {
+   "engine": 2,
+   "coin": "DOGE",
+   "side": "S",
+   "entry": 0.088888,
+   "stop": 0.09155463999999999,
+   "stop_frac": 0.03,
+   "opened": "2026-10-07 16:00:00+00:00",
+   "open": true,
+   "cur": 0.088888
+  },
+  {
+   "engine": 2,
+   "coin": "kPEPE",
+   "side": "S",
+   "entry": 0.004073,
+   "stop": 0.0041951900000000006,
+   "stop_frac": 0.03,
+   "opened": "2026-10-07 16:00:00+00:00",
+   "open": true,
+   "cur": 0.004073
+  },
+  {
+   "engine": 2,
+   "coin": "CRV",
+   "side": "S",
+   "entry": 0.34793,
+   "stop": 0.3583679,
+   "stop_frac": 0.03,
+   "opened": "2026-10-07 16:00:00+00:00",
+   "open": true,
+   "cur": 0.34793
+  },
+  {
+   "engine": 2,
+   "coin": "XRP",
+   "side": "S",
+   "entry": 1.4474,
+   "stop": 1.490822,
+   "stop_frac": 0.03,
+   "opened": "2026-10-07 16:00:00+00:00",
+   "open": true,
+   "cur": 1.4474
+  },
+  {
+   "engine": 2,
+   "coin": "UNI",
+   "side": "S",
+   "entry": 7.9805,
+   "stop": 8.219915,
+   "stop_frac": 0.03,
+   "opened": "2026-10-07 16:00:00+00:00",
+   "open": true,
+   "cur": 7.9805
   }
  ],
  "closed": [
@@ -3378,8 +3455,8 @@
    "why": "TIMEOUT"
   }
  ],
- "alt_scan": "2026-10-07 01:00:00+00:00",
- "alt_scan_bar": "2026-10-07 00:00:00+00:00",
+ "alt_scan": "2026-10-07 16:00:00+00:00",
+ "alt_scan_bar": "2026-10-07 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -4936,6 +5013,10 @@
   [
    "2026-10-07 08:00:00+00:00",
    639.7802
+  ],
+  [
+   "2026-10-07 16:00:00+00:00",
+   643.1735
   ]
  ],
  "trade_log": [
@@ -6457,55 +6538,92 @@
    "coin": "FARTCOIN",
    "action": "open",
    "note": "SHORT @0.1703 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 16:00:00+00:00",
+   "engine": 2,
+   "coin": "OP",
+   "action": "open",
+   "note": "SHORT @0.1196 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 16:00:00+00:00",
+   "engine": 2,
+   "coin": "ARB",
+   "action": "open",
+   "note": "SHORT @0.1856 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 16:00:00+00:00",
+   "engine": 2,
+   "coin": "DOGE",
+   "action": "open",
+   "note": "SHORT @0.0889 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 16:00:00+00:00",
+   "engine": 2,
+   "coin": "kPEPE",
+   "action": "open",
+   "note": "SHORT @0.0041 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 16:00:00+00:00",
+   "engine": 2,
+   "coin": "CRV",
+   "action": "open",
+   "note": "SHORT @0.3479 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 16:00:00+00:00",
+   "engine": 2,
+   "coin": "XRP",
+   "action": "open",
+   "note": "SHORT @1.4474 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 16:00:00+00:00",
+   "engine": 2,
+   "coin": "UNI",
+   "action": "open",
+   "note": "SHORT @7.9805 stop +3% (12h clock)"
   }
  ],
  "watch": [
   {
-   "coin": "VVV",
+   "coin": "LINK",
    "bulls": 3,
-   "gap": 0.5,
+   "gap": 0.67,
    "veto": false
   },
   {
-   "coin": "PENDLE",
-   "bulls": 3,
-   "gap": 0.68,
-   "veto": false
-  },
-  {
-   "coin": "ETC",
-   "bulls": 3,
-   "gap": 0.68,
-   "veto": false
-  },
-  {
-   "coin": "ARB",
-   "bulls": 3,
-   "gap": 0.74,
-   "veto": false
-  },
-  {
-   "coin": "UNI",
-   "bulls": 3,
-   "gap": 0.82,
-   "veto": false
-  },
-  {
-   "coin": "CRV",
-   "bulls": 3,
-   "gap": 0.85,
-   "veto": false
-  },
-  {
-   "coin": "XLM",
+   "coin": "APE",
    "bulls": 3,
    "gap": 1.01,
    "veto": false
   },
   {
-   "coin": "MON",
-   "bulls": 3,
-   "gap": 2.83,
+   "coin": "LDO",
+   "bulls": 4,
+   "gap": 0.16,
+   "veto": false
+  },
+  {
+   "coin": "BNB",
+   "bulls": 4,
+   "gap": 0.26,
+   "veto": false
+  },
+  {
+   "coin": "APT",
+   "bulls": 4,
+   "gap": 0.31,
+   "veto": false
+  },
+  {
+   "coin": "BCH",
+   "bulls": 4,
+   "gap": 0.34,
    "veto": false
   }
  ]

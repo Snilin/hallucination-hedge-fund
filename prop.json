@@ -1,6 +1,6 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-10-07 04:00:00+00:00",
+ "last_bar": "2026-10-07 12:00:00+00:00",
  "closed_total": 17,
  "accounts": [
   {
@@ -70,7 +70,24 @@
    "losses": 8
   }
  ],
- "positions": [],
+ "positions": [
+  {
+   "coin": "ETH",
+   "dir": "S",
+   "entry": 2570.9,
+   "stop": 2648.027,
+   "tp": 2185.265,
+   "bars": 0
+  },
+  {
+   "coin": "XRP",
+   "dir": "S",
+   "entry": 1.4341,
+   "stop": 1.477123,
+   "tp": 1.218985,
+   "bars": 0
+  }
+ ],
  "recent": [
   {
    "coin": "LINK",
