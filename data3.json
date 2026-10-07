@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-10-06 21:00:00+00:00",
+ "updated": "2026-10-07 01:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 626.8253,
+ "equity": 627.8774,
  "realized": 618.0481,
- "pnl": -373.1747,
- "pnl_pct": -37.317,
+ "pnl": -372.1226,
+ "pnl_pct": -37.212,
  "gate_bull": true,
  "series": [
   [
@@ -1556,6 +1556,10 @@
   [
    "2026-10-06 21:00:00+00:00",
    626.8253
+  ],
+  [
+   "2026-10-07 01:00:00+00:00",
+   627.8774
   ]
  ],
  "arming": {
@@ -1563,39 +1567,75 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -2.736,
-    -3.429,
-    -4.273,
-    -4.96,
-    -5.628,
-    -8.135
+    -2.665,
+    -3.379,
+    -4.222,
+    -4.92,
+    -5.595,
+    -8.11
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 6,
+    "fast": 5,
     "hot": true
    },
    "ETH": {
-    "fast": 2,
+    "fast": 1,
     "hot": false
    }
   },
   "e2": {
    "slots": 10,
-   "used": 2,
-   "last_scan": "2026-10-06 16:00:00+00:00",
+   "used": 3,
+   "last_scan": "2026-10-07 01:00:00+00:00",
    "watchlist": [
     {
-     "coin": "MINA",
+     "coin": "VVV",
      "bulls": 3,
-     "gap": 4.56,
+     "gap": 0.5,
+     "veto": false
+    },
+    {
+     "coin": "PENDLE",
+     "bulls": 3,
+     "gap": 0.68,
+     "veto": false
+    },
+    {
+     "coin": "ETC",
+     "bulls": 3,
+     "gap": 0.68,
      "veto": false
     },
     {
      "coin": "ARB",
-     "bulls": 4,
-     "gap": 0.51,
+     "bulls": 3,
+     "gap": 0.74,
+     "veto": false
+    },
+    {
+     "coin": "UNI",
+     "bulls": 3,
+     "gap": 0.82,
+     "veto": false
+    },
+    {
+     "coin": "CRV",
+     "bulls": 3,
+     "gap": 0.85,
+     "veto": false
+    },
+    {
+     "coin": "XLM",
+     "bulls": 3,
+     "gap": 1.01,
+     "veto": false
+    },
+    {
+     "coin": "MON",
+     "bulls": 3,
+     "gap": 2.83,
      "veto": false
     }
    ]
@@ -1612,7 +1652,7 @@
  },
  "e2": {
   "closed": 92,
-  "open": 2,
+  "open": 3,
   "win_pct": 4.3,
   "avg_R": -0.924,
   "tot_R": -85.05,
@@ -1626,7 +1666,7 @@
    "side": "S",
    "entry": 2.0447,
    "stop": 2.1060410000000003,
-   "cur": 2.0063,
+   "cur": 2.0064,
    "unreal_R": 0.61,
    "since": "2026-10-04 05:00"
   },
@@ -1636,9 +1676,19 @@
    "side": "S",
    "entry": 0.64372,
    "stop": 0.6630315999999999,
-   "cur": 0.60025,
-   "unreal_R": 2.23,
+   "cur": 0.59329,
+   "unreal_R": 2.59,
    "since": "2026-10-06 16:00"
+  },
+  {
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "side": "S",
+   "entry": 0.17028,
+   "stop": 0.1753884,
+   "cur": 0.17028,
+   "unreal_R": -0.02,
+   "since": "2026-10-07 01:00"
   }
  ],
  "closed": [
@@ -2187,13 +2237,6 @@
   {
    "ts": "2026-09-24 19:00:00+00:00",
    "engine": 2,
-   "coin": "PUMP",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-24 19:00:00+00:00",
-   "engine": 2,
    "coin": "CHIP",
    "action": "close",
    "note": "STOP -1.09R"
@@ -2603,6 +2646,13 @@
    "coin": "MNT",
    "action": "open",
    "note": "SHORT @0.6437 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-07 01:00:00+00:00",
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "action": "open",
+   "note": "SHORT @0.1703 stop +3% (12h clock)"
   }
  ]
 }
