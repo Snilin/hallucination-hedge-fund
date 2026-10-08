@@ -1,5 +1,5 @@
 MAJORS CHALLENGE - forward paper trade
-started 2026-08-21 08:00:00+00:00  |  latest bar 2026-10-07 20:00:00+00:00  |  trades closed 17
+started 2026-08-21 08:00:00+00:00  |  latest bar 2026-10-08 04:00:00+00:00  |  trades closed 17
 
 account                 risk   equity   phase  status  W/L
 --------------------------------------------------------------
@@ -9,8 +9,8 @@ Breakout-50bp          0.50%   -6.14%       -   BLOWN  0/12
 Breakout-75bp          0.75%   -6.15%       -   BLOWN  0/8
 
 open positions (2/6):
-  S ETH   @ 2570.9000  stop 2648.0270  tp 2185.2650  bar 2/84
-  S XRP   @ 1.4341  stop 1.4771  tp 1.2190  bar 2/84
+  S ETH   @ 2570.9000  stop 2648.0270  tp 2185.2650  bar 4/84
+  S XRP   @ 1.4341  stop 1.4771  tp 1.2190  bar 4/84
 
 last closed:
   S XRP   -1.05R  STOP
