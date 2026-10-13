@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-10-12 17:00:00+00:00",
+ "updated": "2026-10-13 00:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 640.2326,
- "realized": 594.8191,
- "pnl": -359.7674,
- "pnl_pct": -35.977,
+ "equity": 653.1032,
+ "realized": 588.367,
+ "pnl": -346.8968,
+ "pnl_pct": -34.69,
  "gate_bull": true,
  "series": [
   [
@@ -1652,19 +1652,23 @@
   [
    "2026-10-12 17:00:00+00:00",
    640.2326
+  ],
+  [
+   "2026-10-13 00:00:00+00:00",
+   653.1032
   ]
  ],
  "arming": {
   "gate": {
-   "votes": 6,
+   "votes": 5,
    "need": 3,
    "gaps": [
-    -0.022,
-    -0.498,
-    -1.109,
-    -1.811,
-    -2.571,
-    -5.284
+    0.194,
+    -0.346,
+    -0.945,
+    -1.671,
+    -2.439,
+    -5.155
    ]
   },
   "e1": {
@@ -1673,66 +1677,29 @@
     "hot": false
    },
    "ETH": {
-    "fast": 4,
-    "hot": true
+    "fast": 0,
+    "hot": false
    }
   },
   "e2": {
    "slots": 10,
-   "used": 7,
-   "last_scan": "2026-10-12 17:00:00+00:00",
-   "watchlist": [
-    {
-     "coin": "kPEPE",
-     "bulls": 3,
-     "gap": 0.01,
-     "veto": false
-    },
-    {
-     "coin": "ARB",
-     "bulls": 3,
-     "gap": 0.07,
-     "veto": false
-    },
-    {
-     "coin": "BOME",
-     "bulls": 3,
-     "gap": 0.42,
-     "veto": false
-    },
-    {
-     "coin": "SUI",
-     "bulls": 3,
-     "gap": 0.55,
-     "veto": false
-    },
-    {
-     "coin": "PUMP",
-     "bulls": 3,
-     "gap": 1.39,
-     "veto": false
-    },
-    {
-     "coin": "AAVE",
-     "bulls": 4,
-     "gap": 0.54,
-     "veto": false
-    }
-   ]
+   "used": 10,
+   "last_scan": "2026-10-13 00:00:00+00:00",
+   "watchlist": []
   }
  },
  "e1": {
-  "closed": 15,
-  "open": 1,
-  "win_pct": 6.7,
-  "avg_R": -0.354,
-  "tot_R": -5.31,
+  "closed": 16,
+  "open": 0,
+  "win_pct": 6.2,
+  "avg_R": -0.4,
+  "tot_R": -6.4,
   "best": 4.3,
   "worst": -1.09
  },
  "e2": {
   "closed": 99,
-  "open": 7,
+  "open": 10,
   "win_pct": 4.0,
   "avg_R": -0.936,
   "tot_R": -92.69,
@@ -1746,8 +1713,8 @@
    "side": "S",
    "entry": 2.0447,
    "stop": 2.1060410000000003,
-   "cur": 1.8888,
-   "unreal_R": 2.52,
+   "cur": 1.8466,
+   "unreal_R": 3.21,
    "since": "2026-10-04 05:00"
   },
   {
@@ -1756,8 +1723,8 @@
    "side": "S",
    "entry": 0.64372,
    "stop": 0.6630315999999999,
-   "cur": 0.55022,
-   "unreal_R": 4.82,
+   "cur": 0.53631,
+   "unreal_R": 5.54,
    "since": "2026-10-06 16:00"
   },
   {
@@ -1766,8 +1733,8 @@
    "side": "S",
    "entry": 0.17028,
    "stop": 0.1753884,
-   "cur": 0.1627,
-   "unreal_R": 1.47,
+   "cur": 0.15763,
+   "unreal_R": 2.46,
    "since": "2026-10-07 01:00"
   },
   {
@@ -1776,8 +1743,8 @@
    "side": "S",
    "entry": 0.088888,
    "stop": 0.09155463999999999,
-   "cur": 0.084411,
-   "unreal_R": 1.66,
+   "cur": 0.082205,
+   "unreal_R": 2.49,
    "since": "2026-10-07 16:00"
   },
   {
@@ -1786,8 +1753,8 @@
    "side": "S",
    "entry": 1.4474,
    "stop": 1.490822,
-   "cur": 1.358,
-   "unreal_R": 2.04,
+   "cur": 1.3415,
+   "unreal_R": 2.42,
    "since": "2026-10-07 16:00"
   },
   {
@@ -1796,8 +1763,8 @@
    "side": "S",
    "entry": 7.9805,
    "stop": 8.219915,
-   "cur": 7.3471,
-   "unreal_R": 2.63,
+   "cur": 6.9697,
+   "unreal_R": 4.2,
    "since": "2026-10-07 16:00"
   },
   {
@@ -1806,31 +1773,42 @@
    "side": "S",
    "entry": 13.322,
    "stop": 13.72166,
-   "cur": 12.88,
-   "unreal_R": 1.09,
+   "cur": 12.621,
+   "unreal_R": 1.74,
    "since": "2026-10-08 01:00"
   },
-  {
-   "engine": 1,
-   "coin": "ETH",
-   "side": "L",
-   "entry": 2535.2,
-   "stop": 2484.4959999999996,
-   "cur": 2512.3,
-   "unreal_R": -0.48,
-   "since": "2026-10-11 20:00"
-  }
- ],
- "closed": [
   {
    "engine": 2,
    "coin": "AVAX",
    "side": "S",
-   "R": -1.104,
-   "why": "STOP",
-   "opened": "2026-09-12 14:00",
-   "closed": "2026-09-14 23:00"
+   "entry": 10.139,
+   "stop": 10.44317,
+   "cur": 10.139,
+   "unreal_R": -0.02,
+   "since": "2026-10-13 00:00"
   },
+  {
+   "engine": 2,
+   "coin": "ARB",
+   "side": "S",
+   "entry": 0.17962,
+   "stop": 0.1850086,
+   "cur": 0.17962,
+   "unreal_R": -0.02,
+   "since": "2026-10-13 00:00"
+  },
+  {
+   "engine": 2,
+   "coin": "SUI",
+   "side": "S",
+   "entry": 1.0279,
+   "stop": 1.058737,
+   "cur": 1.0279,
+   "unreal_R": -0.02,
+   "since": "2026-10-13 00:00"
+  }
+ ],
+ "closed": [
   {
    "engine": 1,
    "coin": "BTC",
@@ -2361,37 +2339,18 @@
    "why": "STOP",
    "opened": "2026-10-11 15:00",
    "closed": "2026-10-11 20:00"
+  },
+  {
+   "engine": 1,
+   "coin": "ETH",
+   "side": "L",
+   "R": -1.085,
+   "why": "STOP",
+   "opened": "2026-10-11 20:00",
+   "closed": "2026-10-13 00:00"
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-09-30 00:00:00+00:00",
-   "engine": 2,
-   "coin": "HYPE",
-   "action": "open",
-   "note": "SHORT @86.0260 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-30 00:00:00+00:00",
-   "engine": 2,
-   "coin": "MORPHO",
-   "action": "open",
-   "note": "SHORT @2.4757 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-30 00:00:00+00:00",
-   "engine": 2,
-   "coin": "CHIP",
-   "action": "open",
-   "note": "SHORT @0.0440 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-30 00:00:00+00:00",
-   "engine": 2,
-   "coin": "CASHCAT",
-   "action": "open",
-   "note": "SHORT @0.1714 stop +3% (12h clock)"
-  },
   {
    "ts": "2026-09-30 06:00:00+00:00",
    "engine": 1,
@@ -2783,6 +2742,34 @@
    "coin": "SUI",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-10-13 00:00:00+00:00",
+   "engine": 1,
+   "coin": "ETH",
+   "action": "close",
+   "note": "STOP -1.08R"
+  },
+  {
+   "ts": "2026-10-13 00:00:00+00:00",
+   "engine": 2,
+   "coin": "AVAX",
+   "action": "open",
+   "note": "SHORT @10.1390 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-13 00:00:00+00:00",
+   "engine": 2,
+   "coin": "ARB",
+   "action": "open",
+   "note": "SHORT @0.1796 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-13 00:00:00+00:00",
+   "engine": 2,
+   "coin": "SUI",
+   "action": "open",
+   "note": "SHORT @1.0279 stop +3% (12h clock)"
   }
  ]
 }
