@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-10-16 23:00:00+00:00",
+ "updated": "2026-10-17 04:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 648.1884,
- "realized": 589.2384,
- "pnl": -351.8116,
- "pnl_pct": -35.181,
+ "equity": 650.0195,
+ "realized": 598.9141,
+ "pnl": -349.9805,
+ "pnl_pct": -34.998,
  "gate_bull": true,
  "series": [
   [
@@ -1736,6 +1736,10 @@
   [
    "2026-10-16 23:00:00+00:00",
    648.1884
+  ],
+  [
+   "2026-10-17 04:00:00+00:00",
+   650.0195
   ]
  ],
  "arming": {
@@ -1743,12 +1747,12 @@
    "votes": 3,
    "need": 3,
    "gaps": [
-    1.191,
-    0.707,
-    0.267,
-    -0.43,
-    -1.158,
-    -3.738
+    1.251,
+    0.773,
+    0.342,
+    -0.351,
+    -1.078,
+    -3.651
    ]
   },
   "e1": {
@@ -1764,24 +1768,18 @@
   "e2": {
    "slots": 10,
    "used": 8,
-   "last_scan": "2026-10-16 12:00:00+00:00",
+   "last_scan": "2026-10-17 04:00:00+00:00",
    "watchlist": [
     {
-     "coin": "GRASS",
+     "coin": "WLD",
      "bulls": 3,
-     "gap": 1.06,
+     "gap": 0.12,
      "veto": false
     },
     {
-     "coin": "TRX",
-     "bulls": 4,
-     "gap": 0.02,
-     "veto": false
-    },
-    {
-     "coin": "RENDER",
-     "bulls": 4,
-     "gap": 0.11,
+     "coin": "STBL",
+     "bulls": 3,
+     "gap": 0.92,
      "veto": false
     }
    ]
@@ -1797,33 +1795,23 @@
   "worst": -1.09
  },
  "e2": {
-  "closed": 108,
+  "closed": 109,
   "open": 8,
-  "win_pct": 5.6,
-  "avg_R": -0.854,
-  "tot_R": -92.28,
+  "win_pct": 6.4,
+  "avg_R": -0.816,
+  "tot_R": -88.99,
   "best": 5.71,
   "worst": -1.16
  },
  "open_positions": [
   {
    "engine": 2,
-   "coin": "FARTCOIN",
-   "side": "S",
-   "entry": 0.17028,
-   "stop": 0.1753884,
-   "cur": 0.15399,
-   "unreal_R": 3.17,
-   "since": "2026-10-07 01:00"
-  },
-  {
-   "engine": 2,
    "coin": "DOGE",
    "side": "S",
    "entry": 0.088888,
    "stop": 0.09155463999999999,
-   "cur": 0.080931,
-   "unreal_R": 2.97,
+   "cur": 0.080503,
+   "unreal_R": 3.13,
    "since": "2026-10-07 16:00"
   },
   {
@@ -1832,8 +1820,8 @@
    "side": "S",
    "entry": 1.4474,
    "stop": 1.490822,
-   "cur": 1.3098,
-   "unreal_R": 3.15,
+   "cur": 1.308,
+   "unreal_R": 3.19,
    "since": "2026-10-07 16:00"
   },
   {
@@ -1842,8 +1830,8 @@
    "side": "S",
    "entry": 7.9805,
    "stop": 8.219915,
-   "cur": 7.3182,
-   "unreal_R": 2.75,
+   "cur": 7.3281,
+   "unreal_R": 2.71,
    "since": "2026-10-07 16:00"
   },
   {
@@ -1852,8 +1840,8 @@
    "side": "S",
    "entry": 13.322,
    "stop": 13.72166,
-   "cur": 12.33,
-   "unreal_R": 2.46,
+   "cur": 12.341,
+   "unreal_R": 2.44,
    "since": "2026-10-08 01:00"
   },
   {
@@ -1862,8 +1850,8 @@
    "side": "S",
    "entry": 0.33063,
    "stop": 0.3405489,
-   "cur": 0.30575,
-   "unreal_R": 2.49,
+   "cur": 0.30455,
+   "unreal_R": 2.61,
    "since": "2026-10-14 01:00"
   },
   {
@@ -1872,8 +1860,8 @@
    "side": "S",
    "entry": 1.7603,
    "stop": 1.813109,
-   "cur": 1.7651,
-   "unreal_R": -0.11,
+   "cur": 1.7597,
+   "unreal_R": -0.01,
    "since": "2026-10-15 04:00"
   },
   {
@@ -1882,21 +1870,22 @@
    "side": "S",
    "entry": 0.20542,
    "stop": 0.2115826,
-   "cur": 0.18602,
-   "unreal_R": 3.13,
+   "cur": 0.1867,
+   "unreal_R": 3.02,
    "since": "2026-10-16 12:00"
+  },
+  {
+   "engine": 2,
+   "coin": "GRASS",
+   "side": "S",
+   "entry": 0.63637,
+   "stop": 0.6554611,
+   "cur": 0.63637,
+   "unreal_R": -0.02,
+   "since": "2026-10-17 04:00"
   }
  ],
  "closed": [
-  {
-   "engine": 2,
-   "coin": "TRUMP",
-   "side": "S",
-   "R": 2.633,
-   "why": "TIMEOUT",
-   "opened": "2026-09-09 14:00",
-   "closed": "2026-09-19 14:00"
-  },
   {
    "engine": 2,
    "coin": "GRAM",
@@ -2427,23 +2416,18 @@
    "why": "STOP",
    "opened": "2026-10-14 01:00",
    "closed": "2026-10-16 17:00"
+  },
+  {
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "side": "S",
+   "R": 3.284,
+   "why": "TIMEOUT",
+   "opened": "2026-10-07 01:00",
+   "closed": "2026-10-17 04:00"
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-10-02 01:00:00+00:00",
-   "engine": 2,
-   "coin": "VVV",
-   "action": "open",
-   "note": "SHORT @26.2500 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-10-02 01:00:00+00:00",
-   "engine": 2,
-   "coin": "ZEC",
-   "action": "open",
-   "note": "SHORT @1335.9000 stop +3% (12h clock)"
-  },
   {
    "ts": "2026-10-02 08:00:00+00:00",
    "engine": 2,
@@ -2849,6 +2833,20 @@
    "coin": "DOT",
    "action": "close",
    "note": "STOP -1.08R"
+  },
+  {
+   "ts": "2026-10-17 04:00:00+00:00",
+   "engine": 2,
+   "coin": "FARTCOIN",
+   "action": "close",
+   "note": "TIMEOUT +3.28R"
+  },
+  {
+   "ts": "2026-10-17 04:00:00+00:00",
+   "engine": 2,
+   "coin": "GRASS",
+   "action": "open",
+   "note": "SHORT @0.6364 stop +3% (12h clock)"
   }
  ]
 }
