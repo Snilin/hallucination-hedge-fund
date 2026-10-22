@@ -1,12 +1,12 @@
 {
  "name": "Hallucination Hedge Fund",
- "updated": "2026-10-21 22:00:00+00:00",
+ "updated": "2026-10-22 01:00:00+00:00",
  "since": "2026-08-09 14:00:00+00:00",
  "start": 100000.0,
  "fund": {
-  "value": 149390.7,
-  "pnl": 49390.7,
-  "pnl_pct": 49.391,
+  "value": 149558.35,
+  "pnl": 49558.35,
+  "pnl_pct": 49.558,
   "series": [
    [
     "2026-08-09 14:00:00+00:00",
@@ -2631,6 +2631,10 @@
    [
     "2026-10-21 22:00:00+00:00",
     149390.7
+   ],
+   [
+    "2026-10-22 01:00:00+00:00",
+    149558.35
    ]
   ]
  },
@@ -2647,9 +2651,9 @@
    "desc": "Trend long/short with bear-fit short leg + capitulation veto",
    "alloc": 50000,
    "alloc_pct": 50.0,
-   "value": 57989.26,
-   "pnl": 7989.26,
-   "pnl_pct": 15.979,
+   "value": 58073.49,
+   "pnl": 8073.49,
+   "pnl_pct": 16.147,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -5274,6 +5278,10 @@
     [
      "2026-10-21 22:00:00+00:00",
      57989.26
+    ],
+    [
+     "2026-10-22 01:00:00+00:00",
+     58073.49
     ]
    ]
   },
@@ -7911,6 +7919,10 @@
     [
      "2026-10-21 22:00:00+00:00",
      19518.37
+    ],
+    [
+     "2026-10-22 01:00:00+00:00",
+     19518.37
     ]
    ]
   },
@@ -7921,9 +7933,9 @@
    "desc": "Fresh-trend breakout bursts on BTC/ETH/SOL",
    "alloc": 12000,
    "alloc_pct": 12.0,
-   "value": 12294.02,
-   "pnl": 294.02,
-   "pnl_pct": 2.45,
+   "value": 12201.39,
+   "pnl": 201.39,
+   "pnl_pct": 1.678,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -10548,6 +10560,10 @@
     [
      "2026-10-21 22:00:00+00:00",
      12294.02
+    ],
+    [
+     "2026-10-22 01:00:00+00:00",
+     12201.39
     ]
    ]
   },
@@ -10558,9 +10574,9 @@
    "desc": "BTC-gated alt breakouts, top-10 concurrent",
    "alloc": 12000,
    "alloc_pct": 12.0,
-   "value": 54005.17,
-   "pnl": 42005.17,
-   "pnl_pct": 350.043,
+   "value": 54181.21,
+   "pnl": 42181.21,
+   "pnl_pct": 351.51,
    "series": [
     [
      "2026-08-09 14:00:00+00:00",
@@ -13185,6 +13201,10 @@
     [
      "2026-10-21 22:00:00+00:00",
      54005.17
+    ],
+    [
+     "2026-10-22 01:00:00+00:00",
+     54181.21
     ]
    ]
   },
@@ -15822,6 +15842,10 @@
     [
      "2026-10-21 22:00:00+00:00",
      5583.88
+    ],
+    [
+     "2026-10-22 01:00:00+00:00",
+     5583.88
     ]
    ]
   }
@@ -15832,10 +15856,10 @@
    "coin": "BTC",
    "entry": 82718.0,
    "stop": 80230.58,
-   "cur": 84795.0,
-   "move_pct": 2.51,
-   "unreal_R": 0.82,
-   "unreal_usd": 294.02,
+   "cur": 84155.0,
+   "move_pct": 1.74,
+   "unreal_R": 0.56,
+   "unreal_usd": 201.39,
    "since": "2026-10-19"
   },
   {
@@ -15843,10 +15867,10 @@
    "coin": "CRV",
    "entry": 0.36782,
    "stop": 0.3567854,
-   "cur": 0.39888,
-   "move_pct": 8.44,
-   "unreal_R": 2.8,
-   "unreal_usd": 503.36,
+   "cur": 0.40151,
+   "move_pct": 9.16,
+   "unreal_R": 3.03,
+   "unreal_usd": 546.26,
    "since": "2026-10-20"
   },
   {
@@ -15854,10 +15878,10 @@
    "coin": "kPEPE",
    "entry": 0.004156,
    "stop": 0.00403132,
-   "cur": 0.004702,
-   "move_pct": 13.14,
-   "unreal_R": 4.36,
-   "unreal_usd": 784.96,
+   "cur": 0.004613,
+   "move_pct": 11.0,
+   "unreal_R": 3.65,
+   "unreal_usd": 656.47,
    "since": "2026-10-20"
   },
   {
@@ -15865,11 +15889,33 @@
    "coin": "COMP",
    "entry": 25.859,
    "stop": 25.08323,
-   "cur": 25.73,
-   "move_pct": -0.5,
-   "unreal_R": -0.18,
-   "unreal_usd": -33.23,
+   "cur": 26.032,
+   "move_pct": 0.67,
+   "unreal_R": 0.2,
+   "unreal_usd": 36.84,
    "since": "2026-10-21"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "ZEC",
+   "entry": 1315.0,
+   "stop": 1275.55,
+   "cur": 1324.8,
+   "move_pct": 0.75,
+   "unreal_R": 0.23,
+   "unreal_usd": 41.41,
+   "since": "2026-10-22"
+  },
+  {
+   "sleeve": "ign_alts",
+   "coin": "VVV",
+   "entry": 26.981,
+   "stop": 26.17157,
+   "cur": 27.671,
+   "move_pct": 2.56,
+   "unreal_R": 0.83,
+   "unreal_usd": 150.14,
+   "since": "2026-10-22"
   }
  ],
  "holdings": [
@@ -15878,8 +15924,8 @@
    "sleeve": "combo",
    "side": "LONG",
    "entry": 83489.0,
-   "cur": 84795.0,
-   "move_pct": 1.56,
+   "cur": 84155.0,
+   "move_pct": 0.8,
    "exposure": 25000
   },
   {
@@ -15887,8 +15933,8 @@
    "sleeve": "combo",
    "side": "SHORT",
    "entry": 2488.2,
-   "cur": 2499.1,
-   "move_pct": -0.44,
+   "cur": 2473.1,
+   "move_pct": 0.61,
    "exposure": 25000
   },
   {
@@ -15905,8 +15951,8 @@
    "sleeve": "ign_majors",
    "side": "LONG",
    "entry": 82718.0,
-   "cur": 84795.0,
-   "move_pct": 2.51,
+   "cur": 84155.0,
+   "move_pct": 1.74,
    "exposure": 11972
   },
   {
@@ -15914,8 +15960,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.3678,
-   "cur": 0.3989,
-   "move_pct": 8.44,
+   "cur": 0.4015,
+   "move_pct": 9.16,
    "exposure": 6000
   },
   {
@@ -15923,8 +15969,8 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 0.0042,
-   "cur": 0.0047,
-   "move_pct": 13.14,
+   "cur": 0.0046,
+   "move_pct": 11.0,
    "exposure": 6000
   },
   {
@@ -15932,8 +15978,26 @@
    "sleeve": "ign_alts",
    "side": "LONG",
    "entry": 25.859,
-   "cur": 25.73,
-   "move_pct": -0.5,
+   "cur": 26.032,
+   "move_pct": 0.67,
+   "exposure": 6000
+  },
+  {
+   "asset": "ZEC",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 1315.0,
+   "cur": 1324.8,
+   "move_pct": 0.75,
+   "exposure": 6000
+  },
+  {
+   "asset": "VVV",
+   "sleeve": "ign_alts",
+   "side": "LONG",
+   "entry": 26.981,
+   "cur": 27.671,
+   "move_pct": 2.56,
    "exposure": 6000
   }
  ],
@@ -16157,22 +16221,6 @@
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-09-09 09:00:00+00:00",
-   "sleeve": "ign_alts",
-   "coin": "TAO",
-   "action": "close",
-   "price": 258.6,
-   "note": "TIMEOUT \u00b7 +8.51R"
-  },
-  {
-   "ts": "2026-09-09 09:00:00+00:00",
-   "sleeve": "ign_alts",
-   "coin": "ENA",
-   "action": "close",
-   "price": 0.1594,
-   "note": "TIMEOUT \u00b7 +23.55R"
-  },
   {
    "ts": "2026-09-09 09:00:00+00:00",
    "sleeve": "ign_alts",
@@ -16652,6 +16700,22 @@
    "to": 1.0,
    "price": 83489.0,
    "note": "long-votes 0.67, short-votes 0.33, veto False"
+  },
+  {
+   "ts": "2026-10-22 01:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "ZEC",
+   "action": "open",
+   "price": 1315.0,
+   "note": "stop 3.0% below"
+  },
+  {
+   "ts": "2026-10-22 01:00:00+00:00",
+   "sleeve": "ign_alts",
+   "coin": "VVV",
+   "action": "open",
+   "price": 26.981,
+   "note": "stop 3.0% below"
   }
  ]
 }

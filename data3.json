@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-10-21 22:00:00+00:00",
+ "updated": "2026-10-22 01:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 621.6999,
+ "equity": 627.4788,
  "realized": 609.5769,
- "pnl": -378.3001,
- "pnl_pct": -37.83,
+ "pnl": -372.5212,
+ "pnl_pct": -37.252,
  "gate_bull": true,
  "series": [
   [
@@ -1848,6 +1848,10 @@
   [
    "2026-10-21 22:00:00+00:00",
    621.6999
+  ],
+  [
+   "2026-10-22 01:00:00+00:00",
+   627.4788
   ]
  ],
  "arming": {
@@ -1855,12 +1859,12 @@
    "votes": 6,
    "need": 3,
    "gaps": [
-    -0.604,
-    -0.395,
-    -0.692,
-    -0.876,
-    -1.22,
-    -3.174
+    -0.725,
+    -0.503,
+    -0.801,
+    -0.967,
+    -1.294,
+    -3.222
    ]
   },
   "e1": {
@@ -1875,37 +1879,55 @@
   },
   "e2": {
    "slots": 10,
-   "used": 6,
-   "last_scan": "2026-10-21 13:00:00+00:00",
+   "used": 8,
+   "last_scan": "2026-10-22 01:00:00+00:00",
    "watchlist": [
+    {
+     "coin": "PENDLE",
+     "bulls": 3,
+     "gap": 0.01,
+     "veto": false
+    },
+    {
+     "coin": "ENA",
+     "bulls": 3,
+     "gap": 0.24,
+     "veto": false
+    },
+    {
+     "coin": "PENGU",
+     "bulls": 3,
+     "gap": 0.27,
+     "veto": false
+    },
     {
      "coin": "BNB",
      "bulls": 3,
-     "gap": 0.11,
+     "gap": 0.4,
+     "veto": false
+    },
+    {
+     "coin": "PUMP",
+     "bulls": 3,
+     "gap": 0.48,
      "veto": false
     },
     {
      "coin": "BCH",
-     "bulls": 3,
-     "gap": 0.32,
-     "veto": false
-    },
-    {
-     "coin": "REZ",
-     "bulls": 3,
-     "gap": 0.58,
-     "veto": false
-    },
-    {
-     "coin": "ZEC",
-     "bulls": 3,
-     "gap": 1.82,
-     "veto": false
-    },
-    {
-     "coin": "ARB",
      "bulls": 4,
-     "gap": 0.14,
+     "gap": 0.17,
+     "veto": false
+    },
+    {
+     "coin": "ZK",
+     "bulls": 4,
+     "gap": 0.33,
+     "veto": false
+    },
+    {
+     "coin": "LIT",
+     "bulls": 4,
+     "gap": 0.57,
      "veto": false
     }
    ]
@@ -1922,7 +1944,7 @@
  },
  "e2": {
   "closed": 123,
-  "open": 6,
+  "open": 8,
   "win_pct": 8.9,
   "avg_R": -0.694,
   "tot_R": -85.3,
@@ -1936,8 +1958,8 @@
    "side": "S",
    "entry": 0.33063,
    "stop": 0.3405489,
-   "cur": 0.32984,
-   "unreal_R": 0.06,
+   "cur": 0.32963,
+   "unreal_R": 0.08,
    "since": "2026-10-14 01:00"
   },
   {
@@ -1946,8 +1968,8 @@
    "side": "S",
    "entry": 1.7603,
    "stop": 1.813109,
-   "cur": 1.766,
-   "unreal_R": -0.13,
+   "cur": 1.7516,
+   "unreal_R": 0.15,
    "since": "2026-10-15 04:00"
   },
   {
@@ -1956,8 +1978,8 @@
    "side": "S",
    "entry": 0.20542,
    "stop": 0.2115826,
-   "cur": 0.18235,
-   "unreal_R": 3.73,
+   "cur": 0.17988,
+   "unreal_R": 4.13,
    "since": "2026-10-16 12:00"
   },
   {
@@ -1966,8 +1988,8 @@
    "side": "S",
    "entry": 1.0622,
    "stop": 1.094066,
-   "cur": 1.0668,
-   "unreal_R": -0.16,
+   "cur": 1.0527,
+   "unreal_R": 0.28,
    "since": "2026-10-18 14:00"
   },
   {
@@ -1976,8 +1998,8 @@
    "side": "S",
    "entry": 0.33265,
    "stop": 0.34262950000000003,
-   "cur": 0.33095,
-   "unreal_R": 0.15,
+   "cur": 0.33039,
+   "unreal_R": 0.21,
    "since": "2026-10-19 01:00"
   },
   {
@@ -1986,9 +2008,29 @@
    "side": "S",
    "entry": 2.4162,
    "stop": 2.488686,
-   "cur": 2.3911,
-   "unreal_R": 0.33,
+   "cur": 2.3375,
+   "unreal_R": 1.07,
    "since": "2026-10-20 14:00"
+  },
+  {
+   "engine": 2,
+   "coin": "ARB",
+   "side": "S",
+   "entry": 0.18795,
+   "stop": 0.19358850000000002,
+   "cur": 0.18795,
+   "unreal_R": -0.02,
+   "since": "2026-10-22 01:00"
+  },
+  {
+   "engine": 2,
+   "coin": "AERO",
+   "side": "S",
+   "entry": 0.81607,
+   "stop": 0.8405521,
+   "cur": 0.81607,
+   "unreal_R": -0.02,
+   "since": "2026-10-22 01:00"
   }
  ],
  "closed": [
@@ -2535,20 +2577,6 @@
  ],
  "trade_log": [
   {
-   "ts": "2026-10-07 21:00:00+00:00",
-   "engine": 2,
-   "coin": "CRV",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-10-08 01:00:00+00:00",
-   "engine": 2,
-   "coin": "OP",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
    "ts": "2026-10-08 01:00:00+00:00",
    "engine": 2,
    "coin": "LINK",
@@ -2953,6 +2981,20 @@
    "coin": "ARB",
    "action": "close",
    "note": "STOP -1.09R"
+  },
+  {
+   "ts": "2026-10-22 01:00:00+00:00",
+   "engine": 2,
+   "coin": "ARB",
+   "action": "open",
+   "note": "SHORT @0.1880 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-10-22 01:00:00+00:00",
+   "engine": 2,
+   "coin": "AERO",
+   "action": "open",
+   "note": "SHORT @0.8161 stop +3% (12h clock)"
   }
  ]
 }
