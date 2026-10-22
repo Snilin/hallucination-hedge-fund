@@ -1,15 +1,15 @@
 {
- "last_bar": "2026-10-22 12:00:00+00:00",
+ "last_bar": "2026-10-22 16:00:00+00:00",
  "positions": [
   {
-   "coin": "BNB",
-   "dir": "L",
-   "entry": 749.41,
-   "stop": 726.9277,
-   "tp": 861.8214999999999,
-   "opened": "2026-10-21 12:00:00+00:00",
-   "last_bar": "2026-10-22 12:00:00+00:00",
-   "bars": 6
+   "coin": "BTC",
+   "dir": "S",
+   "entry": 81511.0,
+   "stop": 83956.33,
+   "tp": 69284.34999999999,
+   "opened": "2026-10-22 16:00:00+00:00",
+   "last_bar": "2026-10-22 16:00:00+00:00",
+   "bars": 0
   }
  ],
  "closed": [
@@ -180,31 +180,38 @@
    "R": 1.205,
    "why": "TIMEOUT",
    "closed": "2026-10-21 12:00:00+00:00"
+  },
+  {
+   "coin": "BNB",
+   "dir": "L",
+   "R": -1.053,
+   "why": "STOP",
+   "closed": "2026-10-22 16:00:00+00:00"
   }
  ],
  "interval": "4h",
  "accounts": {
   "BrightFunded-50bp": {
-   "equity": 1.0191877374049996,
+   "equity": 1.0138225632906768,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 1.0094561209839068,
-   "day": "2026-10-21",
+   "day_start": 1.0191877374049996,
+   "day": "2026-10-22",
    "status": "active",
-   "opened": 25,
+   "opened": 26,
    "wins": 7,
-   "losses": 17
+   "losses": 18
   },
   "BrightFunded-75bp": {
-   "equity": 1.0278971463633062,
+   "equity": 1.019780613521335,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 1.0132287089001994,
-   "day": "2026-10-21",
+   "day_start": 1.0278971463633062,
+   "day": "2026-10-22",
    "status": "active",
-   "opened": 25,
+   "opened": 26,
    "wins": 7,
-   "losses": 17
+   "losses": 18
   },
   "Breakout-50bp": {
    "equity": 0.9385800609367199,
