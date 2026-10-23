@@ -1,5 +1,5 @@
 MAJORS CHALLENGE - forward paper trade
-started 2026-08-21 08:00:00+00:00  |  latest bar 2026-10-23 08:00:00+00:00  |  trades closed 25
+started 2026-08-21 08:00:00+00:00  |  latest bar 2026-10-23 12:00:00+00:00  |  trades closed 25
 
 account                 risk   equity   phase  status  W/L
 --------------------------------------------------------------
@@ -9,8 +9,8 @@ Breakout-50bp          0.50%   -6.14%       -   BLOWN  0/12
 Breakout-75bp          0.75%   -6.15%       -   BLOWN  0/8
 
 open positions (2/6):
-  S BTC   @ 81511.0000  stop 83956.3300  tp 69284.3500  bar 4/84
-  L BNB   @ 747.5000  stop 725.0750  tp 859.6250  bar 0/84
+  S BTC   @ 81511.0000  stop 83956.3300  tp 69284.3500  bar 5/84
+  L BNB   @ 747.5000  stop 725.0750  tp 859.6250  bar 1/84
 
 last closed:
   S ADA   -1.05R  STOP
