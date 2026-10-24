@@ -1,14 +1,14 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-10-24 08:00:00+00:00",
- "closed_total": 25,
+ "last_bar": "2026-10-24 12:00:00+00:00",
+ "closed_total": 26,
  "accounts": [
   {
    "name": "BrightFunded-50bp",
    "firm": "BrightFunded",
    "risk": 0.005,
-   "equity": 1.01382,
-   "pnl_pct": 1.38,
+   "equity": 1.00849,
+   "pnl_pct": 0.85,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -18,14 +18,14 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 7,
-   "losses": 18
+   "losses": 19
   },
   {
    "name": "BrightFunded-75bp",
    "firm": "BrightFunded",
    "risk": 0.0075,
-   "equity": 1.01978,
-   "pnl_pct": 1.98,
+   "equity": 1.01173,
+   "pnl_pct": 1.17,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -35,7 +35,7 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 7,
-   "losses": 18
+   "losses": 19
   },
   {
    "name": "Breakout-50bp",
@@ -77,25 +77,10 @@
    "entry": 81511.0,
    "stop": 83956.33,
    "tp": 69284.34999999999,
-   "bars": 10
-  },
-  {
-   "coin": "BNB",
-   "dir": "L",
-   "entry": 747.5,
-   "stop": 725.0749999999999,
-   "tp": 859.6249999999999,
-   "bars": 6
+   "bars": 11
   }
  ],
  "recent": [
-  {
-   "coin": "SOL",
-   "dir": "L",
-   "R": 4.963,
-   "why": "TP",
-   "closed": "2026-09-25 08:00:00+00:00"
-  },
   {
    "coin": "LINK",
    "dir": "L",
@@ -172,6 +157,13 @@
    "R": -1.053,
    "why": "STOP",
    "closed": "2026-10-22 16:00:00+00:00"
+  },
+  {
+   "coin": "BNB",
+   "dir": "L",
+   "R": -1.053,
+   "why": "STOP",
+   "closed": "2026-10-24 12:00:00+00:00"
   }
  ]
 }
