@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-11-05 10:00:00+00:00",
+ "ts": "2026-11-05 18:00:00+00:00",
  "equity": 687.5744246133232,
  "events": [
   {
@@ -2559,8 +2559,8 @@
    "stop_frac": 0.03,
    "opened": "2026-10-31 15:00:00+00:00",
    "open": true,
-   "cur": 0.31831,
-   "ts_check": "2026-11-05 10:00:00+00:00"
+   "cur": 0.31676,
+   "ts_check": "2026-11-05 18:00:00+00:00"
   },
   {
    "engine": 2,
@@ -5334,8 +5334,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-11-05 02:00:00+00:00",
- "alt_scan_bar": "2026-11-05 00:00:00+00:00",
+ "alt_scan": "2026-11-05 18:00:00+00:00",
+ "alt_scan_bar": "2026-11-05 12:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -7440,6 +7440,10 @@
   [
    "2026-11-05 10:00:00+00:00",
    688.298
+  ],
+  [
+   "2026-11-05 18:00:00+00:00",
+   688.8522
   ]
  ],
  "trade_log": [
@@ -9546,45 +9550,51 @@
  ],
  "watch": [
   {
+   "coin": "HYPE",
+   "bulls": 3,
+   "gap": 0.25,
+   "veto": false
+  },
+  {
+   "coin": "MORPHO",
+   "bulls": 3,
+   "gap": 0.28,
+   "veto": false
+  },
+  {
+   "coin": "kBONK",
+   "bulls": 3,
+   "gap": 0.35,
+   "veto": false
+  },
+  {
    "coin": "XRP",
-   "bulls": 3,
-   "gap": 0.08,
+   "bulls": 4,
+   "gap": 0.14,
    "veto": false
   },
   {
-   "coin": "ASTER",
-   "bulls": 3,
-   "gap": 0.19,
+   "coin": "ZRO",
+   "bulls": 4,
+   "gap": 0.18,
    "veto": false
   },
   {
-   "coin": "PAXG",
-   "bulls": 3,
-   "gap": 0.46,
+   "coin": "BCH",
+   "bulls": 4,
+   "gap": 0.22,
    "veto": false
   },
   {
    "coin": "RUNE",
-   "bulls": 3,
-   "gap": 0.55,
-   "veto": false
-  },
-  {
-   "coin": "INJ",
-   "bulls": 3,
-   "gap": 1.14,
-   "veto": false
-  },
-  {
-   "coin": "SPX",
    "bulls": 4,
-   "gap": 0.89,
+   "gap": 0.28,
    "veto": false
   },
   {
    "coin": "CASHCAT",
    "bulls": 4,
-   "gap": 1.82,
+   "gap": 1.4,
    "veto": false
   }
  ]

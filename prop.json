@@ -1,14 +1,14 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-11-05 04:00:00+00:00",
- "closed_total": 27,
+ "last_bar": "2026-11-05 12:00:00+00:00",
+ "closed_total": 28,
  "accounts": [
   {
    "name": "BrightFunded-50bp",
    "firm": "BrightFunded",
    "risk": 0.005,
-   "equity": 1.00318,
-   "pnl_pct": 0.32,
+   "equity": 0.9979,
+   "pnl_pct": -0.21,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -18,14 +18,14 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 7,
-   "losses": 20
+   "losses": 21
   },
   {
    "name": "BrightFunded-75bp",
    "firm": "BrightFunded",
    "risk": 0.0075,
-   "equity": 1.00374,
-   "pnl_pct": 0.37,
+   "equity": 0.99581,
+   "pnl_pct": -0.42,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -35,7 +35,7 @@
    "max_dd": 0.1,
    "status": "active",
    "wins": 7,
-   "losses": 20
+   "losses": 21
   },
   {
    "name": "Breakout-50bp",
@@ -77,25 +77,18 @@
    "entry": 81511.0,
    "stop": 83956.33,
    "tp": 69284.34999999999,
-   "bars": 81
+   "bars": 83
   },
   {
-   "coin": "ETH",
-   "dir": "L",
-   "entry": 2405.6,
-   "stop": 2333.432,
-   "tp": 2766.4399999999996,
-   "bars": 3
+   "coin": "XRP",
+   "dir": "S",
+   "entry": 1.2448,
+   "stop": 1.282144,
+   "tp": 1.05808,
+   "bars": 0
   }
  ],
  "recent": [
-  {
-   "coin": "ETH",
-   "dir": "L",
-   "R": 3.311,
-   "why": "TIMEOUT",
-   "closed": "2026-10-02 04:00:00+00:00"
-  },
   {
    "coin": "BTC",
    "dir": "L",
@@ -172,6 +165,13 @@
    "R": -1.053,
    "why": "STOP",
    "closed": "2026-10-30 00:00:00+00:00"
+  },
+  {
+   "coin": "ETH",
+   "dir": "L",
+   "R": -1.053,
+   "why": "STOP",
+   "closed": "2026-11-05 12:00:00+00:00"
   }
  ]
 }

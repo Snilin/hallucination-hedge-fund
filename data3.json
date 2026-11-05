@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-11-05 10:00:00+00:00",
+ "updated": "2026-11-05 18:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 688.298,
+ "equity": 688.8522,
  "realized": 687.5744,
- "pnl": -311.702,
- "pnl_pct": -31.17,
+ "pnl": -311.1478,
+ "pnl_pct": -31.115,
  "gate_bull": false,
  "series": [
   [
@@ -2112,6 +2112,10 @@
   [
    "2026-11-05 10:00:00+00:00",
    688.298
+  ],
+  [
+   "2026-11-05 18:00:00+00:00",
+   688.8522
   ]
  ],
  "arming": {
@@ -2119,69 +2123,75 @@
    "votes": 0,
    "need": 3,
    "gaps": [
-    0.901,
-    1.761,
-    1.977,
-    2.264,
-    2.281,
-    1.294
+    1.208,
+    1.852,
+    2.075,
+    2.295,
+    2.292,
+    1.321
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 6,
-    "hot": true
+    "fast": 2,
+    "hot": false
    },
    "ETH": {
-    "fast": 6,
+    "fast": 3,
     "hot": true
    }
   },
   "e2": {
    "slots": 10,
    "used": 1,
-   "last_scan": "2026-11-05 02:00:00+00:00",
+   "last_scan": "2026-11-05 18:00:00+00:00",
    "watchlist": [
     {
+     "coin": "HYPE",
+     "bulls": 3,
+     "gap": 0.25,
+     "veto": false
+    },
+    {
+     "coin": "MORPHO",
+     "bulls": 3,
+     "gap": 0.28,
+     "veto": false
+    },
+    {
+     "coin": "kBONK",
+     "bulls": 3,
+     "gap": 0.35,
+     "veto": false
+    },
+    {
      "coin": "XRP",
-     "bulls": 3,
-     "gap": 0.08,
+     "bulls": 4,
+     "gap": 0.14,
      "veto": false
     },
     {
-     "coin": "ASTER",
-     "bulls": 3,
-     "gap": 0.19,
+     "coin": "ZRO",
+     "bulls": 4,
+     "gap": 0.18,
      "veto": false
     },
     {
-     "coin": "PAXG",
-     "bulls": 3,
-     "gap": 0.46,
+     "coin": "BCH",
+     "bulls": 4,
+     "gap": 0.22,
      "veto": false
     },
     {
      "coin": "RUNE",
-     "bulls": 3,
-     "gap": 0.55,
-     "veto": false
-    },
-    {
-     "coin": "INJ",
-     "bulls": 3,
-     "gap": 1.14,
-     "veto": false
-    },
-    {
-     "coin": "SPX",
      "bulls": 4,
-     "gap": 0.89,
+     "gap": 0.28,
      "veto": false
     },
     {
      "coin": "CASHCAT",
      "bulls": 4,
-     "gap": 1.82,
+     "gap": 1.4,
      "veto": false
     }
    ]
@@ -2212,8 +2222,8 @@
    "side": "S",
    "entry": 0.32051,
    "stop": 0.3301253,
-   "cur": 0.31831,
-   "unreal_R": 0.21,
+   "cur": 0.31676,
+   "unreal_R": 0.37,
    "since": "2026-10-31 15:00"
   }
  ],
