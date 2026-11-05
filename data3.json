@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-11-04 21:00:00+00:00",
+ "updated": "2026-11-05 02:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 687.8475,
+ "equity": 687.8403,
  "realized": 687.5744,
- "pnl": -312.1525,
- "pnl_pct": -31.215,
+ "pnl": -312.1597,
+ "pnl_pct": -31.216,
  "gate_bull": false,
  "series": [
   [
@@ -2104,6 +2104,10 @@
   [
    "2026-11-04 21:00:00+00:00",
    687.8475
+  ],
+  [
+   "2026-11-05 02:00:00+00:00",
+   687.8403
   ]
  ],
  "arming": {
@@ -2111,12 +2115,12 @@
    "votes": 0,
    "need": 3,
    "gaps": [
-    2.056,
-    2.688,
-    2.917,
-    3.008,
-    2.874,
-    1.667
+    1.526,
+    2.285,
+    2.509,
+    2.694,
+    2.628,
+    1.515
    ]
   },
   "e1": {
@@ -2132,30 +2136,48 @@
   "e2": {
    "slots": 10,
    "used": 1,
-   "last_scan": "2026-11-04 14:00:00+00:00",
+   "last_scan": "2026-11-05 02:00:00+00:00",
    "watchlist": [
     {
-     "coin": "POL",
+     "coin": "XRP",
      "bulls": 3,
-     "gap": 0.62,
+     "gap": 0.08,
+     "veto": false
+    },
+    {
+     "coin": "ASTER",
+     "bulls": 3,
+     "gap": 0.19,
+     "veto": false
+    },
+    {
+     "coin": "PAXG",
+     "bulls": 3,
+     "gap": 0.46,
+     "veto": false
+    },
+    {
+     "coin": "RUNE",
+     "bulls": 3,
+     "gap": 0.55,
+     "veto": false
+    },
+    {
+     "coin": "INJ",
+     "bulls": 3,
+     "gap": 1.14,
      "veto": false
     },
     {
      "coin": "SPX",
-     "bulls": 3,
-     "gap": 0.82,
-     "veto": false
-    },
-    {
-     "coin": "ZEC",
      "bulls": 4,
-     "gap": 0.35,
+     "gap": 0.89,
      "veto": false
     },
     {
      "coin": "CASHCAT",
      "bulls": 4,
-     "gap": 1.54,
+     "gap": 1.82,
      "veto": false
     }
    ]
@@ -2186,7 +2208,7 @@
    "side": "S",
    "entry": 0.32051,
    "stop": 0.3301253,
-   "cur": 0.31957,
+   "cur": 0.31959,
    "unreal_R": 0.08,
    "since": "2026-10-31 15:00"
   }
