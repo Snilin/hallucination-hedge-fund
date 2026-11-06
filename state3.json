@@ -1,6 +1,6 @@
 {
  "t0": "2026-08-19 11:00:00+00:00",
- "ts": "2026-11-05 18:00:00+00:00",
+ "ts": "2026-11-06 00:00:00+00:00",
  "equity": 687.5744246133232,
  "events": [
   {
@@ -2559,8 +2559,8 @@
    "stop_frac": 0.03,
    "opened": "2026-10-31 15:00:00+00:00",
    "open": true,
-   "cur": 0.31676,
-   "ts_check": "2026-11-05 18:00:00+00:00"
+   "cur": 0.3181,
+   "ts_check": "2026-11-06 00:00:00+00:00"
   },
   {
    "engine": 2,
@@ -2672,6 +2672,105 @@
    "exit": 1169.9436795,
    "R": -1.087,
    "why": "STOP"
+  },
+  {
+   "engine": 2,
+   "coin": "XRP",
+   "side": "S",
+   "entry": 1.2069,
+   "stop": 1.2431070000000002,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 1.2069
+  },
+  {
+   "engine": 2,
+   "coin": "BCH",
+   "side": "S",
+   "entry": 272.19,
+   "stop": 280.3557,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 272.19
+  },
+  {
+   "engine": 2,
+   "coin": "UNI",
+   "side": "S",
+   "entry": 6.8127,
+   "stop": 7.017081000000001,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 6.8127
+  },
+  {
+   "engine": 2,
+   "coin": "RUNE",
+   "side": "S",
+   "entry": 0.60176,
+   "stop": 0.6198127999999999,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 0.60176
+  },
+  {
+   "engine": 2,
+   "coin": "ZRO",
+   "side": "S",
+   "entry": 1.5924,
+   "stop": 1.6401720000000002,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 1.5924
+  },
+  {
+   "engine": 2,
+   "coin": "kBONK",
+   "side": "S",
+   "entry": 0.002815,
+   "stop": 0.00289945,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 0.002815
+  },
+  {
+   "engine": 2,
+   "coin": "PURR",
+   "side": "S",
+   "entry": 0.10044,
+   "stop": 0.10345320000000001,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 0.10044
+  },
+  {
+   "engine": 2,
+   "coin": "HYPE",
+   "side": "S",
+   "entry": 76.592,
+   "stop": 78.88976,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 76.592
+  },
+  {
+   "engine": 2,
+   "coin": "SPX",
+   "side": "S",
+   "entry": 0.34068,
+   "stop": 0.3509004,
+   "stop_frac": 0.03,
+   "opened": "2026-11-06 00:00:00+00:00",
+   "open": true,
+   "cur": 0.34068
   }
  ],
  "closed": [
@@ -5334,8 +5433,8 @@
    "why": "STOP"
   }
  ],
- "alt_scan": "2026-11-05 18:00:00+00:00",
- "alt_scan_bar": "2026-11-05 12:00:00+00:00",
+ "alt_scan": "2026-11-06 00:00:00+00:00",
+ "alt_scan_bar": "2026-11-06 00:00:00+00:00",
  "hist": [
   [
    "2026-08-19 11:00:00+00:00",
@@ -7444,72 +7543,13 @@
   [
    "2026-11-05 18:00:00+00:00",
    688.8522
+  ],
+  [
+   "2026-11-06 00:00:00+00:00",
+   687.8058
   ]
  ],
  "trade_log": [
-  {
-   "ts": "2026-09-03 00:00:00+00:00",
-   "engine": 2,
-   "coin": "ZRO",
-   "action": "open",
-   "note": "SHORT @1.0114 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-03 04:00:00+00:00",
-   "engine": 2,
-   "coin": "SUI",
-   "action": "close",
-   "note": "STOP -1.06R"
-  },
-  {
-   "ts": "2026-09-03 04:00:00+00:00",
-   "engine": 2,
-   "coin": "AERO",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-03 04:00:00+00:00",
-   "engine": 2,
-   "coin": "ZRO",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-03 09:00:00+00:00",
-   "engine": 2,
-   "coin": "DOGE",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-03 09:00:00+00:00",
-   "engine": 2,
-   "coin": "TAO",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
-   "ts": "2026-09-03 14:00:00+00:00",
-   "engine": 1,
-   "coin": "BTC",
-   "action": "open",
-   "note": "LONG @78797.00 stop 2.00%"
-  },
-  {
-   "ts": "2026-09-03 14:00:00+00:00",
-   "engine": 2,
-   "coin": "CC",
-   "action": "open",
-   "note": "SHORT @0.1096 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-09-03 18:00:00+00:00",
-   "engine": 2,
-   "coin": "INJ",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
   {
    "ts": "2026-09-03 18:00:00+00:00",
    "engine": 2,
@@ -9546,56 +9586,70 @@
    "coin": "BCH",
    "action": "close",
    "note": "STOP -1.08R"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "XRP",
+   "action": "open",
+   "note": "SHORT @1.2069 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "BCH",
+   "action": "open",
+   "note": "SHORT @272.1900 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "UNI",
+   "action": "open",
+   "note": "SHORT @6.8127 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "RUNE",
+   "action": "open",
+   "note": "SHORT @0.6018 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "ZRO",
+   "action": "open",
+   "note": "SHORT @1.5924 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "kBONK",
+   "action": "open",
+   "note": "SHORT @0.0028 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "PURR",
+   "action": "open",
+   "note": "SHORT @0.1004 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "HYPE",
+   "action": "open",
+   "note": "SHORT @76.5920 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-06 00:00:00+00:00",
+   "engine": 2,
+   "coin": "SPX",
+   "action": "open",
+   "note": "SHORT @0.3407 stop +3% (12h clock)"
   }
  ],
- "watch": [
-  {
-   "coin": "HYPE",
-   "bulls": 3,
-   "gap": 0.25,
-   "veto": false
-  },
-  {
-   "coin": "MORPHO",
-   "bulls": 3,
-   "gap": 0.28,
-   "veto": false
-  },
-  {
-   "coin": "kBONK",
-   "bulls": 3,
-   "gap": 0.35,
-   "veto": false
-  },
-  {
-   "coin": "XRP",
-   "bulls": 4,
-   "gap": 0.14,
-   "veto": false
-  },
-  {
-   "coin": "ZRO",
-   "bulls": 4,
-   "gap": 0.18,
-   "veto": false
-  },
-  {
-   "coin": "BCH",
-   "bulls": 4,
-   "gap": 0.22,
-   "veto": false
-  },
-  {
-   "coin": "RUNE",
-   "bulls": 4,
-   "gap": 0.28,
-   "veto": false
-  },
-  {
-   "coin": "CASHCAT",
-   "bulls": 4,
-   "gap": 1.4,
-   "veto": false
-  }
- ]
+ "watch": []
 }
