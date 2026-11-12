@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-11-12 10:00:00+00:00",
+ "updated": "2026-11-12 18:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 697.4842,
+ "equity": 710.7991,
  "realized": 655.1957,
- "pnl": -302.5158,
- "pnl_pct": -30.252,
+ "pnl": -289.2009,
+ "pnl_pct": -28.92,
  "gate_bull": false,
  "series": [
   [
@@ -2216,6 +2216,10 @@
   [
    "2026-11-12 10:00:00+00:00",
    697.4842
+  ],
+  [
+   "2026-11-12 18:00:00+00:00",
+   710.7991
   ]
  ],
  "arming": {
@@ -2223,12 +2227,12 @@
    "votes": 0,
    "need": 3,
    "gaps": [
-    4.634,
-    5.07,
-    5.619,
-    5.64,
-    5.509,
-    4.739
+    5.099,
+    5.414,
+    5.987,
+    5.951,
+    5.789,
+    5.008
    ]
   },
   "e1": {
@@ -2243,31 +2247,13 @@
   },
   "e2": {
    "slots": 10,
-   "used": 6,
-   "last_scan": "2026-11-12 02:00:00+00:00",
+   "used": 10,
+   "last_scan": "2026-11-12 18:00:00+00:00",
    "watchlist": [
     {
-     "coin": "SPX",
-     "bulls": 3,
-     "gap": 0.23,
-     "veto": false
-    },
-    {
-     "coin": "GRAM",
-     "bulls": 3,
-     "gap": 0.51,
-     "veto": false
-    },
-    {
-     "coin": "kPEPE",
-     "bulls": 3,
-     "gap": 0.92,
-     "veto": false
-    },
-    {
      "coin": "ICP",
-     "bulls": 3,
-     "gap": 0.99,
+     "bulls": 4,
+     "gap": 0.03,
      "veto": false
     }
    ]
@@ -2284,7 +2270,7 @@
  },
  "e2": {
   "closed": 164,
-  "open": 6,
+  "open": 10,
   "win_pct": 12.8,
   "avg_R": -0.427,
   "tot_R": -69.96,
@@ -2298,8 +2284,8 @@
    "side": "S",
    "entry": 1.2069,
    "stop": 1.2431070000000002,
-   "cur": 1.0521,
-   "unreal_R": 4.26,
+   "cur": 1.0297,
+   "unreal_R": 4.88,
    "since": "2026-11-06 00:00"
   },
   {
@@ -2308,8 +2294,8 @@
    "side": "S",
    "entry": 272.19,
    "stop": 280.3557,
-   "cur": 228.04,
-   "unreal_R": 5.39,
+   "cur": 224.84,
+   "unreal_R": 5.78,
    "since": "2026-11-06 00:00"
   },
   {
@@ -2318,8 +2304,8 @@
    "side": "S",
    "entry": 0.60176,
    "stop": 0.6198127999999999,
-   "cur": 0.598,
-   "unreal_R": 0.19,
+   "cur": 0.58087,
+   "unreal_R": 1.14,
    "since": "2026-11-06 00:00"
   },
   {
@@ -2328,8 +2314,8 @@
    "side": "S",
    "entry": 599.47,
    "stop": 617.4541,
-   "cur": 553.99,
-   "unreal_R": 2.51,
+   "cur": 534.5,
+   "unreal_R": 3.59,
    "since": "2026-11-09 00:00"
   },
   {
@@ -2338,8 +2324,8 @@
    "side": "S",
    "entry": 7.5186,
    "stop": 7.7441580000000005,
-   "cur": 7.4504,
-   "unreal_R": 0.28,
+   "cur": 7.328,
+   "unreal_R": 0.83,
    "since": "2026-11-12 02:00"
   },
   {
@@ -2348,9 +2334,49 @@
    "side": "S",
    "entry": 3974.0,
    "stop": 4093.2200000000003,
-   "cur": 3938.6,
-   "unreal_R": 0.28,
+   "cur": 3872.8,
+   "unreal_R": 0.83,
    "since": "2026-11-12 02:00"
+  },
+  {
+   "engine": 2,
+   "coin": "kPEPE",
+   "side": "S",
+   "entry": 0.00445,
+   "stop": 0.0045835,
+   "cur": 0.00445,
+   "unreal_R": -0.02,
+   "since": "2026-11-12 18:00"
+  },
+  {
+   "engine": 2,
+   "coin": "SPX",
+   "side": "S",
+   "entry": 0.34735,
+   "stop": 0.3577705,
+   "cur": 0.34735,
+   "unreal_R": -0.02,
+   "since": "2026-11-12 18:00"
+  },
+  {
+   "engine": 2,
+   "coin": "INIT",
+   "side": "S",
+   "entry": 0.12747,
+   "stop": 0.1312941,
+   "cur": 0.12747,
+   "unreal_R": -0.02,
+   "since": "2026-11-12 18:00"
+  },
+  {
+   "engine": 2,
+   "coin": "LIT",
+   "side": "S",
+   "entry": 3.1191,
+   "stop": 3.212673,
+   "cur": 3.1191,
+   "unreal_R": -0.02,
+   "since": "2026-11-12 18:00"
   }
  ],
  "closed": [
@@ -2897,34 +2923,6 @@
  ],
  "trade_log": [
   {
-   "ts": "2026-10-29 14:00:00+00:00",
-   "engine": 2,
-   "coin": "ETHFI",
-   "action": "open",
-   "note": "SHORT @0.6573 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-10-29 14:00:00+00:00",
-   "engine": 2,
-   "coin": "PENGU",
-   "action": "open",
-   "note": "SHORT @0.0077 stop +3% (12h clock)"
-  },
-  {
-   "ts": "2026-10-29 19:00:00+00:00",
-   "engine": 2,
-   "coin": "VVV",
-   "action": "close",
-   "note": "STOP -1.08R"
-  },
-  {
-   "ts": "2026-10-29 19:00:00+00:00",
-   "engine": 2,
-   "coin": "INJ",
-   "action": "close",
-   "note": "STOP -1.09R"
-  },
-  {
    "ts": "2026-10-29 19:00:00+00:00",
    "engine": 2,
    "coin": "ETHFI",
@@ -3315,6 +3313,34 @@
    "coin": "PAXG",
    "action": "open",
    "note": "SHORT @3974.0000 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-12 18:00:00+00:00",
+   "engine": 2,
+   "coin": "kPEPE",
+   "action": "open",
+   "note": "SHORT @0.0044 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-12 18:00:00+00:00",
+   "engine": 2,
+   "coin": "SPX",
+   "action": "open",
+   "note": "SHORT @0.3473 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-12 18:00:00+00:00",
+   "engine": 2,
+   "coin": "INIT",
+   "action": "open",
+   "note": "SHORT @0.1275 stop +3% (12h clock)"
+  },
+  {
+   "ts": "2026-11-12 18:00:00+00:00",
+   "engine": 2,
+   "coin": "LIT",
+   "action": "open",
+   "note": "SHORT @3.1191 stop +3% (12h clock)"
   }
  ]
 }
