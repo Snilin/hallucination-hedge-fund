@@ -1,14 +1,14 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-11-13 00:00:00+00:00",
- "closed_total": 30,
+ "last_bar": "2026-11-13 12:00:00+00:00",
+ "closed_total": 31,
  "accounts": [
   {
    "name": "BrightFunded-50bp",
    "firm": "BrightFunded",
    "risk": 0.005,
-   "equity": 1.03322,
-   "pnl_pct": 3.32,
+   "equity": 1.05886,
+   "pnl_pct": 5.89,
    "phase": 0,
    "phases": 2,
    "target": [
@@ -17,16 +17,16 @@
    ],
    "max_dd": 0.1,
    "status": "active",
-   "wins": 9,
+   "wins": 10,
    "losses": 21
   },
   {
    "name": "BrightFunded-75bp",
    "firm": "BrightFunded",
    "risk": 0.0075,
-   "equity": 1.04888,
-   "pnl_pct": 4.89,
-   "phase": 0,
+   "equity": 1.08793,
+   "pnl_pct": 8.79,
+   "phase": 1,
    "phases": 2,
    "target": [
     0.08,
@@ -34,7 +34,7 @@
    ],
    "max_dd": 0.1,
    "status": "active",
-   "wins": 9,
+   "wins": 10,
    "losses": 21
   },
   {
@@ -70,24 +70,8 @@
    "losses": 8
   }
  ],
- "positions": [
-  {
-   "coin": "ETH",
-   "dir": "S",
-   "entry": 2237.1,
-   "stop": 2304.213,
-   "tp": 1901.5349999999999,
-   "bars": 43
-  }
- ],
+ "positions": [],
  "recent": [
-  {
-   "coin": "BTC",
-   "dir": "S",
-   "R": -1.054,
-   "why": "STOP",
-   "closed": "2026-10-09 12:00:00+00:00"
-  },
   {
    "coin": "BNB",
    "dir": "S",
@@ -164,6 +148,13 @@
    "R": 4.963,
    "why": "TP",
    "closed": "2026-11-10 12:00:00+00:00"
+  },
+  {
+   "coin": "ETH",
+   "dir": "S",
+   "R": 4.963,
+   "why": "TP",
+   "closed": "2026-11-13 12:00:00+00:00"
   }
  ]
 }
