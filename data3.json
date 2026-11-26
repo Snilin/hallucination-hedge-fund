@@ -1,12 +1,12 @@
 {
  "name": "Test Lab \u2014 Hybrid Book",
- "updated": "2026-11-25 22:00:00+00:00",
+ "updated": "2026-11-26 04:00:00+00:00",
  "since": "2026-08-19 11:00:00+00:00",
  "start": 1000.0,
- "equity": 816.5609,
- "realized": 769.9702,
- "pnl": -183.4391,
- "pnl_pct": -18.344,
+ "equity": 808.1579,
+ "realized": 798.9922,
+ "pnl": -191.8421,
+ "pnl_pct": -19.184,
  "gate_bull": false,
  "series": [
   [
@@ -2388,6 +2388,10 @@
   [
    "2026-11-25 22:00:00+00:00",
    816.5609
+  ],
+  [
+   "2026-11-26 04:00:00+00:00",
+   808.1579
   ]
  ],
  "arming": {
@@ -2395,36 +2399,29 @@
    "votes": 0,
    "need": 3,
    "gaps": [
-    10.766,
-    12.891,
-    15.052,
-    16.366,
-    17.283,
-    19.409
+    10.177,
+    12.477,
+    14.637,
+    16.057,
+    17.051,
+    19.315
    ]
   },
   "e1": {
    "BTC": {
-    "fast": 0,
-    "hot": false
+    "fast": 3,
+    "hot": true
    },
    "ETH": {
-    "fast": 0,
-    "hot": false
+    "fast": 3,
+    "hot": true
    }
   },
   "e2": {
    "slots": 10,
-   "used": 2,
-   "last_scan": "2026-11-25 12:00:00+00:00",
-   "watchlist": [
-    {
-     "coin": "BIGTIME",
-     "bulls": 4,
-     "gap": 4.74,
-     "veto": false
-    }
-   ]
+   "used": 1,
+   "last_scan": "2026-11-26 04:00:00+00:00",
+   "watchlist": []
   }
  },
  "e1": {
@@ -2437,46 +2434,27 @@
   "worst": -1.09
  },
  "e2": {
-  "closed": 179,
-  "open": 2,
-  "win_pct": 16.2,
-  "avg_R": -0.207,
-  "tot_R": -37.06,
+  "closed": 180,
+  "open": 1,
+  "win_pct": 16.7,
+  "avg_R": -0.164,
+  "tot_R": -29.52,
   "best": 8.67,
   "worst": -2.36
  },
  "open_positions": [
   {
    "engine": 2,
-   "coin": "SOPH",
-   "side": "S",
-   "entry": 0.001166,
-   "stop": 0.00120098,
-   "cur": 0.00085,
-   "unreal_R": 9.02,
-   "since": "2026-11-16 01:00"
-  },
-  {
-   "engine": 2,
    "coin": "JUP",
    "side": "S",
    "entry": 0.24993,
    "stop": 0.25742790000000004,
-   "cur": 0.22665,
-   "unreal_R": 3.09,
+   "cur": 0.23259,
+   "unreal_R": 2.29,
    "since": "2026-11-20 03:00"
   }
  ],
  "closed": [
-  {
-   "engine": 2,
-   "coin": "APT",
-   "side": "S",
-   "R": -1.081,
-   "why": "STOP",
-   "opened": "2026-10-19 01:00",
-   "closed": "2026-10-20 19:00"
-  },
   {
    "engine": 2,
    "coin": "NEAR",
@@ -3007,16 +2985,18 @@
    "why": "TIMEOUT",
    "opened": "2026-11-14 03:00",
    "closed": "2026-11-24 05:00"
+  },
+  {
+   "engine": 2,
+   "coin": "SOPH",
+   "side": "S",
+   "R": 7.538,
+   "why": "TIMEOUT",
+   "opened": "2026-11-16 01:00",
+   "closed": "2026-11-26 04:00"
   }
  ],
  "trade_log": [
-  {
-   "ts": "2026-11-03 02:00:00+00:00",
-   "engine": 2,
-   "coin": "ZEC",
-   "action": "open",
-   "note": "SHORT @1135.3000 stop +3% (12h clock)"
-  },
   {
    "ts": "2026-11-03 18:00:00+00:00",
    "engine": 2,
@@ -3429,6 +3409,13 @@
    "coin": "GRAM",
    "action": "close",
    "note": "TIMEOUT +2.91R"
+  },
+  {
+   "ts": "2026-11-26 04:00:00+00:00",
+   "engine": 2,
+   "coin": "SOPH",
+   "action": "close",
+   "note": "TIMEOUT +7.54R"
   }
  ]
 }
