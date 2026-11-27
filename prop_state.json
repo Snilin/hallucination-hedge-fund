@@ -1,17 +1,6 @@
 {
- "last_bar": "2026-11-27 04:00:00+00:00",
- "positions": [
-  {
-   "coin": "LINK",
-   "dir": "L",
-   "entry": 9.5965,
-   "stop": 9.308605,
-   "tp": 11.035975,
-   "opened": "2026-11-27 04:00:00+00:00",
-   "last_bar": "2026-11-27 04:00:00+00:00",
-   "bars": 0
-  }
- ],
+ "last_bar": "2026-11-27 12:00:00+00:00",
+ "positions": [],
  "closed": [
   {
    "coin": "DOGE",
@@ -229,31 +218,38 @@
    "R": 4.963,
    "why": "TP",
    "closed": "2026-11-13 12:00:00+00:00"
+  },
+  {
+   "coin": "LINK",
+   "dir": "L",
+   "R": -1.053,
+   "why": "STOP",
+   "closed": "2026-11-27 12:00:00+00:00"
   }
  ],
  "interval": "4h",
  "accounts": {
   "BrightFunded-50bp": {
-   "equity": 1.0588640942520593,
+   "equity": 1.0532900571825674,
    "phase": 0,
    "phase_start": 1.0,
-   "day_start": 1.033222944837671,
-   "day": "2026-11-13",
+   "day_start": 1.0588640942520593,
+   "day": "2026-11-27",
    "status": "active",
    "opened": 32,
    "wins": 10,
-   "losses": 21
+   "losses": 22
   },
   "BrightFunded-75bp": {
-   "equity": 1.087929692721293,
+   "equity": 1.0793391278851423,
    "phase": 1,
    "phase_start": 1.087929692721293,
    "day_start": 1.087929692721293,
-   "day": "2026-11-13",
+   "day": "2026-11-27",
    "status": "active",
    "opened": 32,
    "wins": 10,
-   "losses": 21
+   "losses": 22
   },
   "Breakout-50bp": {
    "equity": 0.9385800609367199,
