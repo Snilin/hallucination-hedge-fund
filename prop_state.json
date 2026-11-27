@@ -1,6 +1,17 @@
 {
- "last_bar": "2026-11-26 16:00:00+00:00",
- "positions": [],
+ "last_bar": "2026-11-27 04:00:00+00:00",
+ "positions": [
+  {
+   "coin": "LINK",
+   "dir": "L",
+   "entry": 9.5965,
+   "stop": 9.308605,
+   "tp": 11.035975,
+   "opened": "2026-11-27 04:00:00+00:00",
+   "last_bar": "2026-11-27 04:00:00+00:00",
+   "bars": 0
+  }
+ ],
  "closed": [
   {
    "coin": "DOGE",
@@ -229,7 +240,7 @@
    "day_start": 1.033222944837671,
    "day": "2026-11-13",
    "status": "active",
-   "opened": 31,
+   "opened": 32,
    "wins": 10,
    "losses": 21
   },
@@ -240,7 +251,7 @@
    "day_start": 1.087929692721293,
    "day": "2026-11-13",
    "status": "active",
-   "opened": 31,
+   "opened": 32,
    "wins": 10,
    "losses": 21
   },

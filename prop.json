@@ -1,6 +1,6 @@
 {
  "started": "2026-08-21 08:00:00+00:00",
- "last_bar": "2026-11-26 16:00:00+00:00",
+ "last_bar": "2026-11-27 04:00:00+00:00",
  "closed_total": 31,
  "accounts": [
   {
@@ -70,7 +70,16 @@
    "losses": 8
   }
  ],
- "positions": [],
+ "positions": [
+  {
+   "coin": "LINK",
+   "dir": "L",
+   "entry": 9.5965,
+   "stop": 9.308605,
+   "tp": 11.035975,
+   "bars": 0
+  }
+ ],
  "recent": [
   {
    "coin": "BNB",
